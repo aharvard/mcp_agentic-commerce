@@ -15,7 +15,7 @@ export default function UIActionsPage() {
     // Create UI resource based on weather data state
     const createUIActionResource = () => {
         return createUIResource({
-            uri: `ui://mcp-aharvard/ui-action-card`,
+            uri: `ui://mcp-agentic-commerce/ui-action-card`,
             content: {
                 type: "rawHtml",
                 htmlString: UIActionCard(),
@@ -65,7 +65,7 @@ export default function UIActionsPage() {
                                 MCP-UI Resource:
                             </span>
                             <code className="bg-white px-2 py-1 rounded text-xs">
-                                ui://mcp-aharvard/ui-action-card
+                                ui://mcp-agentic-commerce/ui-action-card
                             </code>
                         </div>
                     </div>

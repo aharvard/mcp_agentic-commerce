@@ -83,7 +83,7 @@ This project includes MCP (Model Context Protocol) integration through Express s
 1. Give it a name
 1. Select `HTTP` type
 1. Add a description
-1. Add this endpoint: https://mcp-aharvard.netlify.app/mcp
+1. Add this endpoint: https://mcp-agentic-commerce.netlify.app/mcp
 1. A timeout of `300` is fine
 1. Save changes
 1. Ask goose what's the weather in your city (not all cities are supported)
@@ -159,7 +159,7 @@ For more information, visit: [Open-Meteo API Documentation](https://open-meteo.c
 Test the MCP server locally or remotely:
 
 ```bash
-npx @modelcontextprotocol/inspector --config mcp-config.json --server mcp-aharvard
+npx @modelcontextprotocol/inspector --config mcp-config.json --server mcp-agentic-commerce
 ```
 
 ## Project Structure

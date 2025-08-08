@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description:
             "Preview MCP-UI examples in a demo environment. Test real-time weather data, interactive seat selection, and dynamic UI actions.",
         type: "website",
-        url: "https://mcp-aharvard.netlify.app",
+        url: "https://mcp-agentic-commerce.netlify.app",
     },
     twitter: {
         card: "summary_large_image",

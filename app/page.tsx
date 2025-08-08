@@ -38,7 +38,7 @@ export default function Home() {
                     </p>
                     <div className="flex justify-center gap-6 mb-16">
                         <a
-                            href="https://github.com/aharvard/mcp_aharvard"
+                            href="https://github.com/aharvard/mcp_agentic-commerce"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group inline-flex items-center px-8 py-4 bg-gray-900 text-white rounded-2xl hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl border border-gray-200"
@@ -261,7 +261,7 @@ export default function Home() {
                                         </div>
                                         <code className="block text-green-400">
                                             git clone
-                                            https://github.com/aharvard/mcp_aharvard
+                                            https://github.com/aharvard/mcp_agentic-commerce
                                         </code>
                                     </div>
                                 </div>
@@ -360,7 +360,7 @@ export default function Home() {
                                         HTTP Endpoint:
                                     </p>
                                     <code className="block bg-gray-100 rounded-lg px-3 py-2 text-sm font-mono text-gray-800 mb-2">
-                                        https://mcp-aharvard.netlify.app/mcp
+                                        https://mcp-agentic-commerce.netlify.app/mcp
                                     </code>
                                     <p className="text-gray-600 text-sm">
                                         HTTP type MCP server with streaming

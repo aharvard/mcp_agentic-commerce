@@ -68,7 +68,7 @@ export default function GetWeatherPage() {
     const createWeatherResource = () => {
         if (error) {
             return createUIResource({
-                uri: `ui://mcp-aharvard/weather-card`,
+                uri: `ui://mcp-agentic-commerce/weather-card`,
                 content: {
                     type: "rawHtml",
                     htmlString: `
@@ -83,7 +83,7 @@ export default function GetWeatherPage() {
 
         if (!weatherData) {
             return createUIResource({
-                uri: `ui://mcp-aharvard/weather-card`,
+                uri: `ui://mcp-agentic-commerce/weather-card`,
                 content: {
                     type: "rawHtml",
                     htmlString: `
@@ -97,7 +97,7 @@ export default function GetWeatherPage() {
         }
 
         return createUIResource({
-            uri: `ui://mcp-aharvard/weather-card`,
+            uri: `ui://mcp-agentic-commerce/weather-card`,
             content: {
                 type: "rawHtml",
                 htmlString: WeatherCard(weatherData),
@@ -175,7 +175,7 @@ export default function GetWeatherPage() {
                                 MCP-UI Resource:
                             </span>
                             <code className="bg-white px-2 py-1 rounded text-xs">
-                                ui://mcp-aharvard/weather-card
+                                ui://mcp-agentic-commerce/weather-card
                             </code>
                         </div>
                     </div>

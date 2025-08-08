@@ -7,7 +7,7 @@ export default function MoodTripPlannerPage() {
     // Create UI resource for mood trip planner
     const createMoodTripResource = () => {
         return createUIResource({
-            uri: `ui://mcp-aharvard/mood-trip-planner`,
+            uri: `ui://mcp-agentic-commerce/mood-trip-planner`,
             content: {
                 type: "rawHtml",
                 htmlString: MoodTripPlanner(),
@@ -72,7 +72,7 @@ export default function MoodTripPlannerPage() {
                                 MCP-UI Resource:
                             </span>
                             <code className="bg-white px-2 py-1 rounded text-xs">
-                                ui://mcp-aharvard/mood-trip-planner
+                                ui://mcp-agentic-commerce/mood-trip-planner
                             </code>
                         </div>
                     </div>

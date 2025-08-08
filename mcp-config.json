@@ -1,8 +1,8 @@
 {
     "mcpServers": {
-        "mcp-aharvard": {
+        "mcp-agentic-commerce": {
             "type": "http",
-            "url": "https://mcp-aharvard.netlify.app/mcp"
+            "url": "https://mcp-agentic-commerce.netlify.app/mcp"
         }
     }
 }

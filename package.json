@@ -6,7 +6,7 @@
     "type": "module",
     "license": "ISC",
     "scripts": {
-        "inspect": "npx @modelcontextprotocol/inspector --config mcp-config.json --server mcp-aharvard",
+        "inspect": "npx @modelcontextprotocol/inspector --config mcp-config.json --server mcp-agentic-commerce",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",

@@ -7,7 +7,7 @@ export default function PickSeatPage() {
     // Create UI resource based on weather data state
     const createWeatherResource = () => {
         return createUIResource({
-            uri: `ui://mcp-aharvard/weather-card`,
+            uri: `ui://mcp-agentic-commerce/weather-card`,
             content: {
                 type: "rawHtml",
                 htmlString: SeatSelection(),
@@ -57,7 +57,7 @@ export default function PickSeatPage() {
                                 MCP-UI Resource:
                             </span>
                             <code className="bg-white px-2 py-1 rounded text-xs">
-                                ui://mcp-aharvard/seat-selection
+                                ui://mcp-agentic-commerce/seat-selection
                             </code>
                         </div>
                     </div>

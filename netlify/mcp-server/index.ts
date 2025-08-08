@@ -47,14 +47,14 @@ export const setupMCPServer = (): McpServer => {
                         {
                             type: "resource",
                             resource: {
-                                uri: "http://mcp-aharvard/weather-data",
+                                uri: "http://mcp-agentic-commerce/weather-data",
                                 text: JSON.stringify(weatherData),
                                 mimeType: "application/json",
                             },
                         },
                         {
                             ...createUIResource({
-                                uri: "ui://mcp-aharvard/weather-card",
+                                uri: "ui://mcp-agentic-commerce/weather-card",
                                 content: {
                                     type: "rawHtml",
                                     htmlString: WeatherCard(weatherData),
@@ -135,7 +135,7 @@ export const setupMCPServer = (): McpServer => {
                     content: [
                         {
                             ...createUIResource({
-                                uri: "ui://mcp-aharvard/airplane-seat-selection",
+                                uri: "ui://mcp-agentic-commerce/airplane-seat-selection",
                                 content: {
                                     type: "rawHtml",
                                     htmlString: SeatSelection(flightData),
@@ -184,7 +184,7 @@ export const setupMCPServer = (): McpServer => {
                     content: [
                         {
                             ...createUIResource({
-                                uri: "ui://mcp-aharvard/ui-actions-demo",
+                                uri: "ui://mcp-agentic-commerce/ui-actions-demo",
                                 content: {
                                     type: "rawHtml",
                                     htmlString: UIActionCard(),
@@ -236,7 +236,7 @@ export const setupMCPServer = (): McpServer => {
                 content: [
                     {
                         ...createUIResource({
-                            uri: "ui://mcp-aharvard/goose-website",
+                            uri: "ui://mcp-agentic-commerce/goose-website",
                             content: {
                                 type: "externalUrl",
                                 iframeUrl: "https://block.github.io/goose/",
@@ -288,7 +288,7 @@ export const setupMCPServer = (): McpServer => {
                     content: [
                         {
                             ...createUIResource({
-                                uri: "ui://mcp-aharvard/mood-trip-planner",
+                                uri: "ui://mcp-agentic-commerce/mood-trip-planner",
                                 content: {
                                     type: "rawHtml",
                                     htmlString: MoodTripPlanner(tripData),
