@@ -3,6 +3,10 @@
         "mcp-agentic-commerce": {
             "type": "http",
             "url": "https://mcp-agentic-commerce.netlify.app/mcp"
+        },
+        "mcp-agentic-commerce-local": {
+            "type": "http",
+            "url": "http://localhost:8888/mcp"
         }
     }
 }
