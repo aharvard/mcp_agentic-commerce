@@ -23,8 +23,9 @@ export function restaurantsHtml(list: any[]) {
 </div>`;
         })
         .join("\n");
-    return htmlShell(
-        "Nearby Restaurants",
-        `<h2>Nearby Restaurants</h2>${items || "<div>No results</div>"}`
-    );
+    const body = `<h2>Nearby Restaurants</h2>${
+        items ||
+        "<div>No results. Try a more specific search (e.g., 'bbq in South Congress') or a different cuisine.</div>"
+    }`;
+    return htmlShell("Nearby Restaurants", body);
 }
