@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background-color: pink;
+}
+
+.mcp-ui-container {
+    padding: 16px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #fff;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.meta {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.row {
+    margin: 8px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Catalog media layout */
+.media-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.media-img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.media-body {
+    flex: 1;
+}

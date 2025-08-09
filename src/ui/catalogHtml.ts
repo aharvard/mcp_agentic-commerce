@@ -13,14 +13,14 @@ export function catalogHtml(
 ) {
     const list = (items || [])
         .map(
-            (i) => `<div class="card">
-  <div style="display:flex; gap:12px; align-items:flex-start">
+            (i) => `<div class=\"card\">
+  <div class=\"media-row\">
     ${
         i.imageUrl
-            ? `<img src="${i.imageUrl}" alt="${i.name}" style="width:96px;height:96px;object-fit:cover;border-radius:8px;border:1px solid #ddd;"/>`
+            ? `<img src=\"${i.imageUrl}\" alt=\"${i.name}\" class=\"media-img\"/>`
             : ""
     }
-    <div style="flex:1">
+    <div class=\"media-body\">
       <div class="name">${i.name}</div>
       ${i.description ? `<div class="meta">${i.description}</div>` : ""}
       <div class="row"><strong>$${i.price.toFixed(2)}</strong></div>

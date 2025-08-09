@@ -1,20 +1,31 @@
+import fs from "fs";
+import path from "path";
+
+function loadCss(): string {
+    try {
+        const cssPath = path.resolve(
+            path.dirname(new URL(import.meta.url).pathname),
+            "./style.css"
+        );
+        return fs.readFileSync(cssPath, "utf-8");
+    } catch (err) {
+        console.warn(
+            "[ui] Failed to load style.css, falling back to empty styles:",
+            err
+        );
+        return "";
+    }
+}
+
 export function htmlShell(title: string, bodyHtml: string, extraScript = "") {
+    const styles = loadCss();
     return `<!doctype html>
 <html>
 <head>
   <meta charset=\"utf-8\" />
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
   <title>${title}</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body{ font-family:system-ui,Arial,sans-serif; background-color: #f0f0f0; }
-    .mcp-ui-container{ padding: 16px; }
-    .card{ border:1px solid #ddd; border-radius:8px; padding:12px; margin:8px 0; background-color: #fff; }
-    .name{ font-weight:600; font-size:1.2rem; margin-bottom:8px; }
-    .meta{ color:#555; font-size:.9rem }
-    .row{ margin:8px 0 }
-    button{ cursor:pointer; }
-  </style>
+  <style>${styles}</style>
   <script>
     function callTool(toolName, params){
       console.log('[mcp-ui] posting tool', toolName, params);

@@ -9,7 +9,7 @@ import {
     menuHtml,
     orderHtml,
     catalogHtml,
-} from "./ui/html.js";
+} from "./ui/index.js";
 import {
     detectSquareForBusinessId,
     getCatalogForBusinessId,
