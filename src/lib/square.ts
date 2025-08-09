@@ -206,6 +206,23 @@ const MOCK_CATALOGS: Record<string, CatalogItem[]> = {
                 "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=800&q=80&auto=format&fit=crop",
         },
     ],
+    // Generic menus for types
+    "generic-coffee": [
+        { id: "c1", name: "Espresso", price: 3.0 },
+        { id: "c2", name: "Latte", price: 4.25 },
+        { id: "c3", name: "Cold Brew", price: 4.5 },
+        { id: "c4", name: "Blueberry Muffin", price: 3.25 },
+    ],
+    "generic-bbq": [
+        { id: "q1", name: "Brisket Plate", price: 18.5 },
+        { id: "q2", name: "Pulled Pork Sandwich", price: 11.0 },
+        { id: "q3", name: "Mac and Cheese", price: 4.5 },
+    ],
+    "generic-pizza": [
+        { id: "pz1", name: "Margherita", price: 14.0 },
+        { id: "pz2", name: "Pepperoni", price: 15.5 },
+        { id: "pz3", name: "Veggie", price: 15.0 },
+    ],
 };
 
 export function detectSquareForBusinessId(

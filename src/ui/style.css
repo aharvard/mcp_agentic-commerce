@@ -4,49 +4,161 @@
     padding: 0;
 }
 
+:root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --muted: #6b7280;
+    --accent: #f3f4f6;
+    --primary: #111827;
+    /* Spacing scale */
+    --space-0: 0;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+
+    /* Radii */
+    --radius-2: 8px;
+    --radius-3: 12px;
+    --radius-pill: 9999px;
+
+    /* Type scale */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 0.95rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.375rem;
+
+    /* Elevation */
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
 body {
-    font-family: system-ui, Arial, sans-serif;
-    background-color: cyan;
-    overflow: hidden;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
 }
 
 .mcp-ui-container {
-    padding: 16px;
+    padding: var(--space-6);
+    max-width: 880px;
+    margin: 0 auto;
 }
 
+/* Headings */
+h2 {
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    margin-bottom: var(--space-4);
+}
+
+/* Cards */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 12px;
-    margin: 8px 0;
-    background-color: #fff;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-3);
+    padding: var(--space-4) var(--space-5);
+    margin: var(--space-3) 0;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease,
+        transform 0.05s ease;
+}
+.card:hover {
+    box-shadow: var(--shadow-1);
 }
 
 .name {
     font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-2);
 }
-
 .meta {
-    color: #555;
-    font-size: 0.9rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
 }
-
 .row {
-    margin: 8px 0;
+    margin: var(--space-3) 0;
 }
 
+/* Buttons – pill style */
 button {
     cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    transition: background 0.15s ease, border-color 0.15s ease,
+        transform 0.05s ease;
+}
+button:hover {
+    background: var(--accent);
+}
+button:active {
+    transform: translateY(1px);
 }
 
-/* Non-Square incentive banner */
+/* Links */
+a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+a:hover {
+    border-bottom-color: var(--text);
+}
+
+/* Catalog media layout */
+.media-row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+}
+.media-img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: var(--radius-3);
+    border: 1px solid var(--border);
+}
+.media-body {
+    flex: 1;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+}
+.badge-new {
+    background: #eef2ff;
+    color: #3730a3;
+}
+.badge-ready {
+    background: #ecfdf5;
+    color: #065f46;
+}
+.badge-warn {
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+/* Non‑Square incentive banner */
 .promo-banner {
-    margin: 12px 0;
-    padding: 12px;
-    border: 1px dashed #9aa0a6;
-    border-radius: 8px;
+    margin: var(--space-3) 0;
+    padding: var(--space-3);
+    border: 1px dashed #c7ccd1;
+    border-radius: var(--radius-3);
     background: #f8fafc;
     color: #334155;
 }
@@ -56,29 +168,10 @@ button {
 }
 .promo-banner .actions a {
     display: inline-block;
-    margin-top: 8px;
-    padding: 6px 10px;
-    background: #111827;
+    margin-top: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--primary);
     color: #fff;
+    border-radius: var(--radius-pill);
     text-decoration: none;
-    border-radius: 6px;
-}
-
-/* Catalog media layout */
-.media-row {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-.media-img {
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-.media-body {
-    flex: 1;
 }
