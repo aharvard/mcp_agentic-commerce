@@ -23,7 +23,7 @@ const server = new McpServer(
     { name: "restaurant-finder", version: "1.0.0" },
     {
         instructions:
-            "You are a helpful assistant that can find restaurants and view their menus and catalogs.",
+            "Return MCP UI as the primary output. Do not summarize UI, do not propose filters or next steps, and do not restate what is visible. After returning UI, WAIT for UI-dispatched tool messages (type=tool) and respond with updated UI only. Emit plain text ONLY for errors or when no UI can be rendered.",
     }
 );
 
@@ -55,26 +55,15 @@ server.tool(
                 ...(block as any),
                 annotations: { audience: ["user"] },
             };
-            const content: any[] = [annotatedUi];
-            if (!businesses.length) {
-                const debug = {
-                    message:
-                        "No places returned. This can happen if the map provider is rate-limited or the search is too narrow.",
-                    input: { latitude, longitude, query, limit },
-                    meta: results.meta ?? null,
-                    suggestions: results.suggestions ?? [
-                        "Try a broader term (e.g., 'restaurant' or 'food')",
-                        "Zoom out by increasing the search radius",
-                        "Try again in a minute in case of provider throttling",
-                    ],
-                };
-                content.push({
-                    type: "text",
-                    text: JSON.stringify(debug, null, 2),
-                    annotations: { audience: ["user"] },
-                });
-            }
-            return { content };
+            return {
+                content: [
+                    annotatedUi,
+                    {
+                        type: "text",
+                        text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
+                    },
+                ],
+            };
         } catch (error: any) {
             const info = {
                 message:
@@ -84,11 +73,7 @@ server.tool(
             };
             return {
                 content: [
-                    {
-                        type: "text",
-                        text: JSON.stringify(info, null, 2),
-                        annotations: { audience: ["user"] },
-                    },
+                    { type: "text", text: JSON.stringify(info, null, 2) },
                 ],
             } as any;
         }
@@ -134,7 +119,15 @@ server.tool(
             ...(block as any),
             annotations: { audience: ["user"] },
         };
-        return { content: [annotated] };
+        return {
+            content: [
+                annotated,
+                {
+                    type: "text",
+                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
+                },
+            ],
+        };
     }
 );
 
@@ -163,7 +156,15 @@ server.tool(
             ...(block as any),
             annotations: { audience: ["user"] },
         };
-        return { content: [annotated] };
+        return {
+            content: [
+                annotated,
+                {
+                    type: "text",
+                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
+                },
+            ],
+        };
     }
 );
 
@@ -206,7 +207,15 @@ server.tool(
             ...(block as any),
             annotations: { audience: ["user"] },
         };
-        return { content: [annotated] };
+        return {
+            content: [
+                annotated,
+                {
+                    type: "text",
+                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
+                },
+            ],
+        };
     }
 );
 

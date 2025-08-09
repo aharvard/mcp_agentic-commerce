@@ -36,6 +36,40 @@ const SQUARE_SELLERS: Record<string, Partial<SellerPlatformInfo>> = {
         merchantToken: "merchant_token_mock_3",
         locationId: "location_mock_3",
     },
+    // Realistic demo IDs from local DB
+    "atx-franklin": {
+        usesSquare: true,
+        reason: "known-mapping",
+        merchantToken: "merchant_token_atx_franklin",
+        locationId: "location_atx_franklin",
+    },
+    // Coffee demo sellers used in scenarios
+    "bluebird-coffee-ATL-001": {
+        usesSquare: true,
+        reason: "known-mapping",
+        merchantToken: "merchant_token_bluebird_atl",
+        locationId: "location_bluebird_atl",
+    },
+    "midtown-bean-ATL-102": {
+        usesSquare: true,
+        reason: "known-mapping",
+        merchantToken: "merchant_token_midtownbean_atl",
+        locationId: "location_midtownbean_atl",
+    },
+    "gpg-ATL-877": {
+        usesSquare: true,
+        reason: "known-mapping",
+        merchantToken: "merchant_token_gpg_atl",
+        locationId: "location_gpg_atl",
+    },
+    "peachtree-roasters-ATL-009": {
+        usesSquare: false,
+        reason: "known-mapping",
+    },
+    "nyc-katz": {
+        usesSquare: false,
+        reason: "known-mapping",
+    },
 };
 
 // Very small mock catalog per seller to satisfy 1a-1c with images/pricing
@@ -74,6 +108,102 @@ const MOCK_CATALOGS: Record<string, CatalogItem[]> = {
             price: 4.75,
             imageUrl:
                 "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=800&q=80&auto=format&fit=crop",
+        },
+    ],
+    "atx-franklin": [
+        {
+            id: "bbq1",
+            name: "Brisket Plate",
+            description: "Smoked brisket with pickles and onions",
+            price: 19.5,
+            imageUrl:
+                "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "bbq2",
+            name: "Pulled Pork Sandwich",
+            description: "House sauce, buttered bun",
+            price: 12.0,
+            imageUrl:
+                "https://images.unsplash.com/photo-1604908554226-0466b0f3f0f9?w=800&q=80&auto=format&fit=crop",
+        },
+    ],
+    "bluebird-coffee-ATL-001": [
+        {
+            id: "bb1",
+            name: "Latte",
+            description: "Silky espresso with steamed milk",
+            price: 4.25,
+            imageUrl:
+                "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "bb2",
+            name: "Cold Brew",
+            description: "18-hr steep, chocolatey notes",
+            price: 4.75,
+            imageUrl:
+                "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "bb3",
+            name: "Blueberry Muffin",
+            description: "Baked daily",
+            price: 3.5,
+            imageUrl:
+                "https://images.unsplash.com/photo-1604908551470-6f9ab0d5f0d8?w=800&q=80&auto=format&fit=crop",
+        },
+    ],
+    "midtown-bean-ATL-102": [
+        {
+            id: "mb1",
+            name: "Flat White",
+            description: "Velvety microfoam",
+            price: 4.5,
+            imageUrl:
+                "https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "mb2",
+            name: "Nitro Cold Brew",
+            description: "Creamy, cascading",
+            price: 5.25,
+            imageUrl:
+                "https://images.unsplash.com/photo-1503481766315-7a586b20f66f?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "mb3",
+            name: "Almond Croissant",
+            description: "Buttery, toasted almonds",
+            price: 4.25,
+            imageUrl:
+                "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=800&q=80&auto=format&fit=crop",
+        },
+    ],
+    "gpg-ATL-877": [
+        {
+            id: "gpg1",
+            name: "Drip Coffee",
+            description: "Freshly brewed",
+            price: 2.85,
+            imageUrl:
+                "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "gpg2",
+            name: "Oat Milk Latte",
+            description: "Smooth and dairy-free",
+            price: 4.95,
+            imageUrl:
+                "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=800&q=80&auto=format&fit=crop",
+        },
+        {
+            id: "gpg3",
+            name: "Seasonal Scone",
+            description: "House-made",
+            price: 3.75,
+            imageUrl:
+                "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=800&q=80&auto=format&fit=crop",
         },
     ],
 };

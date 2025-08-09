@@ -11,6 +11,8 @@ export type Restaurant = {
     review_count?: number;
     latitude?: number;
     longitude?: number;
+    phone?: string;
+    hours?: string[];
 };
 
 import db from "../data/restaurants.json" assert { type: "json" };
