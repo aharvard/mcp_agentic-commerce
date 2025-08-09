@@ -122,6 +122,9 @@ export function menuHtml(details: any) {
         details.location?.city ? ", " + details.location.city : ""
     }`;
     const url = details.website || details.url || "#";
+    const usesSquareNote = details?.square?.usesSquare
+        ? `<div class=\"row\"><em>Square detected: true</em></div>`
+        : `<div class=\"row\"><em>Square detected: false</em></div>`;
     const body = `
 <h2>Restaurant</h2>
 <div class=\"name\">${details.name ?? "Unknown"}</div>
@@ -130,6 +133,12 @@ export function menuHtml(details: any) {
         details.review_count ?? 0
     } reviews)</div>
 <div class=\"row\"><a href=\"${url}\" target=\"_blank\" rel=\"noopener\">Open Website</a></div>
+${usesSquareNote}
+${
+    details?.square?.usesSquare
+        ? `<div class=\"row\"><button onclick=\"callTool('view_catalog',{ business_id: '${details.id}' })\">View Catalog</button></div>`
+        : ""
+}
 <div class=\"row\"><button onclick=\"callTool('order_takeout',{ business_id: '${
         details.id
     }', items: [] })\">Start Takeout Order</button></div>`;

@@ -4,7 +4,17 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { getRestaurant, searchRestaurants } from "./lib/restaurants.js";
 import { createUIResource } from "@mcp-ui/server";
-import { restaurantsHtml, menuHtml, orderHtml } from "./ui/html.js";
+import {
+    restaurantsHtml,
+    menuHtml,
+    orderHtml,
+    catalogHtml,
+} from "./ui/html.js";
+import {
+    detectSquareForBusinessId,
+    getCatalogForBusinessId,
+    getCatalogByMerchantToken,
+} from "./lib/square.js";
 
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
 const MCP_PORT = Number(process.env.MCP_PORT || 8000);
@@ -38,12 +48,34 @@ server.tool(
 );
 
 server.tool(
+    "detect_seller_square",
+    "Determine if a seller uses Square and return detection details.",
+    { business_id: z.string(), website_url: z.string().optional() },
+    async ({ business_id, website_url }) => {
+        const info = detectSquareForBusinessId(business_id, website_url);
+        return {
+            content: [
+                {
+                    type: "text",
+                    text: JSON.stringify(info, null, 2),
+                },
+            ],
+            isError: false,
+        } as any;
+    }
+);
+
+server.tool(
     "view_menu",
     "View menu/info for a restaurant by Yelp business id.",
     { business_id: z.string() },
     async ({ business_id }) => {
         const details = await getRestaurant(business_id);
-        const html = menuHtml(details);
+        const square = detectSquareForBusinessId(
+            business_id,
+            (details as any)?.website
+        );
+        const html = menuHtml({ ...(details as any), square });
         const block = createUIResource({
             uri: `ui://menu/${business_id}`,
             content: { type: "rawHtml", htmlString: html },
@@ -71,6 +103,44 @@ server.tool(
         const html = orderHtml(details, items as any);
         const block = createUIResource({
             uri: `ui://order/${business_id}`,
+            content: { type: "rawHtml", htmlString: html },
+            encoding: "text",
+        });
+        return { content: [block] };
+    }
+);
+
+server.tool(
+    "view_catalog",
+    "Read a seller's catalog (if Square) and display items with price and image.",
+    { business_id: z.string() },
+    async ({ business_id }) => {
+        const details = await getRestaurant(business_id);
+        const square = detectSquareForBusinessId(
+            business_id,
+            (details as any)?.website
+        );
+        if (!square.usesSquare) {
+            return {
+                content: [
+                    {
+                        type: "text",
+                        text: "This seller does not appear to use Square. Catalog not available.",
+                    },
+                ],
+            } as any;
+        }
+        // Prefer merchant token lookup when available to model 0c
+        const items = square.merchantToken
+            ? await getCatalogByMerchantToken(square.merchantToken)
+            : await getCatalogForBusinessId(business_id);
+        const html = catalogHtml(
+            business_id,
+            (details as any)?.name ?? "Seller",
+            items
+        );
+        const block = createUIResource({
+            uri: `ui://catalog/${business_id}`,
             content: { type: "rawHtml", htmlString: html },
             encoding: "text",
         });
