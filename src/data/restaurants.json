@@ -1,0 +1,155 @@
+[
+    {
+        "id": "atx-franklin",
+        "name": "Franklin Barbecue",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [{ "alias": "bbq", "title": "BBQ" }],
+        "location": { "address1": "900 E 11th St", "city": "Austin" },
+        "website": "https://franklinbbq.com/",
+        "review_count": 12000,
+        "latitude": 30.2702,
+        "longitude": -97.7313
+    },
+    {
+        "id": "atx-labbq",
+        "name": "La Barbecue",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [{ "alias": "bbq", "title": "BBQ" }],
+        "location": { "address1": "2401 E Cesar Chavez St", "city": "Austin" },
+        "website": "https://www.labarbecue.com/",
+        "review_count": 8000,
+        "latitude": 30.2497,
+        "longitude": -97.7203
+    },
+    {
+        "id": "atx-uchi",
+        "name": "Uchi",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            { "alias": "sushi", "title": "Sushi" },
+            { "alias": "japanese", "title": "Japanese" }
+        ],
+        "location": { "address1": "801 S Lamar Blvd", "city": "Austin" },
+        "website": "https://uchiaustin.com/",
+        "review_count": 7000,
+        "latitude": 30.2613,
+        "longitude": -97.76
+    },
+    {
+        "id": "atl-foxbros",
+        "name": "Fox Bros. Bar-B-Q",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [{ "alias": "bbq", "title": "BBQ" }],
+        "location": { "address1": "1238 DeKalb Ave NE", "city": "Atlanta" },
+        "website": "https://www.foxbrosbbq.com/",
+        "review_count": 9000,
+        "latitude": 33.7613,
+        "longitude": -84.3481
+    },
+    {
+        "id": "atl-heirloom",
+        "name": "Heirloom Market BBQ",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [{ "alias": "bbq", "title": "BBQ" }],
+        "location": { "address1": "2243 Akers Mill Rd SE", "city": "Atlanta" },
+        "website": "https://heirloommarketbbq.com/",
+        "review_count": 6500,
+        "latitude": 33.888,
+        "longitude": -84.4571
+    },
+    {
+        "id": "sf-bunme",
+        "name": "Bun Mee",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            { "alias": "vietnamese", "title": "Vietnamese" },
+            { "alias": "sandwiches", "title": "Sandwiches" }
+        ],
+        "location": { "address1": "2015 Fillmore St", "city": "San Francisco" },
+        "website": "https://bunmee.com/",
+        "review_count": 1500,
+        "latitude": 37.7898,
+        "longitude": -122.4337
+    },
+    {
+        "id": "sf-kokkari",
+        "name": "Kokkari Estiatorio",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [{ "alias": "greek", "title": "Greek" }],
+        "location": { "address1": "200 Jackson St", "city": "San Francisco" },
+        "website": "https://kokkari.com/",
+        "review_count": 7000,
+        "latitude": 37.797,
+        "longitude": -122.3997
+    },
+    {
+        "id": "nyc-katz",
+        "name": "Katz's Delicatessen",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            { "alias": "deli", "title": "Deli" },
+            { "alias": "sandwiches", "title": "Sandwiches" }
+        ],
+        "location": { "address1": "205 E Houston St", "city": "New York" },
+        "website": "https://katzsdelicatessen.com/",
+        "review_count": 20000,
+        "latitude": 40.7223,
+        "longitude": -73.9874
+    },
+    {
+        "id": "nyc-joe",
+        "name": "Joe's Pizza",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "location": { "address1": "7 Carmine St", "city": "New York" },
+        "website": "https://www.joespizzanyc.com/",
+        "review_count": 8000,
+        "latitude": 40.7306,
+        "longitude": -74.0027
+    },
+    {
+        "id": "sea-sushi-kashiba",
+        "name": "Sushi Kashiba",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [{ "alias": "sushi", "title": "Sushi" }],
+        "location": { "address1": "86 Pine St", "city": "Seattle" },
+        "website": "https://www.sushikashiba.com/",
+        "review_count": 3500,
+        "latitude": 47.6095,
+        "longitude": -122.3425
+    },
+    {
+        "id": "chi-girl",
+        "name": "Girl & The Goat",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [{ "alias": "newamerican", "title": "New American" }],
+        "location": { "address1": "809 W Randolph St", "city": "Chicago" },
+        "website": "https://girlandthegoat.com/",
+        "review_count": 9000,
+        "latitude": 41.8841,
+        "longitude": -87.6486
+    },
+    {
+        "id": "bos-oyl",
+        "name": "Oleana",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [{ "alias": "mediterranean", "title": "Mediterranean" }],
+        "location": { "address1": "134 Hampshire St", "city": "Cambridge" },
+        "website": "https://oleanarestaurant.com/",
+        "review_count": 3000,
+        "latitude": 42.3692,
+        "longitude": -71.0984
+    }
+]

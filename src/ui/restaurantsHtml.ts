@@ -25,7 +25,8 @@ export function restaurantsHtml(list: any[]) {
         .join("\n");
     const squareLogo = inlinePublicAsset("Square_Jewel_Black.svg");
     const body = `<h2>Nearby Restaurants</h2>
-    <img src="${squareLogo}" alt="Square Logo" />${
+     <img src="{squareLogo}" alt="Square Logo" />
+    ${
         items ||
         "<div>No results. Try a more specific search (e.g., 'bbq in South Congress') or a different cuisine.</div>"
     }`;
