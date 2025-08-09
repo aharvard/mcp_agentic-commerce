@@ -12,6 +12,7 @@ node_modules
 
 # Production
 /build
+dist
 
 # Misc
 .DS_Store
@@ -90,18 +91,6 @@ jspm_packages/
 
 # Next.js build output
 .next
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
-.cache/
-public
-
-# Storybook build outputs
-.out
-.storybook-out
 
 # Temporary folders
 tmp/

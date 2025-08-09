@@ -6,7 +6,8 @@
 
 body {
     font-family: system-ui, Arial, sans-serif;
-    background-color: pink;
+    background-color: cyan;
+    overflow: hidden;
 }
 
 .mcp-ui-container {

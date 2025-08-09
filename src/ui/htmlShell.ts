@@ -36,7 +36,6 @@ export function htmlShell(title: string, bodyHtml: string, extraScript = "") {
       window.parent.postMessage({ type: 'notify', payload: { level: level||'info', data: message } }, '*');
     }
   </script>
-  ${extraScript}
   </head>
 <body>
   <div class="mcp-ui-container">${bodyHtml}</div>
@@ -50,12 +49,69 @@ export function htmlShell(title: string, bodyHtml: string, extraScript = "") {
     }
     const resizeObserver = new ResizeObserver(() => { postSize(); });
     resizeObserver.observe(mcpUiContainer);
+    // Also ensure we post after full load (images, fonts)
     if (document.readyState === 'complete' || document.readyState === 'interactive') {
       postSize();
+      setTimeout(postSize, 0);
+      setTimeout(postSize, 300);
     } else {
-      window.addEventListener('DOMContentLoaded', postSize);
+      window.addEventListener('DOMContentLoaded', () => { postSize(); setTimeout(postSize, 0); setTimeout(postSize, 300); });
     }
+    window.addEventListener('load', () => { postSize(); setTimeout(postSize, 0); });
+
+    // Image load fallback
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('load', () => postSize());
+      img.addEventListener('error', () => postSize());
+    });
+
+    // Mutation observer as extra safety for dynamic content
+    const mutationObserver = new MutationObserver(() => postSize());
+    mutationObserver.observe(mcpUiContainer, { childList: true, subtree: true, attributes: true });
+
+    // Allow callers to append extra JS that relies on postSize being defined
+    try { ${extraScript} } catch (e) { /* no-op */ }
   </script>
 </body>
 </html>`;
+}
+
+function guessMime(ext: string): string {
+    switch (ext.toLowerCase()) {
+        case ".svg":
+            return "image/svg+xml";
+        case ".png":
+            return "image/png";
+        case ".jpg":
+        case ".jpeg":
+            return "image/jpeg";
+        case ".gif":
+            return "image/gif";
+        case ".webp":
+            return "image/webp";
+        default:
+            return "application/octet-stream";
+    }
+}
+
+export function inlinePublicAsset(fileName: string): string {
+    try {
+        const baseDir = path.resolve(
+            path.dirname(new URL(import.meta.url).pathname),
+            "../public"
+        );
+        const filePath = path.join(baseDir, fileName);
+        const buffer = fs.readFileSync(filePath);
+        const ext = path.extname(fileName);
+        const mime = guessMime(ext);
+        if (ext.toLowerCase() === ".svg") {
+            const text = buffer.toString("utf-8");
+            return `data:${mime};utf8,${encodeURIComponent(text)}`;
+        }
+        const b64 = buffer.toString("base64");
+        return `data:${mime};base64,${b64}`;
+    } catch (err) {
+        console.warn(`[ui] Failed to inline public asset ${fileName}:`, err);
+        return "";
+    }
 }

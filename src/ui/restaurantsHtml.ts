@@ -1,4 +1,4 @@
-import { htmlShell } from "./htmlShell.js";
+import { htmlShell, inlinePublicAsset } from "./htmlShell.js";
 
 export function restaurantsHtml(list: any[]) {
     const items = list
@@ -23,9 +23,11 @@ export function restaurantsHtml(list: any[]) {
 </div>`;
         })
         .join("\n");
-    const body = `<h2>Nearby Restaurants</h2>${
+    const squareLogo = inlinePublicAsset("Square_Jewel_Black.svg");
+    const body = `<h2>Nearby Restaurants</h2>
+    <img src="${squareLogo}" alt="Square Logo" />${
         items ||
         "<div>No results. Try a more specific search (e.g., 'bbq in South Congress') or a different cuisine.</div>"
     }`;
-    return htmlShell("Nearby Restaurants", body);
+    return htmlShell("Nearby Restaurants", body, `postSize()`);
 }
