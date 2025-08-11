@@ -14,9 +14,11 @@ export function restaurantDetailsHtml(details: any) {
              <div>Customers using assistants try to order here. Enable in‑chat ordering with Square to accept orders directly.</div>
              <div class="actions"><a href="https://squareup.com/us/en/point-of-sale/online-checkout" target="_blank" rel="noopener">Learn about Square Ordering</a></div>
            </div>`;
+    const color = (details as any)?.brandColor || "#a3bffa";
     const body = `<p>restaurantDetailsHtml</p>
 <h2>Restaurant Details</h2>
 <div class="name">${details.name ?? "Unknown"}</div>
+<div class="row"><span class="badge" style="background:${color};color:#fff">Brand</span></div>
 <div class="meta">${addr}</div>
 ${
     phone

@@ -38,7 +38,9 @@ export function htmlShell(title: string, bodyHtml: string, extraScript = "") {
   </script>
   </head>
 <body>
-  <div class="mcp-ui-container">${bodyHtml}</div>
+  <div class="mcp-ui-container">${bodyHtml}
+    <div class="footer-note">This demo does not contain real seller data; all content is synthetic and for demonstration purposes only.</div>
+  </div>
   <script>
     const mcpUiContainer = document.querySelector('.mcp-ui-container');
     function postSize() {

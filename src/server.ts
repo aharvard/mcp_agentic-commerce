@@ -65,7 +65,11 @@ server.tool(
                     ],
                 } as any;
             }
-            const html = searchResultsHtml(businesses);
+            const locationStr2 = [city, state].filter(Boolean).join(", ");
+            const dynamicTitle = `${
+                query ? `Results for "${query}"` : "Nearby Restaurants"
+            }${locationStr2 ? ` — ${locationStr2}` : ""}`;
+            const html = searchResultsHtml(businesses, dynamicTitle);
             const block = createUIResource({
                 uri: `ui://restaurants/list`,
                 content: { type: "rawHtml", htmlString: html },
@@ -311,7 +315,10 @@ app.get("/dev/restaurants", async (req, res) => {
             );
             return;
         }
-        const html = searchResultsHtml(businesses);
+        const title = `${
+            query ? `Results for "${query}"` : "Nearby Restaurants"
+        } in ${[city, state].filter(Boolean).join(", ") || "your area"}`;
+        const html = searchResultsHtml(businesses, title);
         res.type("html").send(html);
     } catch (error: any) {
         const code = (error && (error as any).code) || "UNKNOWN";

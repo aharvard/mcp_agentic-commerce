@@ -13,12 +13,13 @@ export type Restaurant = {
     longitude?: number;
     phone?: string;
     hours?: string[];
+    brandColor?: string;
 };
 
 import db from "../data/restaurants.json" assert { type: "json" };
 const DB_RESTAURANTS: Restaurant[] = db as any as Restaurant[];
 
-// Synonyms for better matching across sources
+// Synonyms for better matching across sources and to resolve category intent
 const TERM_SYNONYMS: Record<string, string[]> = {
     bbq: [
         "bbq",
@@ -29,12 +30,19 @@ const TERM_SYNONYMS: Record<string, string[]> = {
         "smokehouse",
         "smoked",
     ],
+    coffee: ["coffee", "espresso", "cafe", "café", "cafeteria"],
     mexican: ["mexican", "tex-mex", "tacos"],
     tacos: ["tacos", "taco", "mexican"],
-    sushi: ["sushi", "japanese"],
-    pizza: ["pizza", "pizzeria"],
-    breakfast: ["breakfast", "brunch"],
+    sushi: ["sushi", "japanese", "omakase", "izakaya"],
+    pizza: ["pizza", "pizzeria", "slice"],
+    breakfast: ["breakfast", "brunch", "waffle", "pancake"],
+    italian: ["italian", "pasta", "trattoria", "osteria"],
+    seafood: ["seafood", "oyster", "lobster", "fish"],
+    burgers: ["burgers", "burger", "smash"],
+    bakery: ["bakery", "boulangerie", "patisserie", "bakeshop"],
 };
+
+const KNOWN_CATEGORY_ALIASES = new Set(Object.keys(TERM_SYNONYMS));
 
 function expandTerms(raw: string): Set<string> {
     const needle = (raw || "").toLowerCase().trim();
@@ -45,6 +53,18 @@ function expandTerms(raw: string): Set<string> {
         }
     }
     return expanded;
+}
+
+function resolveCanonicalCategoryAlias(raw: string): string | null {
+    const needle = (raw || "").toLowerCase().trim();
+    if (!needle) return null;
+    // Check each alias and its synonyms to see if the query implies that category
+    for (const [alias, synonyms] of Object.entries(TERM_SYNONYMS)) {
+        if (alias === needle || synonyms.some((t) => needle.includes(t))) {
+            return alias;
+        }
+    }
+    return null;
 }
 
 // Haversine to filter by proximity
@@ -142,6 +162,7 @@ export async function searchRestaurants(params: SearchParams) {
     }
     const normalizedTerm = (term || "").trim();
     const needle = normalizedTerm.toLowerCase();
+    const primaryCategoryAlias = resolveCanonicalCategoryAlias(needle);
     const expandedTerms = expandTerms(needle);
 
     const byText = (b: Restaurant) =>
@@ -174,7 +195,22 @@ export async function searchRestaurants(params: SearchParams) {
     // can communicate no local results instead of showing another city.
     const pool = nearby;
 
-    const filtered = pool.filter((b) => (needle ? byText(b) : true));
+    const filtered = pool.filter((b) => {
+        if (
+            primaryCategoryAlias &&
+            KNOWN_CATEGORY_ALIASES.has(primaryCategoryAlias)
+        ) {
+            const primary = (b.categories || [])[0];
+            const primaryAlias = (primary?.alias || "").toLowerCase();
+            const primaryTitle = (primary?.title || "").toLowerCase();
+            // Enforce primary category match only
+            return (
+                primaryAlias === primaryCategoryAlias ||
+                primaryTitle.includes(primaryCategoryAlias)
+            );
+        }
+        return needle ? byText(b) : true;
+    });
     const deduped = new Map<string, Restaurant>();
     for (const b of filtered) deduped.set(b.id, b);
 
