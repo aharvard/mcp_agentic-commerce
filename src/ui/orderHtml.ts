@@ -66,6 +66,7 @@ export function orderHtml(
 </table>`;
 
     const body = `
+    <p>orderHtml</p>
 <h2>Takeout Order</h2>
 <div class=\"row\"><strong>${details?.name ?? "Restaurant"}</strong></div>
 <div class=\"row\">${table}</div>

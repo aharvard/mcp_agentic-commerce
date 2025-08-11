@@ -1,6 +1,6 @@
 import { htmlShell, inlinePublicAsset } from "./htmlShell.js";
 
-export function restaurantsHtml(list: any[]) {
+export function searchResultsHtml(list: any[]) {
     const items = list
         .map((b) => {
             const cats = (b.categories || [])
@@ -27,20 +27,22 @@ export function restaurantsHtml(list: any[]) {
             } • ${cats}</div>
       <div class="meta">${addr}</div>
       <div class="row"><a href="${url}" target="_blank" rel="noopener">Website</a></div>
-      <button onclick="callTool('view_menu',{ business_id: '${
+      <button onclick="callTool('view_restaurant',{ business_id: '${
           b.id
-      }' })">View Menu</button>
+      }' })">View Details</button>
     </div>
   </div>
 </div>`;
         })
         .join("\n");
     const squareLogo = inlinePublicAsset("Square_Jewel_Black.svg");
-    const body = `<h2>Nearby Restaurants</h2>
+    const body = `<p>searchResultsHtml</p><h2>Search Results</h2>
      <img src="${squareLogo}" alt="Square Logo" style="height:20px;opacity:.8;margin-bottom:8px"/>
+     <div class="items">
      ${
          items ||
-         "<div>No results. Try a more specific search (e.g., 'bbq in South Congress') or a different cuisine.</div>"
-     }`;
-    return htmlShell("Nearby Restaurants", body, `postSize()`);
+         `<div>No local results. Try a different city, add a state (e.g., "Austin, TX"), or use a broader query.</div>`
+     }
+     </div>`;
+    return htmlShell("Search Results", body, `postSize()`);
 }

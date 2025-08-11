@@ -1,244 +1,6442 @@
 [
     {
-        "id": "atx-franklin",
-        "name": "Franklin Barbecue",
-        "rating": 4.8,
-        "price": "$$$",
-        "categories": [{ "alias": "bbq", "title": "BBQ" }],
-        "location": { "address1": "900 E 11th St", "city": "Austin" },
-        "phone": "+1-512-555-0199",
-        "hours": ["Mon-Sun 11:00-15:00"],
-        "website": "https://franklinbbq.com/",
-        "review_count": 12000,
-        "latitude": 30.2702,
-        "longitude": -97.7313
+        "id": "new-york-urban-new-york-dock-NY-001",
+        "name": "Urban New York Dock",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "326 Rustic Market Ave",
+            "city": "New York"
+        },
+        "website": "https://eat.example.com/new-york/urban-new-york-dock",
+        "review_count": 4638,
+        "latitude": 40.684931170518695,
+        "longitude": -74.0250774006443,
+        "phone": "+1-555-6920",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "atx-labbq",
-        "name": "La Barbecue",
-        "rating": 4.7,
-        "price": "$$$",
-        "categories": [{ "alias": "bbq", "title": "BBQ" }],
-        "location": { "address1": "2401 E Cesar Chavez St", "city": "Austin" },
-        "phone": "+1-512-555-0142",
-        "hours": ["Tue-Sun 11:00-18:00"],
-        "website": "https://www.labarbecue.com/",
-        "review_count": 8000,
-        "latitude": 30.2497,
-        "longitude": -97.7203
-    },
-    {
-        "id": "atx-uchi",
-        "name": "Uchi",
-        "rating": 4.8,
+        "id": "new-york-copper-waffle-NY-002",
+        "name": "Copper Waffle",
+        "rating": 4.2,
         "price": "$$$",
         "categories": [
-            { "alias": "sushi", "title": "Sushi" },
-            { "alias": "japanese", "title": "Japanese" }
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
         ],
-        "location": { "address1": "801 S Lamar Blvd", "city": "Austin" },
-        "phone": "+1-512-555-0177",
-        "hours": ["Daily 17:00-22:00"],
-        "website": "https://uchiaustin.com/",
-        "review_count": 7000,
-        "latitude": 30.2613,
-        "longitude": -97.76
+        "location": {
+            "address1": "156 Starlight Union Blvd",
+            "city": "New York"
+        },
+        "website": "https://eat.example.com/new-york/copper-waffle",
+        "review_count": 3401,
+        "latitude": 40.68865338513832,
+        "longitude": -74.01875823697448,
+        "phone": "+1-555-6257",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "atl-foxbros",
-        "name": "Fox Bros. Bar-B-Q",
-        "rating": 4.6,
-        "price": "$$$",
-        "categories": [{ "alias": "bbq", "title": "BBQ" }],
-        "location": { "address1": "1238 DeKalb Ave NE", "city": "Atlanta" },
-        "phone": "+1-404-555-0102",
-        "hours": ["Daily 11:00-21:00"],
-        "website": "https://www.foxbrosbbq.com/",
-        "review_count": 9000,
-        "latitude": 33.7613,
-        "longitude": -84.3481
-    },
-    {
-        "id": "atl-heirloom",
-        "name": "Heirloom Market BBQ",
-        "rating": 4.7,
-        "price": "$$",
-        "categories": [{ "alias": "bbq", "title": "BBQ" }],
-        "location": { "address1": "2243 Akers Mill Rd SE", "city": "Atlanta" },
-        "phone": "+1-770-555-0112",
-        "hours": ["Tue-Sat 11:00-20:00"],
-        "website": "https://heirloommarketbbq.com/",
-        "review_count": 6500,
-        "latitude": 33.888,
-        "longitude": -84.4571
-    },
-    {
-        "id": "sf-bunme",
-        "name": "Bun Mee",
+        "id": "new-york-ivory-new-york-smokehouse-NY-003",
+        "name": "Ivory New York Smokehouse",
         "rating": 4.2,
         "price": "$$",
         "categories": [
-            { "alias": "vietnamese", "title": "Vietnamese" },
-            { "alias": "sandwiches", "title": "Sandwiches" }
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
         ],
-        "location": { "address1": "2015 Fillmore St", "city": "San Francisco" },
-        "phone": "+1-415-555-0123",
-        "hours": ["Daily 10:00-19:00"],
-        "website": "https://bunmee.com/",
-        "review_count": 1500,
-        "latitude": 37.7898,
-        "longitude": -122.4337
+        "location": {
+            "address1": "787 Bluebird River Way",
+            "city": "New York"
+        },
+        "website": "https://eat.example.com/new-york/ivory-new-york-smokehouse",
+        "review_count": 2777,
+        "latitude": 40.694373355942965,
+        "longitude": -74.02960681761522,
+        "phone": "+1-555-3266",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "sf-kokkari",
-        "name": "Kokkari Estiatorio",
-        "rating": 4.7,
-        "price": "$$$",
-        "categories": [{ "alias": "greek", "title": "Greek" }],
-        "location": { "address1": "200 Jackson St", "city": "San Francisco" },
-        "phone": "+1-415-555-0166",
-        "hours": ["Mon-Sat 17:00-22:00"],
-        "website": "https://kokkari.com/",
-        "review_count": 7000,
-        "latitude": 37.797,
-        "longitude": -122.3997
-    },
-    {
-        "id": "nyc-katz",
-        "name": "Katz's Delicatessen",
-        "rating": 4.5,
+        "id": "new-york-copper-skillet-NY-004",
+        "name": "Copper Skillet",
+        "rating": 4.9,
         "price": "$$",
         "categories": [
-            { "alias": "deli", "title": "Deli" },
-            { "alias": "sandwiches", "title": "Sandwiches" }
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
         ],
-        "location": { "address1": "205 E Houston St", "city": "New York" },
-        "phone": "+1-212-555-0191",
-        "hours": ["Daily 10:00-23:00"],
-        "website": "https://katzsdelicatessen.com/",
-        "review_count": 20000,
-        "latitude": 40.7223,
-        "longitude": -73.9874
+        "location": {
+            "address1": "518 Velvet Lake Blvd",
+            "city": "New York"
+        },
+        "website": "https://eat.example.com/new-york/copper-skillet",
+        "review_count": 2296,
+        "latitude": 40.693959920790235,
+        "longitude": -73.98507349426765,
+        "phone": "+1-555-2118",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "nyc-joe",
-        "name": "Joe's Pizza",
+        "id": "new-york-starlight-new-york-espresso-NY-005",
+        "name": "Starlight New York Espresso",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "652 Crimson Sunset Rd",
+            "city": "New York"
+        },
+        "website": "https://eat.example.com/new-york/starlight-new-york-espresso",
+        "review_count": 324,
+        "latitude": 40.7361495537052,
+        "longitude": -73.99387352180574,
+        "phone": "+1-555-9758",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "los-angeles-los-angeles-bun-CA-001",
+        "name": "Los Angeles Bun",
+        "rating": 4.9,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "455 Sunset Union Blvd",
+            "city": "Los Angeles"
+        },
+        "website": "https://eat.example.com/los-angeles/los-angeles-bun",
+        "review_count": 321,
+        "latitude": 34.04091455045882,
+        "longitude": -118.24410965688415,
+        "phone": "+1-555-8931",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "los-angeles-los-angeles-azul-CA-002",
+        "name": "Los Angeles Azul",
         "rating": 4.4,
-        "price": "$$",
-        "categories": [{ "alias": "pizza", "title": "Pizza" }],
-        "location": { "address1": "7 Carmine St", "city": "New York" },
-        "phone": "+1-212-555-0135",
-        "hours": ["Daily 11:00-01:00"],
-        "website": "https://www.joespizzanyc.com/",
-        "review_count": 8000,
-        "latitude": 40.7306,
-        "longitude": -74.0027
-    },
-    {
-        "id": "sea-sushi-kashiba",
-        "name": "Sushi Kashiba",
-        "rating": 4.7,
         "price": "$$$",
-        "categories": [{ "alias": "sushi", "title": "Sushi" }],
-        "location": { "address1": "86 Pine St", "city": "Seattle" },
-        "phone": "+1-206-555-0175",
-        "hours": ["Daily 17:00-22:00"],
-        "website": "https://www.sushikashiba.com/",
-        "review_count": 3500,
-        "latitude": 47.6095,
-        "longitude": -122.3425
-    },
-    {
-        "id": "chi-girl",
-        "name": "Girl & The Goat",
-        "rating": 4.6,
-        "price": "$$$",
-        "categories": [{ "alias": "newamerican", "title": "New American" }],
-        "location": { "address1": "809 W Randolph St", "city": "Chicago" },
-        "phone": "+1-312-555-0158",
-        "hours": ["Daily 16:30-22:00"],
-        "website": "https://girlandthegoat.com/",
-        "review_count": 9000,
-        "latitude": 41.8841,
-        "longitude": -87.6486
-    },
-    {
-        "id": "bos-oyl",
-        "name": "Oleana",
-        "rating": 4.6,
-        "price": "$$$",
-        "categories": [{ "alias": "mediterranean", "title": "Mediterranean" }],
-        "location": { "address1": "134 Hampshire St", "city": "Cambridge" },
-        "phone": "+1-617-555-0149",
-        "hours": ["Tue-Sun 17:00-22:00"],
-        "website": "https://oleanarestaurant.com/",
-        "review_count": 3000,
-        "latitude": 42.3692,
-        "longitude": -71.0984
-    },
-    {
-        "id": "bluebird-coffee-ATL-001",
-        "name": "Bluebird Coffee",
-        "rating": 4.6,
-        "price": "$$",
         "categories": [
-            { "alias": "coffee", "title": "Coffee" },
-            { "alias": "cafe", "title": "Cafe" }
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
         ],
-        "location": { "address1": "123 Peachtree St NE", "city": "Atlanta" },
-        "website": "https://example.com/bluebird-coffee",
-        "review_count": 540,
-        "latitude": 33.7502,
-        "longitude": -84.3875,
-        "phone": "+1-404-555-0198",
-        "hours": ["Daily 07:00-18:00"]
+        "location": {
+            "address1": "604 Juniper Oak Dr",
+            "city": "Los Angeles"
+        },
+        "website": "https://eat.example.com/los-angeles/los-angeles-azul",
+        "review_count": 2927,
+        "latitude": 34.04636332041379,
+        "longitude": -118.2423983965803,
+        "phone": "+1-555-6476",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "peachtree-roasters-ATL-009",
-        "name": "Peachtree Roasters",
+        "id": "los-angeles-taco-house-CA-003",
+        "name": "Taco House",
         "rating": 4.3,
         "price": "$$",
-        "categories": [{ "alias": "coffee", "title": "Coffee" }],
-        "location": { "address1": "456 Peachtree St NE", "city": "Atlanta" },
-        "website": "https://example.com/peachtree-roasters",
-        "review_count": 320,
-        "latitude": 33.751,
-        "longitude": -84.3879,
-        "phone": "+1-404-555-0134",
-        "hours": ["Mon-Fri 07:00-17:00", "Sat-Sun 08:00-16:00"]
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "317 Starlight Oak Ave",
+            "city": "Los Angeles"
+        },
+        "website": "https://eat.example.com/los-angeles/taco-house",
+        "review_count": 346,
+        "latitude": 34.035863889933374,
+        "longitude": -118.23012597035505,
+        "phone": "+1-555-3646",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "midtown-bean-ATL-102",
-        "name": "Midtown Bean",
+        "id": "los-angeles-smash-sunset-CA-004",
+        "name": "Smash & Sunset",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "156 Juniper Pine Blvd",
+            "city": "Los Angeles"
+        },
+        "website": "https://eat.example.com/los-angeles/smash-sunset",
+        "review_count": 4402,
+        "latitude": 34.05668030428495,
+        "longitude": -118.2417911908392,
+        "phone": "+1-555-4437",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "los-angeles-asada-house-CA-005",
+        "name": "Asada House",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "538 Golden Pine Ln",
+            "city": "Los Angeles"
+        },
+        "website": "https://eat.example.com/los-angeles/asada-house",
+        "review_count": 4304,
+        "latitude": 34.02534431259874,
+        "longitude": -118.24625295456387,
+        "phone": "+1-555-3249",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chicago-chicago-oyster-IL-001",
+        "name": "Chicago Oyster",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "338 Cinder Pine Ave",
+            "city": "Chicago"
+        },
+        "website": "https://eat.example.com/chicago/chicago-oyster",
+        "review_count": 3661,
+        "latitude": 41.884720222995995,
+        "longitude": -87.61431287225821,
+        "phone": "+1-555-4324",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chicago-smash-burger-IL-002",
+        "name": "Smash & Burger",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "670 Amber Main Dr",
+            "city": "Chicago"
+        },
+        "website": "https://eat.example.com/chicago/smash-burger",
+        "review_count": 5831,
+        "latitude": 41.90806512506623,
+        "longitude": -87.60494445448295,
+        "phone": "+1-555-5984",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chicago-harvest-chicago-dough-IL-003",
+        "name": "Harvest Chicago Dough",
         "rating": 4.5,
         "price": "$$",
         "categories": [
-            { "alias": "coffee", "title": "Coffee" },
-            { "alias": "bakery", "title": "Bakery" }
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
         ],
-        "location": { "address1": "789 Spring St NW", "city": "Atlanta" },
-        "website": "https://example.com/midtown-bean",
-        "review_count": 410,
-        "latitude": 33.7763,
-        "longitude": -84.3895,
-        "phone": "+1-404-555-0172",
-        "hours": ["Daily 07:00-19:00"]
+        "location": {
+            "address1": "808 Maple Lake Ln",
+            "city": "Chicago"
+        },
+        "website": "https://eat.example.com/chicago/harvest-chicago-dough",
+        "review_count": 5546,
+        "latitude": 41.857936144149306,
+        "longitude": -87.6115730579991,
+        "phone": "+1-555-7863",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     },
     {
-        "id": "gpg-ATL-877",
-        "name": "Grant Park Grounds",
+        "id": "chicago-patty-house-IL-004",
+        "name": "Patty House",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "551 Harvest Market Ave",
+            "city": "Chicago"
+        },
+        "website": "https://eat.example.com/chicago/patty-house",
+        "review_count": 953,
+        "latitude": 41.8817354578007,
+        "longitude": -87.62406849881188,
+        "phone": "+1-555-9030",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chicago-chicago-press-IL-005",
+        "name": "Chicago Press",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "573 Crimson River Ln",
+            "city": "Chicago"
+        },
+        "website": "https://eat.example.com/chicago/chicago-press",
+        "review_count": 4780,
+        "latitude": 41.88949593181201,
+        "longitude": -87.63821075323523,
+        "phone": "+1-555-9829",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "houston-crimson-brunch-TX-001",
+        "name": "Crimson Brunch",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "542 Sunset Lake Ave",
+            "city": "Houston"
+        },
+        "website": "https://eat.example.com/houston/crimson-brunch",
+        "review_count": 4921,
+        "latitude": 29.763842923319526,
+        "longitude": -95.35842052449026,
+        "phone": "+1-555-5061",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "houston-sunset-houston-bakery-TX-002",
+        "name": "Sunset Houston Bakery",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "226 Maple Maple Ln",
+            "city": "Houston"
+        },
+        "website": "https://eat.example.com/houston/sunset-houston-bakery",
+        "review_count": 4915,
+        "latitude": 29.73611543299593,
+        "longitude": -95.35431557313092,
+        "phone": "+1-555-2008",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "houston-harvest-smokehouse-TX-003",
+        "name": "Harvest Smokehouse",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "779 Union Oak Blvd",
+            "city": "Houston"
+        },
+        "website": "https://eat.example.com/houston/harvest-smokehouse",
+        "review_count": 3393,
+        "latitude": 29.754738556281293,
+        "longitude": -95.35157848451306,
+        "phone": "+1-555-7513",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "houston-toro-house-TX-004",
+        "name": "Toro House",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "502 Sunset Lake Dr",
+            "city": "Houston"
+        },
+        "website": "https://eat.example.com/houston/toro-house",
+        "review_count": 4584,
+        "latitude": 29.750853094611877,
+        "longitude": -95.3532581768373,
+        "phone": "+1-555-7969",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "houston-crimson-al-pastor-TX-005",
+        "name": "Crimson Al Pastor",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "801 Copper Sunset Blvd",
+            "city": "Houston"
+        },
+        "website": "https://eat.example.com/houston/crimson-al-pastor",
+        "review_count": 1449,
+        "latitude": 29.73527366297748,
+        "longitude": -95.39627427173332,
+        "phone": "+1-555-2015",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "phoenix-taco-cantina-AZ-001",
+        "name": "Taco & Cantina",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "793 Sunset Maple Ln",
+            "city": "Phoenix"
+        },
+        "website": "https://eat.example.com/phoenix/taco-cantina",
+        "review_count": 3354,
+        "latitude": 33.474975200380754,
+        "longitude": -112.09099520150664,
+        "phone": "+1-555-8940",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "phoenix-taqueria-house-AZ-002",
+        "name": "Taqueria House",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "354 Harvest Main Rd",
+            "city": "Phoenix"
+        },
+        "website": "https://eat.example.com/phoenix/taqueria-house",
+        "review_count": 1855,
+        "latitude": 33.44328248581998,
+        "longitude": -112.0921064553,
+        "phone": "+1-555-1898",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "phoenix-rustic-harbor-AZ-003",
+        "name": "Rustic Harbor",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "769 Maple Maple Ln",
+            "city": "Phoenix"
+        },
+        "website": "https://eat.example.com/phoenix/rustic-harbor",
+        "review_count": 5920,
+        "latitude": 33.43718392853308,
+        "longitude": -112.07428838210274,
+        "phone": "+1-555-9035",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "phoenix-loaf-house-AZ-004",
+        "name": "Loaf House",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "865 Maple Maple Rd",
+            "city": "Phoenix"
+        },
+        "website": "https://eat.example.com/phoenix/loaf-house",
+        "review_count": 4234,
+        "latitude": 33.43728640984427,
+        "longitude": -112.05050989653077,
+        "phone": "+1-555-3440",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "phoenix-river-pie-AZ-005",
+        "name": "River Pie",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "446 Golden River Way",
+            "city": "Phoenix"
+        },
+        "website": "https://eat.example.com/phoenix/river-pie",
+        "review_count": 3687,
+        "latitude": 33.42617441799175,
+        "longitude": -112.0593142045252,
+        "phone": "+1-555-1061",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "philadelphia-philadelphia-burger-PA-001",
+        "name": "Philadelphia Burger",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "278 Bluebird Cedar St",
+            "city": "Philadelphia"
+        },
+        "website": "https://eat.example.com/philadelphia/philadelphia-burger",
+        "review_count": 1792,
+        "latitude": 39.935241647746786,
+        "longitude": -75.19140390513446,
+        "phone": "+1-555-8151",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "philadelphia-philadelphia-press-PA-002",
+        "name": "Philadelphia Press",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "774 Granite Maple Way",
+            "city": "Philadelphia"
+        },
+        "website": "https://eat.example.com/philadelphia/philadelphia-press",
+        "review_count": 5090,
+        "latitude": 39.95141393399089,
+        "longitude": -75.14252859531884,
+        "phone": "+1-555-1011",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "philadelphia-bamboo-sashimi-PA-003",
+        "name": "Bamboo & Sashimi",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "440 Crimson Market Blvd",
+            "city": "Philadelphia"
+        },
+        "website": "https://eat.example.com/philadelphia/bamboo-sashimi",
+        "review_count": 3600,
+        "latitude": 39.96183501373734,
+        "longitude": -75.1571952736143,
+        "phone": "+1-555-8162",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "philadelphia-crust-house-PA-004",
+        "name": "Crust House",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "328 Granite Market Rd",
+            "city": "Philadelphia"
+        },
+        "website": "https://eat.example.com/philadelphia/crust-house",
+        "review_count": 3948,
+        "latitude": 39.94922795112002,
+        "longitude": -75.14137831041106,
+        "phone": "+1-555-2953",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "philadelphia-juniper-patty-PA-005",
+        "name": "Juniper Patty",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "131 Ivory Oak Blvd",
+            "city": "Philadelphia"
+        },
+        "website": "https://eat.example.com/philadelphia/juniper-patty",
+        "review_count": 3893,
+        "latitude": 39.95247103954423,
+        "longitude": -75.1657159286037,
+        "phone": "+1-555-6990",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-antonio-maple-san-antonio-catch-TX-001",
+        "name": "Maple San Antonio Catch",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "947 Ivory Maple St",
+            "city": "San Antonio"
+        },
+        "website": "https://eat.example.com/san-antonio/maple-san-antonio-catch",
+        "review_count": 3162,
+        "latitude": 29.41870058351513,
+        "longitude": -98.49671754960102,
+        "phone": "+1-555-1137",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-antonio-san-antonio-taqueria-TX-002",
+        "name": "San Antonio Taqueria",
+        "rating": 4.9,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "385 Granite River Dr",
+            "city": "San Antonio"
+        },
+        "website": "https://eat.example.com/san-antonio/san-antonio-taqueria",
+        "review_count": 4006,
+        "latitude": 29.39593389894664,
+        "longitude": -98.50444442359395,
+        "phone": "+1-555-5146",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-antonio-loaf-crumb-TX-003",
+        "name": "Loaf & Crumb",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "337 Juniper River St",
+            "city": "San Antonio"
+        },
+        "website": "https://eat.example.com/san-antonio/loaf-crumb",
+        "review_count": 4492,
+        "latitude": 29.42462540829871,
+        "longitude": -98.49456668145619,
+        "phone": "+1-555-3277",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-antonio-san-antonio-cantina-TX-004",
+        "name": "San Antonio Cantina",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "176 Urban Union Ln",
+            "city": "San Antonio"
+        },
+        "website": "https://eat.example.com/san-antonio/san-antonio-cantina",
+        "review_count": 5374,
+        "latitude": 29.450480561245605,
+        "longitude": -98.5168766348077,
+        "phone": "+1-555-3434",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-antonio-crumb-patisserie-TX-005",
+        "name": "Crumb & Patisserie",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "417 Maple Main Way",
+            "city": "San Antonio"
+        },
+        "website": "https://eat.example.com/san-antonio/crumb-patisserie",
+        "review_count": 5769,
+        "latitude": 29.399868683603962,
+        "longitude": -98.47115473357626,
+        "phone": "+1-555-6172",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-diego-grind-espresso-CA-001",
+        "name": "Grind & Espresso",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "744 Copper Market Blvd",
+            "city": "San Diego"
+        },
+        "website": "https://eat.example.com/san-diego/grind-espresso",
+        "review_count": 2773,
+        "latitude": 32.738777431377024,
+        "longitude": -117.17715865902734,
+        "phone": "+1-555-6749",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-diego-san-diego-al-pastor-CA-002",
+        "name": "San Diego Al Pastor",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "562 Granite Lake Ln",
+            "city": "San Diego"
+        },
+        "website": "https://eat.example.com/san-diego/san-diego-al-pastor",
+        "review_count": 2531,
+        "latitude": 32.70713797382246,
+        "longitude": -117.16939574177508,
+        "phone": "+1-555-3806",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-diego-san-diego-oak-CA-003",
+        "name": "San Diego Oak",
+        "rating": 4.9,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "414 Juniper Pine Ave",
+            "city": "San Diego"
+        },
+        "website": "https://eat.example.com/san-diego/san-diego-oak",
+        "review_count": 2324,
+        "latitude": 32.72569313686043,
+        "longitude": -117.16001326507553,
+        "phone": "+1-555-5692",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-diego-copper-san-diego-barrel-CA-004",
+        "name": "Copper San Diego Barrel",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "114 Crimson Lake Ave",
+            "city": "San Diego"
+        },
+        "website": "https://eat.example.com/san-diego/copper-san-diego-barrel",
+        "review_count": 1496,
+        "latitude": 32.71597891141828,
+        "longitude": -117.186313772594,
+        "phone": "+1-555-2551",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-diego-cinder-san-diego-boulangerie-CA-005",
+        "name": "Cinder San Diego Boulangerie",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "496 Cinder Maple Ave",
+            "city": "San Diego"
+        },
+        "website": "https://eat.example.com/san-diego/cinder-san-diego-boulangerie",
+        "review_count": 5463,
+        "latitude": 32.69067959581669,
+        "longitude": -117.14537751213312,
+        "phone": "+1-555-9093",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "dallas-burger-house-TX-001",
+        "name": "Burger House",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "843 Starlight Lake St",
+            "city": "Dallas"
+        },
+        "website": "https://eat.example.com/dallas/burger-house",
+        "review_count": 5536,
+        "latitude": 32.74855053724795,
+        "longitude": -96.8015312576089,
+        "phone": "+1-555-4565",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "dallas-juniper-dallas-nigiri-TX-002",
+        "name": "Juniper Dallas Nigiri",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "232 Common Market Blvd",
+            "city": "Dallas"
+        },
+        "website": "https://eat.example.com/dallas/juniper-dallas-nigiri",
+        "review_count": 1183,
+        "latitude": 32.78856794712208,
+        "longitude": -96.80264753871411,
+        "phone": "+1-555-5181",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "dallas-amber-waffle-TX-003",
+        "name": "Amber Waffle",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "851 Ivory Market Way",
+            "city": "Dallas"
+        },
+        "website": "https://eat.example.com/dallas/amber-waffle",
+        "review_count": 1473,
+        "latitude": 32.74762771753669,
+        "longitude": -96.81680304197873,
+        "phone": "+1-555-2717",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "dallas-barrel-house-TX-004",
+        "name": "Barrel House",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "983 Cinder Cedar Blvd",
+            "city": "Dallas"
+        },
+        "website": "https://eat.example.com/dallas/barrel-house",
+        "review_count": 3114,
+        "latitude": 32.805645249621755,
+        "longitude": -96.78928338055313,
+        "phone": "+1-555-1385",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "dallas-cinder-slice-TX-005",
+        "name": "Cinder Slice",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "139 River River Blvd",
+            "city": "Dallas"
+        },
+        "website": "https://eat.example.com/dallas/cinder-slice",
+        "review_count": 4789,
+        "latitude": 32.771768925428205,
+        "longitude": -96.77094907833077,
+        "phone": "+1-555-8276",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-jose-san-jose-boulangerie-CA-001",
+        "name": "San Jose Boulangerie",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "357 Granite Sunset Blvd",
+            "city": "San Jose"
+        },
+        "website": "https://eat.example.com/san-jose/san-jose-boulangerie",
+        "review_count": 289,
+        "latitude": 37.32752136860676,
+        "longitude": -121.85917894798443,
+        "phone": "+1-555-1808",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-jose-crumb-house-CA-002",
+        "name": "Crumb House",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "748 Urban Market Blvd",
+            "city": "San Jose"
+        },
+        "website": "https://eat.example.com/san-jose/crumb-house",
+        "review_count": 4810,
+        "latitude": 37.30916251334529,
+        "longitude": -121.90861588293333,
+        "phone": "+1-555-7919",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-jose-cinder-san-jose-oyster-CA-003",
+        "name": "Cinder San Jose Oyster",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "361 Common Cedar Ave",
+            "city": "San Jose"
+        },
+        "website": "https://eat.example.com/san-jose/cinder-san-jose-oyster",
+        "review_count": 2992,
+        "latitude": 37.341613195642644,
+        "longitude": -121.89499977904019,
+        "phone": "+1-555-7098",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-jose-crimson-san-jose-eggs-CA-004",
+        "name": "Crimson San Jose Eggs",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "233 Bluebird Market Ave",
+            "city": "San Jose"
+        },
+        "website": "https://eat.example.com/san-jose/crimson-san-jose-eggs",
+        "review_count": 315,
+        "latitude": 37.361230984443615,
+        "longitude": -121.89777650372237,
+        "phone": "+1-555-4784",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-jose-san-jose-taqueria-CA-005",
+        "name": "San Jose Taqueria",
+        "rating": 4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "237 Crimson Oak Ave",
+            "city": "San Jose"
+        },
+        "website": "https://eat.example.com/san-jose/san-jose-taqueria",
+        "review_count": 3139,
+        "latitude": 37.34051573744211,
+        "longitude": -121.91506735004131,
+        "phone": "+1-555-1749",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "austin-starlight-austin-bun-TX-001",
+        "name": "Starlight Austin Bun",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "277 Copper Cedar Way",
+            "city": "Austin"
+        },
+        "website": "https://eat.example.com/austin/starlight-austin-bun",
+        "review_count": 3369,
+        "latitude": 30.266940532864815,
+        "longitude": -97.72810650185626,
+        "phone": "+1-555-9942",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "austin-agave-azul-TX-002",
+        "name": "Agave & Azul",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "959 Velvet Oak St",
+            "city": "Austin"
+        },
+        "website": "https://eat.example.com/austin/agave-azul",
+        "review_count": 3392,
+        "latitude": 30.28240107246935,
+        "longitude": -97.73910950724445,
+        "phone": "+1-555-3936",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "austin-austin-fire-TX-003",
+        "name": "Austin Fire",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "793 Crimson Pine Way",
+            "city": "Austin"
+        },
+        "website": "https://eat.example.com/austin/austin-fire",
+        "review_count": 4346,
+        "latitude": 30.24982508159969,
+        "longitude": -97.75750955134575,
+        "phone": "+1-555-3840",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "austin-shake-burger-TX-004",
+        "name": "Shake & Burger",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "842 Common Oak Dr",
+            "city": "Austin"
+        },
+        "website": "https://eat.example.com/austin/shake-burger",
+        "review_count": 6046,
+        "latitude": 30.281976281681843,
+        "longitude": -97.71493876992203,
+        "phone": "+1-555-4723",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "austin-river-austin-eggs-TX-005",
+        "name": "River Austin Eggs",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "233 Juniper Maple Rd",
+            "city": "Austin"
+        },
+        "website": "https://eat.example.com/austin/river-austin-eggs",
+        "review_count": 799,
+        "latitude": 30.248382731343433,
+        "longitude": -97.76317902999874,
+        "phone": "+1-555-5738",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "jacksonville-burger-house-FL-001",
+        "name": "Burger House",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "842 Maple Main St",
+            "city": "Jacksonville"
+        },
+        "website": "https://eat.example.com/jacksonville/burger-house",
+        "review_count": 2395,
+        "latitude": 30.338093994159998,
+        "longitude": -81.62700752966273,
+        "phone": "+1-555-3811",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "jacksonville-smokehouse-house-FL-002",
+        "name": "Smokehouse House",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "388 Crimson Lake Blvd",
+            "city": "Jacksonville"
+        },
+        "website": "https://eat.example.com/jacksonville/smokehouse-house",
+        "review_count": 4213,
+        "latitude": 30.338035900194942,
+        "longitude": -81.65097269192505,
+        "phone": "+1-555-8352",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "jacksonville-starlight-dough-FL-003",
+        "name": "Starlight Dough",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "381 Cobalt Main Ave",
+            "city": "Jacksonville"
+        },
+        "website": "https://eat.example.com/jacksonville/starlight-dough",
+        "review_count": 3293,
+        "latitude": 30.307196493062936,
+        "longitude": -81.64786981502715,
+        "phone": "+1-555-3066",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "jacksonville-crimson-jacksonville-cantina-FL-004",
+        "name": "Crimson Jacksonville Cantina",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "959 Juniper Maple Blvd",
+            "city": "Jacksonville"
+        },
+        "website": "https://eat.example.com/jacksonville/crimson-jacksonville-cantina",
+        "review_count": 2276,
+        "latitude": 30.360637444828452,
+        "longitude": -81.6715067042986,
+        "phone": "+1-555-2097",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "jacksonville-amber-jacksonville-loaf-FL-005",
+        "name": "Amber Jacksonville Loaf",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "959 Bluebird Main Dr",
+            "city": "Jacksonville"
+        },
+        "website": "https://eat.example.com/jacksonville/amber-jacksonville-loaf",
+        "review_count": 1539,
+        "latitude": 30.346719675178452,
+        "longitude": -81.67128685406111,
+        "phone": "+1-555-6254",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fort-worth-amber-pit-TX-001",
+        "name": "Amber Pit",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "630 Juniper Main Ave",
+            "city": "Fort Worth"
+        },
+        "website": "https://eat.example.com/fort-worth/amber-pit",
+        "review_count": 3221,
+        "latitude": 32.74067732181586,
+        "longitude": -97.32528778700083,
+        "phone": "+1-555-8742",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fort-worth-trattoria-house-TX-002",
+        "name": "Trattoria House",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "160 Crimson Lake St",
+            "city": "Fort Worth"
+        },
+        "website": "https://eat.example.com/fort-worth/trattoria-house",
+        "review_count": 2738,
+        "latitude": 32.775813040120525,
+        "longitude": -97.30783316242899,
+        "phone": "+1-555-7974",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fort-worth-crimson-pancake-TX-003",
+        "name": "Crimson Pancake",
         "rating": 4.4,
         "price": "$$",
         "categories": [
-            { "alias": "coffee", "title": "Coffee" },
-            { "alias": "breakfast", "title": "Breakfast" }
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
         ],
-        "location": { "address1": "800 Cherokee Ave SE", "city": "Atlanta" },
-        "website": "https://example.com/grant-park-grounds",
-        "review_count": 270,
-        "latitude": 33.7361,
-        "longitude": -84.3728,
-        "phone": "+1-404-555-0111",
-        "hours": ["Daily 07:00-16:00"]
+        "location": {
+            "address1": "909 Juniper Main Blvd",
+            "city": "Fort Worth"
+        },
+        "website": "https://eat.example.com/fort-worth/crimson-pancake",
+        "review_count": 1528,
+        "latitude": 32.75585821943544,
+        "longitude": -97.30316131367739,
+        "phone": "+1-555-4260",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fort-worth-izakaya-toro-TX-004",
+        "name": "Izakaya & Toro",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "131 Ivory Cedar Ave",
+            "city": "Fort Worth"
+        },
+        "website": "https://eat.example.com/fort-worth/izakaya-toro",
+        "review_count": 1718,
+        "latitude": 32.73627538711018,
+        "longitude": -97.35521076185088,
+        "phone": "+1-555-2608",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fort-worth-harvest-fort-worth-verde-TX-005",
+        "name": "Harvest Fort Worth Verde",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "260 River Market Blvd",
+            "city": "Fort Worth"
+        },
+        "website": "https://eat.example.com/fort-worth/harvest-fort-worth-verde",
+        "review_count": 2612,
+        "latitude": 32.74315090045519,
+        "longitude": -97.31043214156217,
+        "phone": "+1-555-9164",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "columbus-crumb-house-OH-001",
+        "name": "Crumb House",
+        "rating": 4.8,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "268 Juniper Sunset Dr",
+            "city": "Columbus"
+        },
+        "website": "https://eat.example.com/columbus/crumb-house",
+        "review_count": 2165,
+        "latitude": 39.97763539573531,
+        "longitude": -82.96954771165382,
+        "phone": "+1-555-1687",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "columbus-verde-casa-OH-002",
+        "name": "Verde & Casa",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "401 Cobalt Main Dr",
+            "city": "Columbus"
+        },
+        "website": "https://eat.example.com/columbus/verde-casa",
+        "review_count": 4717,
+        "latitude": 39.97209700387325,
+        "longitude": -82.98176563004144,
+        "phone": "+1-555-5730",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "columbus-dock-house-OH-003",
+        "name": "Dock House",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "882 Union River St",
+            "city": "Columbus"
+        },
+        "website": "https://eat.example.com/columbus/dock-house",
+        "review_count": 6066,
+        "latitude": 39.97391568614524,
+        "longitude": -82.98401352719516,
+        "phone": "+1-555-7545",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "columbus-amber-columbus-boulangerie-OH-004",
+        "name": "Amber Columbus Boulangerie",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "885 Harvest Maple Blvd",
+            "city": "Columbus"
+        },
+        "website": "https://eat.example.com/columbus/amber-columbus-boulangerie",
+        "review_count": 4481,
+        "latitude": 39.93309364206511,
+        "longitude": -83.00431312187686,
+        "phone": "+1-555-9336",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "columbus-cocina-cantina-OH-005",
+        "name": "Cocina & Cantina",
+        "rating": 4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "575 Juniper River Way",
+            "city": "Columbus"
+        },
+        "website": "https://eat.example.com/columbus/cocina-cantina",
+        "review_count": 1959,
+        "latitude": 39.956090563613735,
+        "longitude": -83.01636171479821,
+        "phone": "+1-555-9684",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-francisco-harvest-agave-CA-001",
+        "name": "Harvest Agave",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "113 Cobalt Oak Way",
+            "city": "San Francisco"
+        },
+        "website": "https://eat.example.com/san-francisco/harvest-agave",
+        "review_count": 1920,
+        "latitude": 37.745187050399934,
+        "longitude": -122.4283148999704,
+        "phone": "+1-555-6166",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-francisco-barrel-house-CA-002",
+        "name": "Barrel House",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "893 Copper Market Ave",
+            "city": "San Francisco"
+        },
+        "website": "https://eat.example.com/san-francisco/barrel-house",
+        "review_count": 5939,
+        "latitude": 37.7485841847375,
+        "longitude": -122.40956618529334,
+        "phone": "+1-555-9673",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-francisco-river-san-francisco-izakaya-CA-003",
+        "name": "River San Francisco Izakaya",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "159 River Union Rd",
+            "city": "San Francisco"
+        },
+        "website": "https://eat.example.com/san-francisco/river-san-francisco-izakaya",
+        "review_count": 1737,
+        "latitude": 37.76032273418978,
+        "longitude": -122.43288777124192,
+        "phone": "+1-555-5656",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-francisco-juniper-patisserie-CA-004",
+        "name": "Juniper Patisserie",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "962 Common Pine Ln",
+            "city": "San Francisco"
+        },
+        "website": "https://eat.example.com/san-francisco/juniper-patisserie",
+        "review_count": 1547,
+        "latitude": 37.76044872358218,
+        "longitude": -122.41102866963539,
+        "phone": "+1-555-4222",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-francisco-sunset-san-francisco-toro-CA-005",
+        "name": "Sunset San Francisco Toro",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "899 Crimson Union Rd",
+            "city": "San Francisco"
+        },
+        "website": "https://eat.example.com/san-francisco/sunset-san-francisco-toro",
+        "review_count": 2252,
+        "latitude": 37.79118689144738,
+        "longitude": -122.39166565002463,
+        "phone": "+1-555-2930",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "charlotte-juniper-osteria-NC-001",
+        "name": "Juniper Osteria",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "431 Urban Lake Way",
+            "city": "Charlotte"
+        },
+        "website": "https://eat.example.com/charlotte/juniper-osteria",
+        "review_count": 4433,
+        "latitude": 35.25583798722867,
+        "longitude": -80.83801085428745,
+        "phone": "+1-555-4509",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "charlotte-charlotte-agave-NC-002",
+        "name": "Charlotte Agave",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "181 Rustic Maple Dr",
+            "city": "Charlotte"
+        },
+        "website": "https://eat.example.com/charlotte/charlotte-agave",
+        "review_count": 1153,
+        "latitude": 35.24421878858973,
+        "longitude": -80.87053492080365,
+        "phone": "+1-555-2663",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "charlotte-boulangerie-bakery-NC-003",
+        "name": "Boulangerie & Bakery",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "796 Amber Oak Ln",
+            "city": "Charlotte"
+        },
+        "website": "https://eat.example.com/charlotte/boulangerie-bakery",
+        "review_count": 316,
+        "latitude": 35.22558982380237,
+        "longitude": -80.84963749308083,
+        "phone": "+1-555-4354",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "charlotte-pit-oak-NC-004",
+        "name": "Pit & Oak",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "753 Urban River Blvd",
+            "city": "Charlotte"
+        },
+        "website": "https://eat.example.com/charlotte/pit-oak",
+        "review_count": 1512,
+        "latitude": 35.19812079147473,
+        "longitude": -80.85877327325699,
+        "phone": "+1-555-9568",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "charlotte-taqueria-house-NC-005",
+        "name": "Taqueria House",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "731 Golden Sunset Way",
+            "city": "Charlotte"
+        },
+        "website": "https://eat.example.com/charlotte/taqueria-house",
+        "review_count": 4906,
+        "latitude": 35.20240510350596,
+        "longitude": -80.8355173013773,
+        "phone": "+1-555-3697",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "indianapolis-union-indianapolis-embers-IN-001",
+        "name": "Union Indianapolis Embers",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "233 Cinder Oak Ave",
+            "city": "Indianapolis"
+        },
+        "website": "https://eat.example.com/indianapolis/union-indianapolis-embers",
+        "review_count": 3285,
+        "latitude": 39.77376391186062,
+        "longitude": -86.1825375711307,
+        "phone": "+1-555-7964",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "indianapolis-river-oven-IN-002",
+        "name": "River Oven",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "939 Rustic Cedar St",
+            "city": "Indianapolis"
+        },
+        "website": "https://eat.example.com/indianapolis/river-oven",
+        "review_count": 5511,
+        "latitude": 39.79491965095196,
+        "longitude": -86.1286682201963,
+        "phone": "+1-555-9894",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "indianapolis-rustic-indianapolis-boulangerie-IN-003",
+        "name": "Rustic Indianapolis Boulangerie",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "941 Granite Market Rd",
+            "city": "Indianapolis"
+        },
+        "website": "https://eat.example.com/indianapolis/rustic-indianapolis-boulangerie",
+        "review_count": 2653,
+        "latitude": 39.73844457592499,
+        "longitude": -86.16599315012284,
+        "phone": "+1-555-9752",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "indianapolis-indianapolis-omakase-IN-004",
+        "name": "Indianapolis Omakase",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "875 Granite Sunset St",
+            "city": "Indianapolis"
+        },
+        "website": "https://eat.example.com/indianapolis/indianapolis-omakase",
+        "review_count": 3391,
+        "latitude": 39.76290148804579,
+        "longitude": -86.1830907970801,
+        "phone": "+1-555-3276",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "indianapolis-oven-house-IN-005",
+        "name": "Oven House",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "533 Ivory Maple Ln",
+            "city": "Indianapolis"
+        },
+        "website": "https://eat.example.com/indianapolis/oven-house",
+        "review_count": 2750,
+        "latitude": 39.79164879734777,
+        "longitude": -86.16845966132303,
+        "phone": "+1-555-5586",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "seattle-catch-house-WA-001",
+        "name": "Catch House",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "357 Maple Main Ave",
+            "city": "Seattle"
+        },
+        "website": "https://eat.example.com/seattle/catch-house",
+        "review_count": 3713,
+        "latitude": 47.58650048733577,
+        "longitude": -122.34757972179949,
+        "phone": "+1-555-9143",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "seattle-skillet-brunch-WA-002",
+        "name": "Skillet & Brunch",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "998 Cinder Main Ave",
+            "city": "Seattle"
+        },
+        "website": "https://eat.example.com/seattle/skillet-brunch",
+        "review_count": 5499,
+        "latitude": 47.61440019788574,
+        "longitude": -122.35163774665482,
+        "phone": "+1-555-6475",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "seattle-embers-house-WA-003",
+        "name": "Embers House",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "198 Golden Union St",
+            "city": "Seattle"
+        },
+        "website": "https://eat.example.com/seattle/embers-house",
+        "review_count": 2536,
+        "latitude": 47.580154498027454,
+        "longitude": -122.33492075500115,
+        "phone": "+1-555-2617",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "seattle-cantina-taco-WA-004",
+        "name": "Cantina & Taco",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "840 Cobalt Union St",
+            "city": "Seattle"
+        },
+        "website": "https://eat.example.com/seattle/cantina-taco",
+        "review_count": 6030,
+        "latitude": 47.57695916158501,
+        "longitude": -122.30405733856409,
+        "phone": "+1-555-6455",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "seattle-grill-bluebird-WA-005",
+        "name": "Grill & Bluebird",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "200 Juniper River Rd",
+            "city": "Seattle"
+        },
+        "website": "https://eat.example.com/seattle/grill-bluebird",
+        "review_count": 4864,
+        "latitude": 47.632168563798814,
+        "longitude": -122.3264419235712,
+        "phone": "+1-555-9649",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "denver-copper-denver-pit-CO-001",
+        "name": "Copper Denver Pit",
+        "rating": 4.4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "980 Sunset Market Ave",
+            "city": "Denver"
+        },
+        "website": "https://eat.example.com/denver/copper-denver-pit",
+        "review_count": 2834,
+        "latitude": 39.73072892828453,
+        "longitude": -105.01656336821355,
+        "phone": "+1-555-1173",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "denver-starlight-waffle-CO-002",
+        "name": "Starlight Waffle",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "410 Granite Lake Ave",
+            "city": "Denver"
+        },
+        "website": "https://eat.example.com/denver/starlight-waffle",
+        "review_count": 3971,
+        "latitude": 39.73638846721575,
+        "longitude": -104.9829747306483,
+        "phone": "+1-555-8069",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "denver-cobalt-crumb-CO-003",
+        "name": "Cobalt Crumb",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "788 Urban Pine Blvd",
+            "city": "Denver"
+        },
+        "website": "https://eat.example.com/denver/cobalt-crumb",
+        "review_count": 2255,
+        "latitude": 39.73931289709713,
+        "longitude": -104.98725922066923,
+        "phone": "+1-555-5970",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "denver-denver-fire-CO-004",
+        "name": "Denver Fire",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "510 Union Cedar Dr",
+            "city": "Denver"
+        },
+        "website": "https://eat.example.com/denver/denver-fire",
+        "review_count": 5508,
+        "latitude": 39.75917279256116,
+        "longitude": -105.01979012403842,
+        "phone": "+1-555-9405",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "denver-fire-pie-CO-005",
+        "name": "Fire & Pie",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "172 Juniper Cedar Way",
+            "city": "Denver"
+        },
+        "website": "https://eat.example.com/denver/fire-pie",
+        "review_count": 4687,
+        "latitude": 39.71802413753774,
+        "longitude": -104.99949465147891,
+        "phone": "+1-555-2121",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "washington-slice-oven-DC-001",
+        "name": "Slice & Oven",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "895 Juniper Maple Dr",
+            "city": "Washington"
+        },
+        "website": "https://eat.example.com/washington/slice-oven",
+        "review_count": 751,
+        "latitude": 38.92745584002957,
+        "longitude": -77.06387639320512,
+        "phone": "+1-555-3180",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "washington-washington-harbor-DC-002",
+        "name": "Washington Harbor",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "168 Rustic Union Ln",
+            "city": "Washington"
+        },
+        "website": "https://eat.example.com/washington/washington-harbor",
+        "review_count": 2393,
+        "latitude": 38.91077338503003,
+        "longitude": -77.01604638278074,
+        "phone": "+1-555-9358",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "washington-copper-al-pastor-DC-003",
+        "name": "Copper Al Pastor",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "332 Union Main Rd",
+            "city": "Washington"
+        },
+        "website": "https://eat.example.com/washington/copper-al-pastor",
+        "review_count": 4740,
+        "latitude": 38.89828405677602,
+        "longitude": -77.0621178255655,
+        "phone": "+1-555-2657",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "washington-cobalt-washington-osteria-DC-004",
+        "name": "Cobalt Washington Osteria",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "660 Maple Union Ln",
+            "city": "Washington"
+        },
+        "website": "https://eat.example.com/washington/cobalt-washington-osteria",
+        "review_count": 3236,
+        "latitude": 38.905008111812926,
+        "longitude": -77.04653632645086,
+        "phone": "+1-555-4461",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "washington-amber-washington-steam-DC-005",
+        "name": "Amber Washington Steam",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "406 Juniper Oak Rd",
+            "city": "Washington"
+        },
+        "website": "https://eat.example.com/washington/amber-washington-steam",
+        "review_count": 2607,
+        "latitude": 38.92132837327924,
+        "longitude": -77.01336580594592,
+        "phone": "+1-555-3237",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "boston-maple-boulangerie-MA-001",
+        "name": "Maple Boulangerie",
+        "rating": 4.9,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "829 Velvet Lake St",
+            "city": "Boston"
+        },
+        "website": "https://eat.example.com/boston/maple-boulangerie",
+        "review_count": 346,
+        "latitude": 42.354677175332235,
+        "longitude": -71.05877358496058,
+        "phone": "+1-555-1121",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "boston-golden-boston-neapolitan-MA-002",
+        "name": "Golden Boston Neapolitan",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "257 Harvest Oak Ln",
+            "city": "Boston"
+        },
+        "website": "https://eat.example.com/boston/golden-boston-neapolitan",
+        "review_count": 4029,
+        "latitude": 42.387966088752634,
+        "longitude": -71.05518300386946,
+        "phone": "+1-555-4645",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "boston-boston-harbor-MA-003",
+        "name": "Boston Harbor",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "991 Urban Market Blvd",
+            "city": "Boston"
+        },
+        "website": "https://eat.example.com/boston/boston-harbor",
+        "review_count": 2806,
+        "latitude": 42.37136089854166,
+        "longitude": -71.03621822476721,
+        "phone": "+1-555-3330",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "boston-cobalt-brisket-MA-004",
+        "name": "Cobalt Brisket",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "443 Union Market Rd",
+            "city": "Boston"
+        },
+        "website": "https://eat.example.com/boston/cobalt-brisket",
+        "review_count": 423,
+        "latitude": 42.37580522071328,
+        "longitude": -71.03545763624702,
+        "phone": "+1-555-2286",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "boston-boston-brunch-MA-005",
+        "name": "Boston Brunch",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "351 Union River Dr",
+            "city": "Boston"
+        },
+        "website": "https://eat.example.com/boston/boston-brunch",
+        "review_count": 5568,
+        "latitude": 42.36180204360504,
+        "longitude": -71.03256590046789,
+        "phone": "+1-555-8762",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "nashville-nashville-steam-TN-001",
+        "name": "Nashville Steam",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "304 Amber Lake Rd",
+            "city": "Nashville"
+        },
+        "website": "https://eat.example.com/nashville/nashville-steam",
+        "review_count": 704,
+        "latitude": 36.16931446450278,
+        "longitude": -86.75518455733861,
+        "phone": "+1-555-4430",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "nashville-nashville-agave-TN-002",
+        "name": "Nashville Agave",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "519 Cinder Lake Ln",
+            "city": "Nashville"
+        },
+        "website": "https://eat.example.com/nashville/nashville-agave",
+        "review_count": 2349,
+        "latitude": 36.13815020256192,
+        "longitude": -86.79428385206815,
+        "phone": "+1-555-2714",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "nashville-cinder-embers-TN-003",
+        "name": "Cinder Embers",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "259 Rustic Union Blvd",
+            "city": "Nashville"
+        },
+        "website": "https://eat.example.com/nashville/cinder-embers",
+        "review_count": 5496,
+        "latitude": 36.134598217257114,
+        "longitude": -86.77833403412103,
+        "phone": "+1-555-5019",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "nashville-nashville-waffle-TN-004",
+        "name": "Nashville Waffle",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "166 Crimson Maple Ave",
+            "city": "Nashville"
+        },
+        "website": "https://eat.example.com/nashville/nashville-waffle",
+        "review_count": 432,
+        "latitude": 36.140030587180334,
+        "longitude": -86.77038138839733,
+        "phone": "+1-555-6138",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "nashville-patisserie-house-TN-005",
+        "name": "Patisserie House",
+        "rating": 4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "834 Urban Lake Ln",
+            "city": "Nashville"
+        },
+        "website": "https://eat.example.com/nashville/patisserie-house",
+        "review_count": 1087,
+        "latitude": 36.157435097624365,
+        "longitude": -86.78440685821082,
+        "phone": "+1-555-5187",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "el-paso-copper-steam-TX-001",
+        "name": "Copper Steam",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "395 Cinder Maple Ave",
+            "city": "El Paso"
+        },
+        "website": "https://eat.example.com/el-paso/copper-steam",
+        "review_count": 799,
+        "latitude": 31.787271728050523,
+        "longitude": -106.49728513753507,
+        "phone": "+1-555-5741",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "el-paso-el-paso-pie-TX-002",
+        "name": "El Paso Pie",
+        "rating": 4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "297 Common Lake Ave",
+            "city": "El Paso"
+        },
+        "website": "https://eat.example.com/el-paso/el-paso-pie",
+        "review_count": 1855,
+        "latitude": 31.738056211788766,
+        "longitude": -106.47440024594776,
+        "phone": "+1-555-1089",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "el-paso-sunset-nigiri-TX-003",
+        "name": "Sunset Nigiri",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "959 Common Sunset Dr",
+            "city": "El Paso"
+        },
+        "website": "https://eat.example.com/el-paso/sunset-nigiri",
+        "review_count": 4008,
+        "latitude": 31.773311686437204,
+        "longitude": -106.48237494095228,
+        "phone": "+1-555-3857",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "el-paso-barrel-brisket-TX-004",
+        "name": "Barrel & Brisket",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "772 Granite Oak Blvd",
+            "city": "El Paso"
+        },
+        "website": "https://eat.example.com/el-paso/barrel-brisket",
+        "review_count": 1676,
+        "latitude": 31.73402399928365,
+        "longitude": -106.4580741869146,
+        "phone": "+1-555-5987",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "el-paso-crimson-burger-TX-005",
+        "name": "Crimson Burger",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "761 Amber Cedar Blvd",
+            "city": "El Paso"
+        },
+        "website": "https://eat.example.com/el-paso/crimson-burger",
+        "review_count": 3178,
+        "latitude": 31.751379435780088,
+        "longitude": -106.48605300662108,
+        "phone": "+1-555-1895",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "detroit-crimson-detroit-oyster-MI-001",
+        "name": "Crimson Detroit Oyster",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "831 Union Pine Ln",
+            "city": "Detroit"
+        },
+        "website": "https://eat.example.com/detroit/crimson-detroit-oyster",
+        "review_count": 5778,
+        "latitude": 42.30361882298589,
+        "longitude": -83.07104066432379,
+        "phone": "+1-555-2449",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "detroit-brew-kettle-MI-002",
+        "name": "Brew & Kettle",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "137 Cobalt Maple Way",
+            "city": "Detroit"
+        },
+        "website": "https://eat.example.com/detroit/brew-kettle",
+        "review_count": 2546,
+        "latitude": 42.31871429716573,
+        "longitude": -83.04227078414914,
+        "phone": "+1-555-8466",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "detroit-urban-detroit-cantina-MI-003",
+        "name": "Urban Detroit Cantina",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "785 Urban River Ave",
+            "city": "Detroit"
+        },
+        "website": "https://eat.example.com/detroit/urban-detroit-cantina",
+        "review_count": 4984,
+        "latitude": 42.355686076221616,
+        "longitude": -83.06183330811486,
+        "phone": "+1-555-6427",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "detroit-taco-house-MI-004",
+        "name": "Taco House",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "241 Cinder Pine Rd",
+            "city": "Detroit"
+        },
+        "website": "https://eat.example.com/detroit/taco-house",
+        "review_count": 3687,
+        "latitude": 42.30765582774636,
+        "longitude": -83.04655687317178,
+        "phone": "+1-555-7675",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "detroit-harbor-house-MI-005",
+        "name": "Harbor House",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "153 Rustic Oak Ln",
+            "city": "Detroit"
+        },
+        "website": "https://eat.example.com/detroit/harbor-house",
+        "review_count": 1986,
+        "latitude": 42.34923604707103,
+        "longitude": -83.02344799227939,
+        "phone": "+1-555-2896",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oklahoma-city-burger-patty-OK-001",
+        "name": "Burger & Patty",
+        "rating": 4.9,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "666 Cobalt Lake Ave",
+            "city": "Oklahoma City"
+        },
+        "website": "https://eat.example.com/oklahoma-city/burger-patty",
+        "review_count": 3011,
+        "latitude": 35.45301477667633,
+        "longitude": -97.53865356025622,
+        "phone": "+1-555-6156",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oklahoma-city-azul-house-OK-002",
+        "name": "Azul House",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "515 Crimson Sunset Dr",
+            "city": "Oklahoma City"
+        },
+        "website": "https://eat.example.com/oklahoma-city/azul-house",
+        "review_count": 3419,
+        "latitude": 35.45392803406101,
+        "longitude": -97.53217485294081,
+        "phone": "+1-555-6750",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oklahoma-city-sunset-oklahoma-city-bun-OK-003",
+        "name": "Sunset Oklahoma City Bun",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "689 Cobalt Cedar Way",
+            "city": "Oklahoma City"
+        },
+        "website": "https://eat.example.com/oklahoma-city/sunset-oklahoma-city-bun",
+        "review_count": 5993,
+        "latitude": 35.455619004766824,
+        "longitude": -97.51116093271747,
+        "phone": "+1-555-6218",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oklahoma-city-grind-house-OK-004",
+        "name": "Grind House",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "442 Maple Lake St",
+            "city": "Oklahoma City"
+        },
+        "website": "https://eat.example.com/oklahoma-city/grind-house",
+        "review_count": 2212,
+        "latitude": 35.485043696581755,
+        "longitude": -97.51189521079287,
+        "phone": "+1-555-6040",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oklahoma-city-union-oklahoma-city-azul-OK-005",
+        "name": "Union Oklahoma City Azul",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "693 Juniper River Dr",
+            "city": "Oklahoma City"
+        },
+        "website": "https://eat.example.com/oklahoma-city/union-oklahoma-city-azul",
+        "review_count": 3937,
+        "latitude": 35.490922087326084,
+        "longitude": -97.50967195674181,
+        "phone": "+1-555-4814",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fresno-fresno-taqueria-CA-001",
+        "name": "Fresno Taqueria",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "491 Union Pine St",
+            "city": "Fresno"
+        },
+        "website": "https://eat.example.com/fresno/fresno-taqueria",
+        "review_count": 4694,
+        "latitude": 36.74000239699818,
+        "longitude": -119.77064570353403,
+        "phone": "+1-555-9461",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fresno-cantina-casa-CA-002",
+        "name": "Cantina & Casa",
+        "rating": 4.5,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "298 Ivory Lake Ave",
+            "city": "Fresno"
+        },
+        "website": "https://eat.example.com/fresno/cantina-casa",
+        "review_count": 5275,
+        "latitude": 36.715580758594164,
+        "longitude": -119.77810646002217,
+        "phone": "+1-555-7874",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fresno-juniper-patisserie-CA-003",
+        "name": "Juniper Patisserie",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "212 Cobalt Maple Blvd",
+            "city": "Fresno"
+        },
+        "website": "https://eat.example.com/fresno/juniper-patisserie",
+        "review_count": 4350,
+        "latitude": 36.73826182471793,
+        "longitude": -119.81549320599566,
+        "phone": "+1-555-9958",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fresno-urban-brew-CA-004",
+        "name": "Urban Brew",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "149 Ivory Cedar Rd",
+            "city": "Fresno"
+        },
+        "website": "https://eat.example.com/fresno/urban-brew",
+        "review_count": 5659,
+        "latitude": 36.72859540262464,
+        "longitude": -119.80033255483526,
+        "phone": "+1-555-7419",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fresno-omakase-nigiri-CA-005",
+        "name": "Omakase & Nigiri",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "197 Golden River Ave",
+            "city": "Fresno"
+        },
+        "website": "https://eat.example.com/fresno/omakase-nigiri",
+        "review_count": 4889,
+        "latitude": 36.74858418080229,
+        "longitude": -119.7583156343041,
+        "phone": "+1-555-4579",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "sacramento-sacramento-pasta-CA-001",
+        "name": "Sacramento Pasta",
+        "rating": 4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "404 Maple Sunset Rd",
+            "city": "Sacramento"
+        },
+        "website": "https://eat.example.com/sacramento/sacramento-pasta",
+        "review_count": 2465,
+        "latitude": 38.5845463920882,
+        "longitude": -121.48127043988146,
+        "phone": "+1-555-6571",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "sacramento-izakaya-sushi-CA-002",
+        "name": "Izakaya & Sushi",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "417 Copper Sunset Blvd",
+            "city": "Sacramento"
+        },
+        "website": "https://eat.example.com/sacramento/izakaya-sushi",
+        "review_count": 1379,
+        "latitude": 38.58772909005955,
+        "longitude": -121.493043794097,
+        "phone": "+1-555-8957",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "sacramento-rustic-sacramento-al-pastor-CA-003",
+        "name": "Rustic Sacramento Al Pastor",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "603 Amber Union Way",
+            "city": "Sacramento"
+        },
+        "website": "https://eat.example.com/sacramento/rustic-sacramento-al-pastor",
+        "review_count": 3893,
+        "latitude": 38.58114542564228,
+        "longitude": -121.50634303585682,
+        "phone": "+1-555-7371",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "sacramento-river-sacramento-bakery-CA-004",
+        "name": "River Sacramento Bakery",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "984 Rustic Oak Dr",
+            "city": "Sacramento"
+        },
+        "website": "https://eat.example.com/sacramento/river-sacramento-bakery",
+        "review_count": 1568,
+        "latitude": 38.604008137372695,
+        "longitude": -121.47100247090738,
+        "phone": "+1-555-3264",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "sacramento-ivory-eggs-CA-005",
+        "name": "Ivory Eggs",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "509 Copper Union Blvd",
+            "city": "Sacramento"
+        },
+        "website": "https://eat.example.com/sacramento/ivory-eggs",
+        "review_count": 4230,
+        "latitude": 38.604141978205554,
+        "longitude": -121.5200545364391,
+        "phone": "+1-555-9283",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "long-beach-kettle-house-CA-001",
+        "name": "Kettle House",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "383 Union Lake Ln",
+            "city": "Long Beach"
+        },
+        "website": "https://eat.example.com/long-beach/kettle-house",
+        "review_count": 5451,
+        "latitude": 33.74288078345116,
+        "longitude": -118.18926254248136,
+        "phone": "+1-555-1906",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "long-beach-long-beach-smash-CA-002",
+        "name": "Long Beach Smash",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "886 Velvet River Rd",
+            "city": "Long Beach"
+        },
+        "website": "https://eat.example.com/long-beach/long-beach-smash",
+        "review_count": 3641,
+        "latitude": 33.79119696774278,
+        "longitude": -118.19479532367905,
+        "phone": "+1-555-7419",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "long-beach-urban-oak-CA-003",
+        "name": "Urban Oak",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "529 Maple Oak Dr",
+            "city": "Long Beach"
+        },
+        "website": "https://eat.example.com/long-beach/urban-oak",
+        "review_count": 4208,
+        "latitude": 33.740161300741505,
+        "longitude": -118.2108780977631,
+        "phone": "+1-555-4722",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "long-beach-golden-bean-CA-004",
+        "name": "Golden Bean",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "300 Starlight Main Way",
+            "city": "Long Beach"
+        },
+        "website": "https://eat.example.com/long-beach/golden-bean",
+        "review_count": 1908,
+        "latitude": 33.79376997193079,
+        "longitude": -118.16749577399233,
+        "phone": "+1-555-5793",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "long-beach-ivory-long-beach-enoteca-CA-005",
+        "name": "Ivory Long Beach Enoteca",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "788 Granite River Rd",
+            "city": "Long Beach"
+        },
+        "website": "https://eat.example.com/long-beach/ivory-long-beach-enoteca",
+        "review_count": 2255,
+        "latitude": 33.77520984634515,
+        "longitude": -118.17094300927018,
+        "phone": "+1-555-6754",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oakland-urban-oakland-patty-CA-001",
+        "name": "Urban Oakland Patty",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "373 Ivory River Blvd",
+            "city": "Oakland"
+        },
+        "website": "https://eat.example.com/oakland/urban-oakland-patty",
+        "review_count": 3607,
+        "latitude": 37.83408624447938,
+        "longitude": -122.25100447454155,
+        "phone": "+1-555-4276",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oakland-pancake-eggs-CA-002",
+        "name": "Pancake & Eggs",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "441 Ivory Oak St",
+            "city": "Oakland"
+        },
+        "website": "https://eat.example.com/oakland/pancake-eggs",
+        "review_count": 3592,
+        "latitude": 37.827027043570396,
+        "longitude": -122.28966291977689,
+        "phone": "+1-555-7398",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oakland-juniper-oakland-roast-CA-003",
+        "name": "Juniper Oakland Roast",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "809 Common Lake Rd",
+            "city": "Oakland"
+        },
+        "website": "https://eat.example.com/oakland/juniper-oakland-roast",
+        "review_count": 3233,
+        "latitude": 37.79907353071552,
+        "longitude": -122.27539833030329,
+        "phone": "+1-555-7722",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oakland-golden-bean-CA-004",
+        "name": "Golden Bean",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "405 Sunset Maple Dr",
+            "city": "Oakland"
+        },
+        "website": "https://eat.example.com/oakland/golden-bean",
+        "review_count": 1396,
+        "latitude": 37.81495246211123,
+        "longitude": -122.29353370787706,
+        "phone": "+1-555-6694",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oakland-oakland-brunch-CA-005",
+        "name": "Oakland Brunch",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "424 Golden River St",
+            "city": "Oakland"
+        },
+        "website": "https://eat.example.com/oakland/oakland-brunch",
+        "review_count": 4042,
+        "latitude": 37.803214855259846,
+        "longitude": -122.29589751693085,
+        "phone": "+1-555-5786",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "bakersfield-steam-kettle-CA-001",
+        "name": "Steam & Kettle",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "291 Common Sunset St",
+            "city": "Bakersfield"
+        },
+        "website": "https://eat.example.com/bakersfield/steam-kettle",
+        "review_count": 1558,
+        "latitude": 35.35678520454951,
+        "longitude": -119.04757782212812,
+        "phone": "+1-555-5007",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "bakersfield-bun-urban-CA-002",
+        "name": "Bun & Urban",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "206 Juniper Sunset Dr",
+            "city": "Bakersfield"
+        },
+        "website": "https://eat.example.com/bakersfield/bun-urban",
+        "review_count": 5758,
+        "latitude": 35.379309753635155,
+        "longitude": -118.9972537056718,
+        "phone": "+1-555-3810",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "bakersfield-ivory-oven-CA-003",
+        "name": "Ivory Oven",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "612 Sunset Lake Ln",
+            "city": "Bakersfield"
+        },
+        "website": "https://eat.example.com/bakersfield/ivory-oven",
+        "review_count": 2891,
+        "latitude": 35.384725429349764,
+        "longitude": -119.02665949985739,
+        "phone": "+1-555-3366",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "bakersfield-bakersfield-bun-CA-004",
+        "name": "Bakersfield Bun",
+        "rating": 4.7,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "774 Velvet Sunset Blvd",
+            "city": "Bakersfield"
+        },
+        "website": "https://eat.example.com/bakersfield/bakersfield-bun",
+        "review_count": 5558,
+        "latitude": 35.363688200953604,
+        "longitude": -119.03602873034197,
+        "phone": "+1-555-1506",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "bakersfield-rustic-grill-CA-005",
+        "name": "Rustic Grill",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "255 Starlight Maple Ave",
+            "city": "Bakersfield"
+        },
+        "website": "https://eat.example.com/bakersfield/rustic-grill",
+        "review_count": 1782,
+        "latitude": 35.37103669398856,
+        "longitude": -119.0238131785009,
+        "phone": "+1-555-6123",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "anaheim-starlight-loaf-CA-001",
+        "name": "Starlight Loaf",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "445 Juniper Pine Blvd",
+            "city": "Anaheim"
+        },
+        "website": "https://eat.example.com/anaheim/starlight-loaf",
+        "review_count": 268,
+        "latitude": 33.83198600166328,
+        "longitude": -117.92365044971294,
+        "phone": "+1-555-7293",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "anaheim-eggs-house-CA-002",
+        "name": "Eggs House",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "580 Starlight Oak Ave",
+            "city": "Anaheim"
+        },
+        "website": "https://eat.example.com/anaheim/eggs-house",
+        "review_count": 2315,
+        "latitude": 33.841558212184715,
+        "longitude": -117.90695694698785,
+        "phone": "+1-555-7421",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "anaheim-anaheim-brunch-CA-003",
+        "name": "Anaheim Brunch",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "658 Golden Market St",
+            "city": "Anaheim"
+        },
+        "website": "https://eat.example.com/anaheim/anaheim-brunch",
+        "review_count": 2522,
+        "latitude": 33.86087704072557,
+        "longitude": -117.92939760414716,
+        "phone": "+1-555-3905",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "anaheim-anaheim-oak-CA-004",
+        "name": "Anaheim Oak",
+        "rating": 4.8,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "422 Granite Cedar Dr",
+            "city": "Anaheim"
+        },
+        "website": "https://eat.example.com/anaheim/anaheim-oak",
+        "review_count": 2762,
+        "latitude": 33.843130549232846,
+        "longitude": -117.9433499243792,
+        "phone": "+1-555-7006",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "anaheim-patisserie-maple-CA-005",
+        "name": "Patisserie & Maple",
+        "rating": 4.4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "542 Starlight Cedar Ln",
+            "city": "Anaheim"
+        },
+        "website": "https://eat.example.com/anaheim/patisserie-maple",
+        "review_count": 3136,
+        "latitude": 33.85550796044375,
+        "longitude": -117.88458536425438,
+        "phone": "+1-555-4617",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-ana-santa-ana-agave-CA-001",
+        "name": "Santa Ana Agave",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "233 Cobalt Maple Ave",
+            "city": "Santa Ana"
+        },
+        "website": "https://eat.example.com/santa-ana/santa-ana-agave",
+        "review_count": 4680,
+        "latitude": 33.75902102395613,
+        "longitude": -117.8680179631941,
+        "phone": "+1-555-9150",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-ana-harvest-santa-ana-skillet-CA-002",
+        "name": "Harvest Santa Ana Skillet",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "756 Harvest Market Ave",
+            "city": "Santa Ana"
+        },
+        "website": "https://eat.example.com/santa-ana/harvest-santa-ana-skillet",
+        "review_count": 2784,
+        "latitude": 33.72128565002885,
+        "longitude": -117.86497938520256,
+        "phone": "+1-555-2793",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-ana-crimson-santa-ana-agave-CA-003",
+        "name": "Crimson Santa Ana Agave",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "635 Union Union St",
+            "city": "Santa Ana"
+        },
+        "website": "https://eat.example.com/santa-ana/crimson-santa-ana-agave",
+        "review_count": 2110,
+        "latitude": 33.7487124539651,
+        "longitude": -117.84441663652174,
+        "phone": "+1-555-9370",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-ana-cobalt-santa-ana-loaf-CA-004",
+        "name": "Cobalt Santa Ana Loaf",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "473 Amber River Rd",
+            "city": "Santa Ana"
+        },
+        "website": "https://eat.example.com/santa-ana/cobalt-santa-ana-loaf",
+        "review_count": 4239,
+        "latitude": 33.716650009883566,
+        "longitude": -117.88267324196156,
+        "phone": "+1-555-5686",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-ana-bun-house-CA-005",
+        "name": "Bun House",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "655 Common Oak Ave",
+            "city": "Santa Ana"
+        },
+        "website": "https://eat.example.com/santa-ana/bun-house",
+        "review_count": 703,
+        "latitude": 33.76805442375317,
+        "longitude": -117.85989941805117,
+        "phone": "+1-555-7943",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "riverside-oven-house-CA-001",
+        "name": "Oven House",
+        "rating": 4.4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "128 River Maple Rd",
+            "city": "Riverside"
+        },
+        "website": "https://eat.example.com/riverside/oven-house",
+        "review_count": 2972,
+        "latitude": 33.97196955094989,
+        "longitude": -117.38939481217601,
+        "phone": "+1-555-7382",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "riverside-copper-grill-CA-002",
+        "name": "Copper Grill",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "301 Cobalt Sunset Way",
+            "city": "Riverside"
+        },
+        "website": "https://eat.example.com/riverside/copper-grill",
+        "review_count": 1676,
+        "latitude": 33.96702388348468,
+        "longitude": -117.3697699680198,
+        "phone": "+1-555-4326",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "riverside-trattoria-forno-CA-003",
+        "name": "Trattoria & Forno",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "182 Amber Maple Ave",
+            "city": "Riverside"
+        },
+        "website": "https://eat.example.com/riverside/trattoria-forno",
+        "review_count": 1856,
+        "latitude": 33.971244914144656,
+        "longitude": -117.35261860116572,
+        "phone": "+1-555-5095",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "riverside-ivory-barrel-CA-004",
+        "name": "Ivory Barrel",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "445 Velvet Lake Way",
+            "city": "Riverside"
+        },
+        "website": "https://eat.example.com/riverside/ivory-barrel",
+        "review_count": 2375,
+        "latitude": 33.96970998710897,
+        "longitude": -117.39993169735838,
+        "phone": "+1-555-3923",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "riverside-velvet-skillet-CA-005",
+        "name": "Velvet Skillet",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "426 Ivory River Dr",
+            "city": "Riverside"
+        },
+        "website": "https://eat.example.com/riverside/velvet-skillet",
+        "review_count": 3171,
+        "latitude": 33.98860128627103,
+        "longitude": -117.34770933584497,
+        "phone": "+1-555-9856",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "stockton-brunch-house-CA-001",
+        "name": "Brunch House",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "490 Granite Union Ave",
+            "city": "Stockton"
+        },
+        "website": "https://eat.example.com/stockton/brunch-house",
+        "review_count": 4964,
+        "latitude": 37.9330836838901,
+        "longitude": -121.3028383494813,
+        "phone": "+1-555-9220",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "stockton-enoteca-house-CA-002",
+        "name": "Enoteca House",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "128 Ivory Market Ave",
+            "city": "Stockton"
+        },
+        "website": "https://eat.example.com/stockton/enoteca-house",
+        "review_count": 985,
+        "latitude": 37.96596649362687,
+        "longitude": -121.30645405683592,
+        "phone": "+1-555-7579",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "stockton-harvest-stockton-osteria-CA-003",
+        "name": "Harvest Stockton Osteria",
+        "rating": 4.2,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "933 Rustic Main Rd",
+            "city": "Stockton"
+        },
+        "website": "https://eat.example.com/stockton/harvest-stockton-osteria",
+        "review_count": 605,
+        "latitude": 37.9725761278065,
+        "longitude": -121.27449138862472,
+        "phone": "+1-555-8852",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "stockton-stockton-dock-CA-004",
+        "name": "Stockton Dock",
+        "rating": 4.6,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "402 Urban Pine Way",
+            "city": "Stockton"
+        },
+        "website": "https://eat.example.com/stockton/stockton-dock",
+        "review_count": 3756,
+        "latitude": 37.98639435331784,
+        "longitude": -121.28800799942502,
+        "phone": "+1-555-1085",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "stockton-stockton-lobster-CA-005",
+        "name": "Stockton Lobster",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "654 Velvet River St",
+            "city": "Stockton"
+        },
+        "website": "https://eat.example.com/stockton/stockton-lobster",
+        "review_count": 2128,
+        "latitude": 37.93820598420669,
+        "longitude": -121.31144658919816,
+        "phone": "+1-555-3306",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "irvine-loaf-bakery-CA-001",
+        "name": "Loaf & Bakery",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "122 Juniper Cedar Ln",
+            "city": "Irvine"
+        },
+        "website": "https://eat.example.com/irvine/loaf-bakery",
+        "review_count": 3812,
+        "latitude": 33.68188387600277,
+        "longitude": -117.84375531557109,
+        "phone": "+1-555-7322",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "irvine-bluebird-kettle-CA-002",
+        "name": "Bluebird Kettle",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "405 Bluebird Maple Ln",
+            "city": "Irvine"
+        },
+        "website": "https://eat.example.com/irvine/bluebird-kettle",
+        "review_count": 1114,
+        "latitude": 33.711717922520265,
+        "longitude": -117.84002935563772,
+        "phone": "+1-555-5046",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "irvine-casa-house-CA-003",
+        "name": "Casa House",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "944 Amber Maple Blvd",
+            "city": "Irvine"
+        },
+        "website": "https://eat.example.com/irvine/casa-house",
+        "review_count": 361,
+        "latitude": 33.66839483093508,
+        "longitude": -117.83762296486739,
+        "phone": "+1-555-2887",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "irvine-irvine-steam-CA-004",
+        "name": "Irvine Steam",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "216 Velvet Oak Way",
+            "city": "Irvine"
+        },
+        "website": "https://eat.example.com/irvine/irvine-steam",
+        "review_count": 4408,
+        "latitude": 33.661371978191106,
+        "longitude": -117.82409416222572,
+        "phone": "+1-555-6903",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "irvine-irvine-osteria-CA-005",
+        "name": "Irvine Osteria",
+        "rating": 4.8,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "760 Urban Cedar Ave",
+            "city": "Irvine"
+        },
+        "website": "https://eat.example.com/irvine/irvine-osteria",
+        "review_count": 4722,
+        "latitude": 33.706529247588854,
+        "longitude": -117.83654983283579,
+        "phone": "+1-555-6900",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chula-vista-forno-house-CA-001",
+        "name": "Forno House",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "686 Harvest Maple St",
+            "city": "Chula Vista"
+        },
+        "website": "https://eat.example.com/chula-vista/forno-house",
+        "review_count": 6118,
+        "latitude": 32.62213843070194,
+        "longitude": -117.063500070717,
+        "phone": "+1-555-5100",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chula-vista-agave-house-CA-002",
+        "name": "Agave House",
+        "rating": 4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "770 Copper Main Ln",
+            "city": "Chula Vista"
+        },
+        "website": "https://eat.example.com/chula-vista/agave-house",
+        "review_count": 4326,
+        "latitude": 32.65743785998076,
+        "longitude": -117.05977324715424,
+        "phone": "+1-555-5439",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chula-vista-cocina-azul-CA-003",
+        "name": "Cocina & Azul",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "967 Starlight Cedar St",
+            "city": "Chula Vista"
+        },
+        "website": "https://eat.example.com/chula-vista/cocina-azul",
+        "review_count": 1207,
+        "latitude": 32.66263068641293,
+        "longitude": -117.10582114436272,
+        "phone": "+1-555-8062",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chula-vista-taco-cinder-CA-004",
+        "name": "Taco & Cinder",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "312 Harvest Pine Way",
+            "city": "Chula Vista"
+        },
+        "website": "https://eat.example.com/chula-vista/taco-cinder",
+        "review_count": 2210,
+        "latitude": 32.66056568311285,
+        "longitude": -117.05440973705221,
+        "phone": "+1-555-2109",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "chula-vista-barrel-oak-CA-005",
+        "name": "Barrel & Oak",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "493 Velvet Cedar Dr",
+            "city": "Chula Vista"
+        },
+        "website": "https://eat.example.com/chula-vista/barrel-oak",
+        "review_count": 1261,
+        "latitude": 32.61429520709198,
+        "longitude": -117.09493222479317,
+        "phone": "+1-555-6632",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fremont-fremont-pasta-CA-001",
+        "name": "Fremont Pasta",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "212 Bluebird River Dr",
+            "city": "Fremont"
+        },
+        "website": "https://eat.example.com/fremont/fremont-pasta",
+        "review_count": 5458,
+        "latitude": 37.56393955575228,
+        "longitude": -121.96648448896259,
+        "phone": "+1-555-4672",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fremont-fremont-pancake-CA-002",
+        "name": "Fremont Pancake",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "986 Cobalt Pine Rd",
+            "city": "Fremont"
+        },
+        "website": "https://eat.example.com/fremont/fremont-pancake",
+        "review_count": 5186,
+        "latitude": 37.54926434262581,
+        "longitude": -122.0093001540158,
+        "phone": "+1-555-8451",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fremont-starlight-patisserie-CA-003",
+        "name": "Starlight Patisserie",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "966 Starlight Lake Way",
+            "city": "Fremont"
+        },
+        "website": "https://eat.example.com/fremont/starlight-patisserie",
+        "review_count": 4541,
+        "latitude": 37.55058192294482,
+        "longitude": -121.98861253125258,
+        "phone": "+1-555-3737",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fremont-smokehouse-house-CA-004",
+        "name": "Smokehouse House",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "137 Cinder Union Ave",
+            "city": "Fremont"
+        },
+        "website": "https://eat.example.com/fremont/smokehouse-house",
+        "review_count": 4928,
+        "latitude": 37.52145113144461,
+        "longitude": -121.98726836684756,
+        "phone": "+1-555-2593",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fremont-toro-house-CA-005",
+        "name": "Toro House",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "786 Velvet Lake Ln",
+            "city": "Fremont"
+        },
+        "website": "https://eat.example.com/fremont/toro-house",
+        "review_count": 2622,
+        "latitude": 37.537930273338404,
+        "longitude": -122.01457535135225,
+        "phone": "+1-555-3189",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-bernardino-san-bernardino-brunch-CA-001",
+        "name": "San Bernardino Brunch",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "458 Amber Pine Rd",
+            "city": "San Bernardino"
+        },
+        "website": "https://eat.example.com/san-bernardino/san-bernardino-brunch",
+        "review_count": 5489,
+        "latitude": 34.11684433354456,
+        "longitude": -117.30141399118602,
+        "phone": "+1-555-2443",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-bernardino-copper-san-bernardino-sashimi-CA-002",
+        "name": "Copper San Bernardino Sashimi",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "626 Amber Sunset Rd",
+            "city": "San Bernardino"
+        },
+        "website": "https://eat.example.com/san-bernardino/copper-san-bernardino-sashimi",
+        "review_count": 1808,
+        "latitude": 34.08640759143438,
+        "longitude": -117.30170822788048,
+        "phone": "+1-555-1571",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-bernardino-izakaya-toro-CA-003",
+        "name": "Izakaya & Toro",
+        "rating": 4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "122 Cobalt Market Rd",
+            "city": "San Bernardino"
+        },
+        "website": "https://eat.example.com/san-bernardino/izakaya-toro",
+        "review_count": 5982,
+        "latitude": 34.13426271666698,
+        "longitude": -117.29037216678746,
+        "phone": "+1-555-3921",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-bernardino-crimson-steam-CA-004",
+        "name": "Crimson Steam",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "383 Golden Lake Dr",
+            "city": "San Bernardino"
+        },
+        "website": "https://eat.example.com/san-bernardino/crimson-steam",
+        "review_count": 1334,
+        "latitude": 34.1019734842835,
+        "longitude": -117.2989938289348,
+        "phone": "+1-555-8223",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "san-bernardino-oyster-dock-CA-005",
+        "name": "Oyster & Dock",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "706 Ivory Maple Dr",
+            "city": "San Bernardino"
+        },
+        "website": "https://eat.example.com/san-bernardino/oyster-dock",
+        "review_count": 2135,
+        "latitude": 34.12751657211613,
+        "longitude": -117.27149252308085,
+        "phone": "+1-555-3189",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "modesto-bakery-house-CA-001",
+        "name": "Bakery House",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "226 Harvest Cedar Ave",
+            "city": "Modesto"
+        },
+        "website": "https://eat.example.com/modesto/bakery-house",
+        "review_count": 4419,
+        "latitude": 37.65218236821555,
+        "longitude": -120.97688245504685,
+        "phone": "+1-555-4879",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "modesto-modesto-grind-CA-002",
+        "name": "Modesto Grind",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "393 River Pine Blvd",
+            "city": "Modesto"
+        },
+        "website": "https://eat.example.com/modesto/modesto-grind",
+        "review_count": 5840,
+        "latitude": 37.65838899708204,
+        "longitude": -121.01704762690756,
+        "phone": "+1-555-7154",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "modesto-modesto-crumb-CA-003",
+        "name": "Modesto Crumb",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "451 Cobalt Main Ln",
+            "city": "Modesto"
+        },
+        "website": "https://eat.example.com/modesto/modesto-crumb",
+        "review_count": 4932,
+        "latitude": 37.66874923899155,
+        "longitude": -120.99090777464266,
+        "phone": "+1-555-2954",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "modesto-modesto-catch-CA-004",
+        "name": "Modesto Catch",
+        "rating": 4.3,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "935 Crimson Market Dr",
+            "city": "Modesto"
+        },
+        "website": "https://eat.example.com/modesto/modesto-catch",
+        "review_count": 2507,
+        "latitude": 37.62864210717231,
+        "longitude": -120.99495686179083,
+        "phone": "+1-555-6997",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "modesto-starlight-enoteca-CA-005",
+        "name": "Starlight Enoteca",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "656 Bluebird Market Way",
+            "city": "Modesto"
+        },
+        "website": "https://eat.example.com/modesto/starlight-enoteca",
+        "review_count": 4982,
+        "latitude": 37.62002090988532,
+        "longitude": -120.99684035328738,
+        "phone": "+1-555-2096",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oxnard-izakaya-sushi-CA-001",
+        "name": "Izakaya & Sushi",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "784 Amber Cedar Ave",
+            "city": "Oxnard"
+        },
+        "website": "https://eat.example.com/oxnard/izakaya-sushi",
+        "review_count": 1653,
+        "latitude": 34.21471258363686,
+        "longitude": -119.20033399367742,
+        "phone": "+1-555-3313",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oxnard-bluebird-embers-CA-002",
+        "name": "Bluebird Embers",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "147 Juniper Main Ln",
+            "city": "Oxnard"
+        },
+        "website": "https://eat.example.com/oxnard/bluebird-embers",
+        "review_count": 4826,
+        "latitude": 34.21249848826788,
+        "longitude": -119.169166052109,
+        "phone": "+1-555-4644",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oxnard-taqueria-house-CA-003",
+        "name": "Taqueria House",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "472 Velvet Union Ave",
+            "city": "Oxnard"
+        },
+        "website": "https://eat.example.com/oxnard/taqueria-house",
+        "review_count": 1793,
+        "latitude": 34.17341934497468,
+        "longitude": -119.17818744502533,
+        "phone": "+1-555-7107",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oxnard-crumb-union-CA-004",
+        "name": "Crumb & Union",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "179 Starlight Main Blvd",
+            "city": "Oxnard"
+        },
+        "website": "https://eat.example.com/oxnard/crumb-union",
+        "review_count": 6021,
+        "latitude": 34.167843425306486,
+        "longitude": -119.20194751812647,
+        "phone": "+1-555-3626",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "oxnard-waffle-brunch-CA-005",
+        "name": "Waffle & Brunch",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "483 Cobalt Sunset Blvd",
+            "city": "Oxnard"
+        },
+        "website": "https://eat.example.com/oxnard/waffle-brunch",
+        "review_count": 2868,
+        "latitude": 34.214857290517536,
+        "longitude": -119.20273596209977,
+        "phone": "+1-555-2198",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fontana-fontana-dock-CA-001",
+        "name": "Fontana Dock",
+        "rating": 4.9,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "489 Sunset Main Blvd",
+            "city": "Fontana"
+        },
+        "website": "https://eat.example.com/fontana/fontana-dock",
+        "review_count": 2414,
+        "latitude": 34.09832705600913,
+        "longitude": -117.44559256106615,
+        "phone": "+1-555-5873",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fontana-velvet-fontana-grill-CA-002",
+        "name": "Velvet Fontana Grill",
+        "rating": 4.4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "782 Velvet Maple Way",
+            "city": "Fontana"
+        },
+        "website": "https://eat.example.com/fontana/velvet-fontana-grill",
+        "review_count": 5021,
+        "latitude": 34.07330707569867,
+        "longitude": -117.40506730562076,
+        "phone": "+1-555-2757",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fontana-union-fontana-taqueria-CA-003",
+        "name": "Union Fontana Taqueria",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "889 Amber Market Blvd",
+            "city": "Fontana"
+        },
+        "website": "https://eat.example.com/fontana/union-fontana-taqueria",
+        "review_count": 3562,
+        "latitude": 34.07110966489911,
+        "longitude": -117.4090208532801,
+        "phone": "+1-555-2376",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fontana-fontana-marina-CA-004",
+        "name": "Fontana Marina",
+        "rating": 4.4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "709 Union Pine Blvd",
+            "city": "Fontana"
+        },
+        "website": "https://eat.example.com/fontana/fontana-marina",
+        "review_count": 4816,
+        "latitude": 34.113174891972726,
+        "longitude": -117.44868395464495,
+        "phone": "+1-555-2663",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "fontana-sunset-fontana-oyster-CA-005",
+        "name": "Sunset Fontana Oyster",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "229 Bluebird Sunset Rd",
+            "city": "Fontana"
+        },
+        "website": "https://eat.example.com/fontana/sunset-fontana-oyster",
+        "review_count": 1187,
+        "latitude": 34.07669799491092,
+        "longitude": -117.42677452703006,
+        "phone": "+1-555-7162",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "moreno-valley-sunset-moreno-valley-dough-CA-001",
+        "name": "Sunset Moreno Valley Dough",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "199 Sunset Pine Ln",
+            "city": "Moreno Valley"
+        },
+        "website": "https://eat.example.com/moreno-valley/sunset-moreno-valley-dough",
+        "review_count": 2269,
+        "latitude": 33.92817315468099,
+        "longitude": -117.22503486305736,
+        "phone": "+1-555-3681",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "moreno-valley-enoteca-house-CA-002",
+        "name": "Enoteca House",
+        "rating": 4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "966 Union Lake Blvd",
+            "city": "Moreno Valley"
+        },
+        "website": "https://eat.example.com/moreno-valley/enoteca-house",
+        "review_count": 5965,
+        "latitude": 33.92987855124287,
+        "longitude": -117.24825117881204,
+        "phone": "+1-555-5882",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "moreno-valley-moreno-valley-roast-CA-003",
+        "name": "Moreno Valley Roast",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "734 Urban Union Rd",
+            "city": "Moreno Valley"
+        },
+        "website": "https://eat.example.com/moreno-valley/moreno-valley-roast",
+        "review_count": 3890,
+        "latitude": 33.93450109298807,
+        "longitude": -117.21245605649221,
+        "phone": "+1-555-5178",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "moreno-valley-burger-house-CA-004",
+        "name": "Burger House",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "142 Granite Maple St",
+            "city": "Moreno Valley"
+        },
+        "website": "https://eat.example.com/moreno-valley/burger-house",
+        "review_count": 3855,
+        "latitude": 33.91797955227085,
+        "longitude": -117.22108335218653,
+        "phone": "+1-555-1549",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "moreno-valley-osteria-house-CA-005",
+        "name": "Osteria House",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            }
+        ],
+        "location": {
+            "address1": "374 River Main Way",
+            "city": "Moreno Valley"
+        },
+        "website": "https://eat.example.com/moreno-valley/osteria-house",
+        "review_count": 2994,
+        "latitude": 33.950776861482304,
+        "longitude": -117.23780029475017,
+        "phone": "+1-555-3214",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "glendale-pancake-eggs-CA-001",
+        "name": "Pancake & Eggs",
+        "rating": 4.4,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "896 Bluebird Lake Blvd",
+            "city": "Glendale"
+        },
+        "website": "https://eat.example.com/glendale/pancake-eggs",
+        "review_count": 1041,
+        "latitude": 34.15187154898886,
+        "longitude": -118.25561040198188,
+        "phone": "+1-555-1427",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "glendale-crimson-glendale-loaf-CA-002",
+        "name": "Crimson Glendale Loaf",
+        "rating": 4.3,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "850 Urban Maple Way",
+            "city": "Glendale"
+        },
+        "website": "https://eat.example.com/glendale/crimson-glendale-loaf",
+        "review_count": 2076,
+        "latitude": 34.149738130695184,
+        "longitude": -118.2643888256954,
+        "phone": "+1-555-7317",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "glendale-grill-golden-CA-003",
+        "name": "Grill & Golden",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            }
+        ],
+        "location": {
+            "address1": "968 Copper Union St",
+            "city": "Glendale"
+        },
+        "website": "https://eat.example.com/glendale/grill-golden",
+        "review_count": 1045,
+        "latitude": 34.113061347245235,
+        "longitude": -118.24874970471244,
+        "phone": "+1-555-7726",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "glendale-glendale-cocina-CA-004",
+        "name": "Glendale Cocina",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "581 River Union Rd",
+            "city": "Glendale"
+        },
+        "website": "https://eat.example.com/glendale/glendale-cocina",
+        "review_count": 2504,
+        "latitude": 34.161133592589756,
+        "longitude": -118.2815103236515,
+        "phone": "+1-555-8362",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "glendale-amber-osteria-CA-005",
+        "name": "Amber Osteria",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "603 Sunset Main St",
+            "city": "Glendale"
+        },
+        "website": "https://eat.example.com/glendale/amber-osteria",
+        "review_count": 4931,
+        "latitude": 34.143262725765815,
+        "longitude": -118.27547176993676,
+        "phone": "+1-555-3849",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "huntington-beach-agave-house-CA-001",
+        "name": "Agave House",
+        "rating": 4.1,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            }
+        ],
+        "location": {
+            "address1": "754 Cobalt River St",
+            "city": "Huntington Beach"
+        },
+        "website": "https://eat.example.com/huntington-beach/agave-house",
+        "review_count": 1195,
+        "latitude": 33.67067657607887,
+        "longitude": -118.01451531709284,
+        "phone": "+1-555-4472",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "huntington-beach-harvest-huntington-beach-oak-CA-002",
+        "name": "Harvest Huntington Beach Oak",
+        "rating": 4.5,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "681 River Market Dr",
+            "city": "Huntington Beach"
+        },
+        "website": "https://eat.example.com/huntington-beach/harvest-huntington-beach-oak",
+        "review_count": 5894,
+        "latitude": 33.6519680572236,
+        "longitude": -118.01290404182971,
+        "phone": "+1-555-6137",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "huntington-beach-ivory-bun-CA-003",
+        "name": "Ivory Bun",
+        "rating": 4.8,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "587 Starlight Cedar Blvd",
+            "city": "Huntington Beach"
+        },
+        "website": "https://eat.example.com/huntington-beach/ivory-bun",
+        "review_count": 731,
+        "latitude": 33.68423740250804,
+        "longitude": -117.9853241726907,
+        "phone": "+1-555-7461",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "huntington-beach-cantina-house-CA-004",
+        "name": "Cantina House",
+        "rating": 4.6,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            },
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            }
+        ],
+        "location": {
+            "address1": "978 Bluebird Maple Rd",
+            "city": "Huntington Beach"
+        },
+        "website": "https://eat.example.com/huntington-beach/cantina-house",
+        "review_count": 3744,
+        "latitude": 33.66579628680181,
+        "longitude": -117.99390955706704,
+        "phone": "+1-555-1982",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "huntington-beach-osteria-trattoria-CA-005",
+        "name": "Osteria & Trattoria",
+        "rating": 4.7,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "259 Cinder Cedar St",
+            "city": "Huntington Beach"
+        },
+        "website": "https://eat.example.com/huntington-beach/osteria-trattoria",
+        "review_count": 2360,
+        "latitude": 33.65471664050408,
+        "longitude": -117.96932951286081,
+        "phone": "+1-555-1761",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-clarita-oyster-house-CA-001",
+        "name": "Oyster House",
+        "rating": 4,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "666 Cinder Sunset Dr",
+            "city": "Santa Clarita"
+        },
+        "website": "https://eat.example.com/santa-clarita/oyster-house",
+        "review_count": 3214,
+        "latitude": 34.37129544955753,
+        "longitude": -118.56833070413433,
+        "phone": "+1-555-2725",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-clarita-santa-clarita-pancake-CA-002",
+        "name": "Santa Clarita Pancake",
+        "rating": 4.7,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            }
+        ],
+        "location": {
+            "address1": "889 Bluebird Main Dr",
+            "city": "Santa Clarita"
+        },
+        "website": "https://eat.example.com/santa-clarita/santa-clarita-pancake",
+        "review_count": 4831,
+        "latitude": 34.414901827062295,
+        "longitude": -118.53494961898997,
+        "phone": "+1-555-3554",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-clarita-common-santa-clarita-espresso-CA-003",
+        "name": "Common Santa Clarita Espresso",
+        "rating": 4.2,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "913 Golden Sunset Ave",
+            "city": "Santa Clarita"
+        },
+        "website": "https://eat.example.com/santa-clarita/common-santa-clarita-espresso",
+        "review_count": 3123,
+        "latitude": 34.40647232254576,
+        "longitude": -118.56108393161315,
+        "phone": "+1-555-9318",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-clarita-river-santa-clarita-cocina-CA-004",
+        "name": "River Santa Clarita Cocina",
+        "rating": 4.4,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "mexican",
+                "title": "Mexican"
+            },
+            {
+                "alias": "tacos",
+                "title": "Tacos"
+            }
+        ],
+        "location": {
+            "address1": "259 Bluebird Union Blvd",
+            "city": "Santa Clarita"
+        },
+        "website": "https://eat.example.com/santa-clarita/river-santa-clarita-cocina",
+        "review_count": 3408,
+        "latitude": 34.374581393018175,
+        "longitude": -118.56577390015349,
+        "phone": "+1-555-5486",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "santa-clarita-pancake-house-CA-005",
+        "name": "Pancake House",
+        "rating": 4.5,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "breakfast",
+                "title": "Breakfast"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "location": {
+            "address1": "188 Harvest Lake Way",
+            "city": "Santa Clarita"
+        },
+        "website": "https://eat.example.com/santa-clarita/pancake-house",
+        "review_count": 6145,
+        "latitude": 34.421280322019754,
+        "longitude": -118.56615720577295,
+        "phone": "+1-555-1689",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "garden-grove-urban-patisserie-CA-001",
+        "name": "Urban Patisserie",
+        "rating": 4.2,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "bakery",
+                "title": "Bakery"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "750 Crimson Sunset St",
+            "city": "Garden Grove"
+        },
+        "website": "https://eat.example.com/garden-grove/urban-patisserie",
+        "review_count": 927,
+        "latitude": 33.762588782071695,
+        "longitude": -117.96402808939442,
+        "phone": "+1-555-7787",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "garden-grove-trattoria-forno-CA-002",
+        "name": "Trattoria & Forno",
+        "rating": 4.1,
+        "price": "$",
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee"
+            }
+        ],
+        "location": {
+            "address1": "340 Harvest Maple Blvd",
+            "city": "Garden Grove"
+        },
+        "website": "https://eat.example.com/garden-grove/trattoria-forno",
+        "review_count": 2200,
+        "latitude": 33.77317833251189,
+        "longitude": -117.92560931311324,
+        "phone": "+1-555-1112",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "garden-grove-catch-marina-CA-003",
+        "name": "Catch & Marina",
+        "rating": 4.6,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            }
+        ],
+        "location": {
+            "address1": "612 Sunset Maple Rd",
+            "city": "Garden Grove"
+        },
+        "website": "https://eat.example.com/garden-grove/catch-marina",
+        "review_count": 2843,
+        "latitude": 33.76022680532988,
+        "longitude": -117.94177289975211,
+        "phone": "+1-555-9486",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "garden-grove-garden-grove-bamboo-CA-004",
+        "name": "Garden Grove Bamboo",
+        "rating": 4.3,
+        "price": "$$",
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "location": {
+            "address1": "394 Cinder Cedar Rd",
+            "city": "Garden Grove"
+        },
+        "website": "https://eat.example.com/garden-grove/garden-grove-bamboo",
+        "review_count": 1365,
+        "latitude": 33.74477090316694,
+        "longitude": -117.92380128249395,
+        "phone": "+1-555-1679",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
+    },
+    {
+        "id": "garden-grove-bluebird-smokehouse-CA-005",
+        "name": "Bluebird Smokehouse",
+        "rating": 4.1,
+        "price": "$$$",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "BBQ"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "location": {
+            "address1": "582 Urban Pine Way",
+            "city": "Garden Grove"
+        },
+        "website": "https://eat.example.com/garden-grove/bluebird-smokehouse",
+        "review_count": 2911,
+        "latitude": 33.791656346906535,
+        "longitude": -117.9532592431862,
+        "phone": "+1-555-1406",
+        "hours": [
+            "Daily 07:00-21:00"
+        ]
     }
 ]

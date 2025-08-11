@@ -1,5 +1,5 @@
 export { htmlShell } from "./htmlShell.js";
-export { restaurantsHtml } from "./restaurantsHtml.js";
-export { menuHtml } from "./menuHtml.js";
+export { searchResultsHtml } from "./searchResultsHtml.js";
+export { restaurantDetailsHtml } from "./restaurantDetailsHtml.js";
 export { orderHtml } from "./orderHtml.js";
-export { catalogHtml } from "./catalogHtml.js";
+export { menuHtml } from "./menuHtml.js";

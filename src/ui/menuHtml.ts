@@ -1,36 +1,42 @@
 import { htmlShell } from "./htmlShell.js";
 
-export function menuHtml(details: any) {
-    const addr = `${details.location?.address1 ?? ""}${
-        details.location?.city ? ", " + details.location.city : ""
-    }`;
-    const url = details.website || details.url || "#";
-    const phone = details.phone || "";
-    const hours = (details.hours || []).join(" · ");
-    const squareNote = details?.square?.usesSquare
-        ? `<div class=\"row\"><em>Ordering available in chat</em></div>`
-        : `<div class=\"promo-banner\">
-             <div class=\"title\">In‑chat ordering not enabled</div>
-             <div>Customers using assistants try to order here. Enable in‑chat ordering with Square to accept orders directly.</div>
-             <div class=\"actions\"><a href=\"https://squareup.com/us/en/point-of-sale/online-checkout\" target=\"_blank\" rel=\"noopener\">Learn about Square Ordering</a></div>
-           </div>`;
-    const body = `
-<h2>Restaurant</h2>
-<div class=\"name\">${details.name ?? "Unknown"}</div>
-<div class=\"meta\">${addr}</div>
-${
-    phone
-        ? `<div class=\"row\">Phone: <a href=\"tel:${phone}\">${phone}</a></div>`
-        : ""
-}
-${hours ? `<div class=\"row\">Hours: ${hours}</div>` : ""}
-<div class=\"row\">Rating: ${details.rating ?? "N/A"} (${
-        details.review_count ?? 0
-    } reviews)</div>
-<div class=\"row\"><a href=\"${url}\" target=\"_blank\" rel=\"noopener\">Open Website</a></div>
-${squareNote}
-<div class=\"row\"><button onclick=\"callTool('order_takeout',{ business_id: '${
-        details.id
-    }', items: [] })\">Start Takeout Order</button></div>`;
-    return htmlShell("Restaurant Menu", body);
+export function menuHtml(
+    businessId: string,
+    businessName: string,
+    items: Array<{
+        id: string;
+        name: string;
+        description?: string;
+        price: number;
+        imageUrl?: string;
+    }>
+) {
+    const list = (items || [])
+        .map(
+            (i) =>
+                `<div class=\"card\">\n  <div class=\"media-row\">\n    ${
+                    i.imageUrl
+                        ? `<img src=\"${i.imageUrl}\" alt=\"${i.name}\" class=\"media-img\"/>`
+                        : ""
+                }\n    <div class=\"media-body\">\n      <div class="name">${
+                    i.name
+                }</div>\n      ${
+                    i.description
+                        ? `<div class="meta">${i.description}</div>`
+                        : ""
+                }\n      <div class="row"><strong>$${i.price.toFixed(
+                    2
+                )}</strong></div>\n      <button onclick="callTool('order_takeout',{ business_id: '${businessId}', items: [{ name: '${i.name.replace(
+                    /'/g,
+                    "\\'"
+                )}', qty: 1, price: ${
+                    i.price
+                } }] })">Order 1</button>\n    </div>\n  </div>\n</div>`
+        )
+        .join("\n");
+
+    const body = `\n<p>menuHtml</p>\n<h2>Menu</h2>\n<div class="row"><strong>${businessName}</strong></div>\n${
+        list || "<div>No menu items available.</div>"
+    }\n`;
+    return htmlShell("Menu", body);
 }

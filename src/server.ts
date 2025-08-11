@@ -5,10 +5,10 @@ import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/
 import { getRestaurant, searchRestaurants } from "./lib/restaurants.js";
 import { createUIResource } from "@mcp-ui/server";
 import {
-    restaurantsHtml,
-    menuHtml,
+    searchResultsHtml,
+    restaurantDetailsHtml,
     orderHtml,
-    catalogHtml,
+    menuHtml,
 } from "./ui/index.js";
 import {
     detectSquareForBusinessId,
@@ -19,8 +19,10 @@ import {
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
 const MCP_PORT = Number(process.env.MCP_PORT || 8000);
 
+export const SERVER_NAME = "commerce_localhost";
+
 const server = new McpServer(
-    { name: "restaurant-finder", version: "1.0.0" },
+    { name: SERVER_NAME, version: "1.0.0" },
     {
         instructions:
             "Return MCP UI as the primary output. Do not summarize UI, do not propose filters or next steps, and do not restate what is visible. After returning UI, WAIT for UI-dispatched tool messages (type=tool) and respond with updated UI only. Emit plain text ONLY for errors or when no UI can be rendered.",
@@ -29,23 +31,41 @@ const server = new McpServer(
 
 server.tool(
     "find_restaurants",
-    "Find nearby restaurants by coordinates and optional query.",
+    "Find nearby restaurants by city/state and optional query.",
     {
-        latitude: z.number().default(33.749),
-        longitude: z.number().default(-84.388),
+        city: z.string().default("Austin"),
+        state: z.string().optional(),
         query: z.string().optional(),
         limit: z.number().int().min(1).max(25).default(10),
     },
-    async ({ latitude, longitude, query, limit }) => {
+    async ({ city, state, query, limit }) => {
         try {
-            const results = await searchRestaurants(
-                query,
-                latitude,
-                longitude,
-                limit
-            );
+            const results = await searchRestaurants({
+                term: query,
+                city,
+                state,
+                limit,
+            });
             const businesses = results.businesses || [];
-            const html = restaurantsHtml(businesses);
+            if (!businesses.length) {
+                const suggestions = Array.isArray(results?.suggestions)
+                    ? `\nSuggestions: ${results.suggestions.join("; ")}`
+                    : "";
+                return {
+                    content: [
+                        {
+                            type: "text",
+                            text: `No local results for ${[city, state]
+                                .filter(Boolean)
+                                .join(", ")}${
+                                query ? ` (query=\"${query}\")` : ""
+                            }.${suggestions}`,
+                            annotations: { audience: ["user"] },
+                        },
+                    ],
+                } as any;
+            }
+            const html = searchResultsHtml(businesses);
             const block = createUIResource({
                 uri: `ui://restaurants/list`,
                 content: { type: "rawHtml", htmlString: html },
@@ -54,27 +74,57 @@ server.tool(
             const annotatedUi = {
                 ...(block as any),
                 annotations: { audience: ["user"] },
+                _meta: {
+                    server: SERVER_NAME,
+                },
             };
+            // Provide a concise textual summary for the LLM while keeping UI as primary output
+            const locationStr = [city, state].filter(Boolean).join(", ");
+            const topNames = businesses
+                .slice(0, 3)
+                .map((b: any) => b.name)
+                .filter(Boolean)
+                .join(", ");
+            const summaryText = `Found ${businesses.length} result$${"{"}
+                businesses.length === 1 ? '' : 's'
+            ${"}"}${query ? ` for "${query}"` : ""}${
+                locationStr ? ` near ${locationStr}` : ""
+            }.${topNames ? ` Top: ${topNames}.` : ""}`;
+            const llmSummary = {
+                type: "text",
+                text: summaryText,
+                annotations: { audience: ["assistant"] },
+            } as const;
+            return { content: [annotatedUi, llmSummary as any] };
+        } catch (error: any) {
+            const code = (error && (error as any).code) || "UNKNOWN";
+            const human =
+                code === "GEOCODE_NOT_FOUND"
+                    ? `Could not find a location for "${[city, state]
+                          .filter(Boolean)
+                          .join(
+                              ", "
+                          )}". Try a different city or include a state (e.g., "Austin, TX").`
+                    : code === "LOCATION_REQUIRED"
+                    ? "Location is required. Provide a city (and optional state)."
+                    : "We hit a temporary issue fetching nearby places. Please try again shortly.";
             return {
                 content: [
-                    annotatedUi,
                     {
                         type: "text",
-                        text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
+                        text: JSON.stringify(
+                            {
+                                message: human,
+                                code,
+                                input: { city, state, query, limit },
+                            },
+                            null,
+                            2
+                        ),
+                        annotations: { audience: ["user"] },
                     },
                 ],
-            };
-        } catch (error: any) {
-            const info = {
-                message:
-                    "We hit a temporary issue fetching nearby places. Please try again shortly.",
-                input: { latitude, longitude, query, limit },
-                error: String(error?.message || error),
-            };
-            return {
-                content: [
-                    { type: "text", text: JSON.stringify(info, null, 2) },
-                ],
+                isError: true,
             } as any;
         }
     }
@@ -100,8 +150,8 @@ server.tool(
 );
 
 server.tool(
-    "view_menu",
-    "View menu/info for a restaurant by id.",
+    "view_restaurant",
+    "View restaurant details by id.",
     { business_id: z.string() },
     async ({ business_id }) => {
         const details = await getRestaurant(business_id);
@@ -109,24 +159,21 @@ server.tool(
             business_id,
             (details as any)?.website
         );
-        const html = menuHtml({ ...(details as any), square });
+        const html = restaurantDetailsHtml({ ...(details as any), square });
         const block = createUIResource({
-            uri: `ui://menu/${business_id}`,
+            uri: `ui://restaurant/${business_id}`,
             content: { type: "rawHtml", htmlString: html },
             encoding: "text",
         });
         const annotated = {
             ...(block as any),
             annotations: { audience: ["user"] },
+            _meta: {
+                server: SERVER_NAME,
+            },
         };
         return {
-            content: [
-                annotated,
-                {
-                    type: "text",
-                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
-                },
-            ],
+            content: [annotated],
         };
     }
 );
@@ -155,22 +202,19 @@ server.tool(
         const annotated = {
             ...(block as any),
             annotations: { audience: ["user"] },
+            _meta: {
+                server: SERVER_NAME,
+            },
         };
         return {
-            content: [
-                annotated,
-                {
-                    type: "text",
-                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
-                },
-            ],
+            content: [annotated],
         };
     }
 );
 
 server.tool(
-    "view_catalog",
-    "Read a seller's catalog (if Square) and display items with price and image.",
+    "view_menu",
+    "Read a seller's menu (if Square) and display items with price and image.",
     { business_id: z.string() },
     async ({ business_id }) => {
         const details = await getRestaurant(business_id);
@@ -193,28 +237,25 @@ server.tool(
         const items = square.merchantToken
             ? await getCatalogByMerchantToken(square.merchantToken)
             : await getCatalogForBusinessId(business_id);
-        const html = catalogHtml(
+        const html = menuHtml(
             business_id,
             (details as any)?.name ?? "Seller",
             items
         );
         const block = createUIResource({
-            uri: `ui://catalog/${business_id}`,
+            uri: `ui://menu/${business_id}`,
             content: { type: "rawHtml", htmlString: html },
             encoding: "text",
         });
         const annotated = {
             ...(block as any),
             annotations: { audience: ["user"] },
+            _meta: {
+                server: SERVER_NAME,
+            },
         };
         return {
-            content: [
-                annotated,
-                {
-                    type: "text",
-                    text: '{"status":"ok","ui":"rendered","next":"wait_for_ui_message"}',
-                },
-            ],
+            content: [annotated],
         };
     }
 );
@@ -232,38 +273,73 @@ app.get("/dev", (_req, res) => {
         .send(`<!doctype html><html><body style=\"font-family:system-ui;padding:20px\"> 
     <h2>MCP UI Dev Links</h2>
     <ul>
-      <li><a href=\"/dev/restaurants\">Restaurants List (default)</a></li>
-      <li><a href=\"/dev/restaurants?query=bbq\">Restaurants List (query=bbq)</a></li>
-      <li><a href=\"/dev/menu/atx-franklin\">Menu: Franklin Barbecue</a></li>
-      <li><a href=\"/dev/catalog/atx-franklin\">Catalog: Franklin (mock)</a></li>
-      <li><a href=\"/dev/order/atx-franklin\">Order: Franklin (mock)</a></li>
+      <li><a href=\"/dev/restaurants\">Search Results (default)</a> — <code>src/ui/searchResultsHtml.ts</code></li>
+      <li><a href=\"/dev/restaurants?city=Austin&state=TX&query=bbq\">Search Results (Austin, TX; query=bbq)</a> — <code>src/ui/searchResultsHtml.ts</code></li>
+      <li><a href=\"/dev/restaurant/atx-franklin\">Restaurant Details: Franklin Barbecue</a> — <code>src/ui/restaurantDetailsHtml.ts</code></li>
+      <li><a href=\"/dev/menu/atx-franklin\">Menu: Franklin (mock)</a> — <code>src/ui/menuHtml.ts</code></li>
+      <li><a href=\"/dev/order/atx-franklin\">Order: Franklin (mock)</a> — <code>src/ui/orderHtml.ts</code></li>
     </ul>
-    <p>Query params supported on /dev/restaurants: latitude, longitude, query, limit</p>
+    <p>Query params supported on /dev/restaurants: city, state, query, limit</p>
     </body></html>`);
 });
 
 app.get("/dev/restaurants", async (req, res) => {
-    const latitude = Number(req.query.latitude ?? 30.2672); // Austin
-    const longitude = Number(req.query.longitude ?? -97.7431);
+    const city = typeof req.query.city === "string" ? req.query.city : "Austin";
+    const state =
+        typeof req.query.state === "string" ? req.query.state : undefined;
     const query =
         typeof req.query.query === "string" ? req.query.query : undefined;
     const limit = Number(req.query.limit ?? 10);
-    const results = await searchRestaurants(query, latitude, longitude, limit);
-    const html = restaurantsHtml(results.businesses || []);
+    try {
+        const results = await searchRestaurants({
+            term: query,
+            city,
+            state,
+            limit,
+        });
+        const businesses = results.businesses || [];
+        if (!businesses.length) {
+            const suggestions = Array.isArray(results?.suggestions)
+                ? `\nSuggestions: ${results.suggestions.join("; ")}`
+                : "";
+            res.type("text").send(
+                `No local results for ${[city, state]
+                    .filter(Boolean)
+                    .join(", ")}${
+                    query ? ` (query=\"${query}\")` : ""
+                }.${suggestions}`
+            );
+            return;
+        }
+        const html = searchResultsHtml(businesses);
+        res.type("html").send(html);
+    } catch (error: any) {
+        const code = (error && (error as any).code) || "UNKNOWN";
+        const human =
+            code === "GEOCODE_NOT_FOUND"
+                ? `Could not find a location for "${[city, state]
+                      .filter(Boolean)
+                      .join(
+                          ", "
+                      )}". Try a different city or include a state (e.g., "Austin, TX").`
+                : code === "LOCATION_REQUIRED"
+                ? "Location is required. Provide a city (and optional state)."
+                : "We hit a temporary issue fetching nearby places. Please try again shortly.";
+        res.status(400).type("text").send(`${human} (code=${code})`);
+    }
+});
+
+app.get("/dev/restaurant/:id", async (req, res) => {
+    const details = await getRestaurant(req.params.id);
+    const html = restaurantDetailsHtml(details);
     res.type("html").send(html);
 });
 
 app.get("/dev/menu/:id", async (req, res) => {
-    const details = await getRestaurant(req.params.id);
-    const html = menuHtml(details);
-    res.type("html").send(html);
-});
-
-app.get("/dev/catalog/:id", async (req, res) => {
     const id = req.params.id;
     const details = await getRestaurant(id);
     const items = await getCatalogForBusinessId(id);
-    const html = catalogHtml(id, (details as any)?.name ?? "Seller", items);
+    const html = menuHtml(id, (details as any)?.name ?? "Seller", items);
     res.type("html").send(html);
 });
 

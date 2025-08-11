@@ -1,4 +1,4 @@
-// Local JSON database only; no external API calls
+// Local JSON database; geocoding via OpenStreetMap Nominatim for city/state → lat/lon
 
 export type Restaurant = {
     id: string;
@@ -67,12 +67,79 @@ function haversineKm(
     return R * c;
 }
 
-export async function searchRestaurants(
-    term: string | undefined,
-    latitude: number,
-    longitude: number,
-    limit = 10
-) {
+type SearchParams = {
+    term?: string;
+    city?: string;
+    state?: string;
+    latitude?: number;
+    longitude?: number;
+    limit?: number;
+};
+
+async function geocodeCityState(
+    city?: string,
+    state?: string
+): Promise<{ lat: number; lon: number } | null> {
+    const input = [city?.trim(), state?.trim()].filter(Boolean).join(", ");
+    if (!input) return null;
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+        input
+    )}`;
+    try {
+        const resp = await fetch(url, {
+            headers: {
+                "User-Agent":
+                    process.env.MCP_GEOCODE_USERAGENT ||
+                    "mcp-agentic-commerce/1.0 (+https://squareup.com)",
+            },
+        } as any);
+        if (!resp.ok) return null;
+        const json = (await resp.json()) as Array<{
+            lat: string;
+            lon: string;
+        }>;
+        if (!json?.length) return null;
+        const first = json[0];
+        const lat = Number(first.lat);
+        const lon = Number(first.lon);
+        if (Number.isFinite(lat) && Number.isFinite(lon)) return { lat, lon };
+        return null;
+    } catch {
+        return null;
+    }
+}
+
+export async function searchRestaurants(params: SearchParams) {
+    const { term, city, state } = params || {};
+    let { latitude, longitude } = params || {};
+    const limit = typeof params?.limit === "number" ? params.limit : 10;
+    // Resolve coordinates if not provided
+    if (
+        (typeof latitude !== "number" || typeof longitude !== "number") &&
+        (city || state)
+    ) {
+        const geo = await geocodeCityState(city, state);
+        if (geo) {
+            latitude = geo.lat;
+            longitude = geo.lon;
+        } else {
+            const err: any = new Error(
+                `Unable to resolve location from city/state: ${
+                    [city, state].filter(Boolean).join(", ") || "<missing>"
+                }`
+            );
+            err.code = "GEOCODE_NOT_FOUND";
+            throw err;
+        }
+    }
+    // If still no coordinates (and no city/state provided), throw
+    if (typeof latitude !== "number" || typeof longitude !== "number") {
+        const err: any = new Error(
+            "Location is required (provide city/state or latitude/longitude)."
+        );
+        err.code = "LOCATION_REQUIRED";
+        throw err;
+    }
     const normalizedTerm = (term || "").trim();
     const needle = normalizedTerm.toLowerCase();
     const expandedTerms = expandTerms(needle);
@@ -103,7 +170,9 @@ export async function searchRestaurants(
         .filter((x) => x.d <= 30 || !isFinite(x.d))
         .sort((a, b) => a.d - b.d)
         .map((x) => x.r);
-    const pool = nearby.length ? nearby : DB_RESTAURANTS;
+    // Only use nearby results; if none found, return an empty set so the UI
+    // can communicate no local results instead of showing another city.
+    const pool = nearby;
 
     const filtered = pool.filter((b) => (needle ? byText(b) : true));
     const deduped = new Map<string, Restaurant>();
