@@ -25,9 +25,9 @@ export function searchResultsHtml(list: any[], title: string) {
     <button class="btn btn-secondary" onclick="callTool('view_restaurant',{ business_id: '${
         b.id
     }' })">Details</button>
-    <button class="btn btn-primary" onclick="callTool('order_takeout',{ business_id: '${
+    <button class="btn btn-primary" onclick="callTool('view_menu',{ business_id: '${
         b.id
-    }', items: [] })">Order Now</button>
+    }' })">Order Now</button>
   </div>
 </div>`;
         })

@@ -8,6 +8,7 @@
         "dev:ui": "tsx src/ui-server.ts",
         "build": "tsc",
         "generate:data": "tsx src/scripts/generateMockRestaurants.ts",
+        "generate:menus": "tsx src/scripts/generateMockMenus.ts",
         "start:mcp": "node dist/server.js",
         "start:ui": "node dist/ui-server.js",
         "dev:inspector": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server default-server"

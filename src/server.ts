@@ -14,6 +14,7 @@ import {
     detectSquareForBusinessId,
     getCatalogForBusinessId,
     getCatalogByMerchantToken,
+    getGenericMenuByCategory,
 } from "./lib/square.js";
 
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
@@ -226,21 +227,29 @@ server.tool(
             business_id,
             (details as any)?.website
         );
-        if (!square.usesSquare) {
+        // Prefer Square catalogs when available
+        let items = square.usesSquare
+            ? square.merchantToken
+                ? await getCatalogByMerchantToken(square.merchantToken)
+                : await getCatalogForBusinessId(business_id)
+            : [];
+        // If none, fallback to our local generic menu using the business's primary category
+        if (!items.length) {
+            const details = await getRestaurant(business_id);
+            const primary = (details as any)?.categories?.[0]?.alias;
+            if (primary) items = getGenericMenuByCategory(primary);
+        }
+        if (!items.length) {
             return {
                 content: [
                     {
                         type: "text",
-                        text: "This seller does not appear to use Square. Catalog not available.",
+                        text: "No menu available for this seller.",
                         annotations: { audience: ["user"] },
                     },
                 ],
             } as any;
         }
-        // Prefer merchant token lookup when available to model 0c
-        const items = square.merchantToken
-            ? await getCatalogByMerchantToken(square.merchantToken)
-            : await getCatalogForBusinessId(business_id);
         const html = menuHtml(
             business_id,
             (details as any)?.name ?? "Seller",

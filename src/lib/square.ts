@@ -273,3 +273,11 @@ export async function getCatalogByMerchantToken(
     if (!businessId) return [];
     return MOCK_CATALOGS[businessId] ?? [];
 }
+
+// Fallback: local generic menus by primary category
+import menus from "../data/menus.json" assert { type: "json" };
+export function getGenericMenuByCategory(categoryAlias: string): CatalogItem[] {
+    const key = (categoryAlias || "").toLowerCase();
+    const items = (menus as any)[key] || [];
+    return items as CatalogItem[];
+}

@@ -1,0 +1,723 @@
+{
+  "coffee": [
+    {
+      "id": "coffee-espresso",
+      "name": "Espresso",
+      "description": "Double shot",
+      "price": 3
+    },
+    {
+      "id": "coffee-latte",
+      "name": "Latte",
+      "description": "Espresso + steamed milk",
+      "price": 4.25
+    },
+    {
+      "id": "coffee-capp",
+      "name": "Cappuccino",
+      "description": "Foamy classic",
+      "price": 4
+    },
+    {
+      "id": "coffee-coldbrew",
+      "name": "Cold Brew",
+      "description": "Slow steeped",
+      "price": 4.5
+    },
+    {
+      "id": "coffee-muffin",
+      "name": "Blueberry Muffin",
+      "description": "Baked daily",
+      "price": 3.25
+    },
+    {
+      "id": "coffee-extra-drip-coffee-01",
+      "name": "Drip Coffee",
+      "price": 3.62
+    },
+    {
+      "id": "coffee-extra-chai-latte-02",
+      "name": "Chai Latte",
+      "price": 5.69
+    },
+    {
+      "id": "coffee-extra-americano-03",
+      "name": "Americano",
+      "price": 3.89
+    },
+    {
+      "id": "coffee-extra-almond-croissant-04",
+      "name": "Almond Croissant",
+      "price": 5.05
+    },
+    {
+      "id": "coffee-extra-chai-latte-05",
+      "name": "Chai Latte",
+      "price": 4.39
+    },
+    {
+      "id": "coffee-extra-cortado-06",
+      "name": "Cortado",
+      "price": 3.08
+    },
+    {
+      "id": "coffee-extra-bagel-07",
+      "name": "Bagel",
+      "price": 5.16
+    }
+  ],
+  "bbq": [
+    {
+      "id": "bbq-brisket",
+      "name": "Brisket Plate",
+      "description": "Smoked 12 hours",
+      "price": 19.5
+    },
+    {
+      "id": "bbq-pork",
+      "name": "Pulled Pork Sandwich",
+      "description": "House sauce, toasted bun",
+      "price": 12
+    },
+    {
+      "id": "bbq-ribs",
+      "name": "St. Louis Ribs (1/2 rack)",
+      "description": "Dry rub, applewood",
+      "price": 18
+    },
+    {
+      "id": "bbq-mac",
+      "name": "Mac & Cheese",
+      "description": "Three-cheese bake",
+      "price": 5
+    },
+    {
+      "id": "bbq-extra-pork-ribs-01",
+      "name": "Pork Ribs",
+      "price": 16.24
+    },
+    {
+      "id": "bbq-extra-coleslaw-02",
+      "name": "Coleslaw",
+      "price": 13.73
+    },
+    {
+      "id": "bbq-extra-pork-ribs-03",
+      "name": "Pork Ribs",
+      "price": 20.17
+    },
+    {
+      "id": "bbq-extra-sausage-link-04",
+      "name": "Sausage Link",
+      "price": 14.98
+    },
+    {
+      "id": "bbq-extra-jalape-o-cornbread-05",
+      "name": "Jalapeño Cornbread",
+      "price": 12.2
+    },
+    {
+      "id": "bbq-extra-sausage-link-06",
+      "name": "Sausage Link",
+      "price": 18.21
+    },
+    {
+      "id": "bbq-extra-coleslaw-07",
+      "name": "Coleslaw",
+      "price": 17.95
+    },
+    {
+      "id": "bbq-extra-burnt-ends-08",
+      "name": "Burnt Ends",
+      "price": 20.29
+    }
+  ],
+  "sushi": [
+    {
+      "id": "sushi-nigiri",
+      "name": "Chef's Nigiri (6 pc)",
+      "description": "Daily selection",
+      "price": 18
+    },
+    {
+      "id": "sushi-roll",
+      "name": "Spicy Tuna Roll",
+      "description": "Ahi, chili mayo",
+      "price": 9.5
+    },
+    {
+      "id": "sushi-salmon",
+      "name": "Salmon Sashimi (6 pc)",
+      "description": "Fresh cut",
+      "price": 16
+    },
+    {
+      "id": "sushi-miso",
+      "name": "Miso Soup",
+      "description": "Tofu, scallion",
+      "price": 3
+    },
+    {
+      "id": "sushi-extra-california-roll-01",
+      "name": "California Roll",
+      "price": 10.36
+    },
+    {
+      "id": "sushi-extra-dragon-roll-02",
+      "name": "Dragon Roll",
+      "price": 16.39
+    },
+    {
+      "id": "sushi-extra-gyoza-03",
+      "name": "Gyoza",
+      "price": 10.88
+    },
+    {
+      "id": "sushi-extra-dragon-roll-04",
+      "name": "Dragon Roll",
+      "price": 16.04
+    },
+    {
+      "id": "sushi-extra-seaweed-salad-05",
+      "name": "Seaweed Salad",
+      "price": 13.76
+    },
+    {
+      "id": "sushi-extra-dragon-roll-06",
+      "name": "Dragon Roll",
+      "price": 9.14
+    },
+    {
+      "id": "sushi-extra-edamame-07",
+      "name": "Edamame",
+      "price": 12.14
+    },
+    {
+      "id": "sushi-extra-california-roll-08",
+      "name": "California Roll",
+      "price": 13.21
+    }
+  ],
+  "pizza": [
+    {
+      "id": "pizza-margherita",
+      "name": "Margherita",
+      "description": "San Marzano, basil, mozz",
+      "price": 14
+    },
+    {
+      "id": "pizza-pepperoni",
+      "name": "Pepperoni",
+      "description": "Cup & char",
+      "price": 15.5
+    },
+    {
+      "id": "pizza-veg",
+      "name": "Garden Veg",
+      "description": "Seasonal veg, pesto",
+      "price": 15
+    },
+    {
+      "id": "pizza-garlic",
+      "name": "Garlic Knots",
+      "description": "Parmesan + herbs",
+      "price": 6
+    },
+    {
+      "id": "pizza-extra-caesar-salad-01",
+      "name": "Caesar Salad",
+      "price": 12.44
+    },
+    {
+      "id": "pizza-extra-prosciutto-arugula-02",
+      "name": "Prosciutto Arugula",
+      "price": 15.4
+    },
+    {
+      "id": "pizza-extra-meat-lovers-03",
+      "name": "Meat Lovers",
+      "price": 17.56
+    },
+    {
+      "id": "pizza-extra-garlic-bread-04",
+      "name": "Garlic Bread",
+      "price": 17.63
+    },
+    {
+      "id": "pizza-extra-meat-lovers-05",
+      "name": "Meat Lovers",
+      "price": 14.47
+    },
+    {
+      "id": "pizza-extra-meat-lovers-06",
+      "name": "Meat Lovers",
+      "price": 9.36
+    },
+    {
+      "id": "pizza-extra-white-pie-07",
+      "name": "White Pie",
+      "price": 10.53
+    },
+    {
+      "id": "pizza-extra-four-cheese-08",
+      "name": "Four Cheese",
+      "price": 17.24
+    }
+  ],
+  "mexican": [
+    {
+      "id": "mex-taco-carnitas",
+      "name": "Carnitas Tacos (2)",
+      "description": "Cilantro, onion, salsa verde",
+      "price": 8.5
+    },
+    {
+      "id": "mex-burrito",
+      "name": "Mission Burrito",
+      "description": "Rice, beans, pico, choice of protein",
+      "price": 10.5
+    },
+    {
+      "id": "mex-queso",
+      "name": "Queso & Chips",
+      "description": "Warm, creamy",
+      "price": 6
+    },
+    {
+      "id": "mexican-extra-churros-01",
+      "name": "Churros",
+      "price": 17.93
+    },
+    {
+      "id": "mexican-extra-churros-02",
+      "name": "Churros",
+      "price": 17.47
+    },
+    {
+      "id": "mexican-extra-horchata-03",
+      "name": "Horchata",
+      "price": 14.11
+    },
+    {
+      "id": "mexican-extra-barbacoa-tacos-2--04",
+      "name": "Barbacoa Tacos (2)",
+      "price": 14.54
+    },
+    {
+      "id": "mexican-extra-guacamole-chips-05",
+      "name": "Guacamole & Chips",
+      "price": 14.69
+    },
+    {
+      "id": "mexican-extra-pollo-asado-tacos-2--06",
+      "name": "Pollo Asado Tacos (2)",
+      "price": 12.86
+    },
+    {
+      "id": "mexican-extra-barbacoa-tacos-2--07",
+      "name": "Barbacoa Tacos (2)",
+      "price": 12.09
+    },
+    {
+      "id": "mexican-extra-horchata-08",
+      "name": "Horchata",
+      "price": 15.54
+    },
+    {
+      "id": "mexican-extra-chicken-quesadilla-09",
+      "name": "Chicken Quesadilla",
+      "price": 10.78
+    }
+  ],
+  "italian": [
+    {
+      "id": "it-spaghetti",
+      "name": "Spaghetti Pomodoro",
+      "description": "Tomato, basil",
+      "price": 13
+    },
+    {
+      "id": "it-lasagna",
+      "name": "Beef Lasagna",
+      "description": "Baked, ricotta, mozz",
+      "price": 16
+    },
+    {
+      "id": "it-salad",
+      "name": "Caesar Salad",
+      "description": "Romaine, croutons",
+      "price": 9
+    },
+    {
+      "id": "italian-extra-chicken-parmesan-01",
+      "name": "Chicken Parmesan",
+      "price": 13.08
+    },
+    {
+      "id": "italian-extra-meatballs-02",
+      "name": "Meatballs",
+      "price": 15.03
+    },
+    {
+      "id": "italian-extra-tiramisu-03",
+      "name": "Tiramisu",
+      "price": 18.15
+    },
+    {
+      "id": "italian-extra-tiramisu-04",
+      "name": "Tiramisu",
+      "price": 10.19
+    },
+    {
+      "id": "italian-extra-tiramisu-05",
+      "name": "Tiramisu",
+      "price": 14.22
+    },
+    {
+      "id": "italian-extra-bruschetta-06",
+      "name": "Bruschetta",
+      "price": 12.39
+    },
+    {
+      "id": "italian-extra-fettuccine-alfredo-07",
+      "name": "Fettuccine Alfredo",
+      "price": 15.91
+    },
+    {
+      "id": "italian-extra-bruschetta-08",
+      "name": "Bruschetta",
+      "price": 16.94
+    },
+    {
+      "id": "italian-extra-chicken-parmesan-09",
+      "name": "Chicken Parmesan",
+      "price": 16.53
+    }
+  ],
+  "seafood": [
+    {
+      "id": "sf-fish",
+      "name": "Grilled Salmon",
+      "description": "Lemon, herbs",
+      "price": 19
+    },
+    {
+      "id": "sf-oyster",
+      "name": "Oysters (6)",
+      "description": "On the half shell",
+      "price": 17
+    },
+    {
+      "id": "sf-chowder",
+      "name": "Clam Chowder",
+      "description": "New England style",
+      "price": 7.5
+    },
+    {
+      "id": "seafood-extra-fish-chips-01",
+      "name": "Fish & Chips",
+      "price": 17.61
+    },
+    {
+      "id": "seafood-extra-shrimp-cocktail-02",
+      "name": "Shrimp Cocktail",
+      "price": 12.67
+    },
+    {
+      "id": "seafood-extra-calamari-03",
+      "name": "Calamari",
+      "price": 20.09
+    },
+    {
+      "id": "seafood-extra-calamari-04",
+      "name": "Calamari",
+      "price": 9.53
+    },
+    {
+      "id": "seafood-extra-calamari-05",
+      "name": "Calamari",
+      "price": 12.87
+    },
+    {
+      "id": "seafood-extra-calamari-06",
+      "name": "Calamari",
+      "price": 20.62
+    },
+    {
+      "id": "seafood-extra-coleslaw-07",
+      "name": "Coleslaw",
+      "price": 18.69
+    },
+    {
+      "id": "seafood-extra-coleslaw-08",
+      "name": "Coleslaw",
+      "price": 13.49
+    },
+    {
+      "id": "seafood-extra-lobster-roll-09",
+      "name": "Lobster Roll",
+      "price": 10.81
+    }
+  ],
+  "burgers": [
+    {
+      "id": "bg-classic",
+      "name": "Classic Burger",
+      "description": "American, lettuce, tomato",
+      "price": 11
+    },
+    {
+      "id": "bg-cheese",
+      "name": "Double Cheeseburger",
+      "description": "Two patties, cheddar",
+      "price": 13.5
+    },
+    {
+      "id": "bg-fries",
+      "name": "Shoestring Fries",
+      "description": "Crispy",
+      "price": 4
+    },
+    {
+      "id": "bg-shake",
+      "name": "Vanilla Shake",
+      "description": "Thick, creamy",
+      "price": 5
+    },
+    {
+      "id": "burgers-extra-chocolate-shake-01",
+      "name": "Chocolate Shake",
+      "price": 11.23
+    },
+    {
+      "id": "burgers-extra-crispy-chicken-sandwich-02",
+      "name": "Crispy Chicken Sandwich",
+      "price": 14.35
+    },
+    {
+      "id": "burgers-extra-crispy-chicken-sandwich-03",
+      "name": "Crispy Chicken Sandwich",
+      "price": 10.05
+    },
+    {
+      "id": "burgers-extra-bacon-burger-04",
+      "name": "Bacon Burger",
+      "price": 13.22
+    },
+    {
+      "id": "burgers-extra-chocolate-shake-05",
+      "name": "Chocolate Shake",
+      "price": 10.59
+    },
+    {
+      "id": "burgers-extra-crispy-chicken-sandwich-06",
+      "name": "Crispy Chicken Sandwich",
+      "price": 20.74
+    },
+    {
+      "id": "burgers-extra-sweet-potato-fries-07",
+      "name": "Sweet Potato Fries",
+      "price": 11.41
+    },
+    {
+      "id": "burgers-extra-crispy-chicken-sandwich-08",
+      "name": "Crispy Chicken Sandwich",
+      "price": 17.65
+    }
+  ],
+  "tacos": [
+    {
+      "id": "tc-alpastor",
+      "name": "Al Pastor (2)",
+      "description": "Pineapple, onion, cilantro",
+      "price": 8
+    },
+    {
+      "id": "tc-baja",
+      "name": "Baja Fish (2)",
+      "description": "Cabbage slaw, crema",
+      "price": 8.5
+    },
+    {
+      "id": "tc-elote",
+      "name": "Street Corn",
+      "description": "Cotija, chili, lime",
+      "price": 5
+    },
+    {
+      "id": "tacos-extra-quesadilla-01",
+      "name": "Quesadilla",
+      "price": 14.61
+    },
+    {
+      "id": "tacos-extra-agua-fresca-02",
+      "name": "Agua Fresca",
+      "price": 15.78
+    },
+    {
+      "id": "tacos-extra-chicken-tinga-2--03",
+      "name": "Chicken Tinga (2)",
+      "price": 19.04
+    },
+    {
+      "id": "tacos-extra-agua-fresca-04",
+      "name": "Agua Fresca",
+      "price": 19.6
+    },
+    {
+      "id": "tacos-extra-carne-asada-2--05",
+      "name": "Carne Asada (2)",
+      "price": 9.19
+    },
+    {
+      "id": "tacos-extra-chicken-tinga-2--06",
+      "name": "Chicken Tinga (2)",
+      "price": 14.05
+    },
+    {
+      "id": "tacos-extra-chips-salsa-07",
+      "name": "Chips & Salsa",
+      "price": 18.93
+    },
+    {
+      "id": "tacos-extra-quesadilla-08",
+      "name": "Quesadilla",
+      "price": 17.01
+    },
+    {
+      "id": "tacos-extra-agua-fresca-09",
+      "name": "Agua Fresca",
+      "price": 17.03
+    }
+  ],
+  "breakfast": [
+    {
+      "id": "bf-pancakes",
+      "name": "Buttermilk Pancakes",
+      "description": "Maple syrup, butter",
+      "price": 9
+    },
+    {
+      "id": "bf-avotoast",
+      "name": "Avocado Toast",
+      "description": "Sourdough, chili flakes",
+      "price": 8.5
+    },
+    {
+      "id": "bf-benedict",
+      "name": "Eggs Benedict",
+      "description": "Hollandaise",
+      "price": 12
+    },
+    {
+      "id": "breakfast-extra-house-coffee-01",
+      "name": "House Coffee",
+      "price": 10.75
+    },
+    {
+      "id": "breakfast-extra-breakfast-burrito-02",
+      "name": "Breakfast Burrito",
+      "price": 11.99
+    },
+    {
+      "id": "breakfast-extra-breakfast-burrito-03",
+      "name": "Breakfast Burrito",
+      "price": 9.29
+    },
+    {
+      "id": "breakfast-extra-hash-browns-04",
+      "name": "Hash Browns",
+      "price": 13.04
+    },
+    {
+      "id": "breakfast-extra-fruit-cup-05",
+      "name": "Fruit Cup",
+      "price": 9.42
+    },
+    {
+      "id": "breakfast-extra-breakfast-burrito-06",
+      "name": "Breakfast Burrito",
+      "price": 12.7
+    },
+    {
+      "id": "breakfast-extra-three-egg-omelette-07",
+      "name": "Three-Egg Omelette",
+      "price": 12.66
+    },
+    {
+      "id": "breakfast-extra-fruit-cup-08",
+      "name": "Fruit Cup",
+      "price": 7.52
+    },
+    {
+      "id": "breakfast-extra-house-coffee-09",
+      "name": "House Coffee",
+      "price": 12.2
+    }
+  ],
+  "bakery": [
+    {
+      "id": "bk-croissant",
+      "name": "Butter Croissant",
+      "description": "Flaky layers",
+      "price": 3.75
+    },
+    {
+      "id": "bk-sourdough",
+      "name": "Sourdough Loaf",
+      "description": "Crusty, tangy",
+      "price": 6
+    },
+    {
+      "id": "bk-cookie",
+      "name": "Chocolate Chip Cookie",
+      "description": "Sea salt",
+      "price": 2.5
+    },
+    {
+      "id": "bakery-extra-baguette-01",
+      "name": "Baguette",
+      "price": 4.82
+    },
+    {
+      "id": "bakery-extra-cinnamon-roll-02",
+      "name": "Cinnamon Roll",
+      "price": 2.75
+    },
+    {
+      "id": "bakery-extra-cinnamon-roll-03",
+      "name": "Cinnamon Roll",
+      "price": 2.68
+    },
+    {
+      "id": "bakery-extra-scone-04",
+      "name": "Scone",
+      "price": 3.34
+    },
+    {
+      "id": "bakery-extra-cinnamon-roll-05",
+      "name": "Cinnamon Roll",
+      "price": 5.68
+    },
+    {
+      "id": "bakery-extra-cinnamon-roll-06",
+      "name": "Cinnamon Roll",
+      "price": 3.4
+    },
+    {
+      "id": "bakery-extra-baguette-07",
+      "name": "Baguette",
+      "price": 6.01
+    },
+    {
+      "id": "bakery-extra-lemon-tart-08",
+      "name": "Lemon Tart",
+      "price": 6.25
+    },
+    {
+      "id": "bakery-extra-brownie-09",
+      "name": "Brownie",
+      "price": 3.74
+    }
+  ]
+}
