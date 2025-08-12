@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
-import { setupMCPServer } from "./mcp-server-setup.js";
+import { setupMCPServer } from "../../src/mcp-server-setup.js";
 import express from "express";
 import cors from "cors";
 import {
@@ -10,7 +10,7 @@ import {
     handleDevMenu,
     handleDevOrder,
     handleDevReceipt
-} from "./dev-routes.js";
+} from "../../src/dev-routes.js";
 
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
 const MCP_PORT = Number(process.env.MCP_PORT || 8000);
@@ -84,4 +84,5 @@ app.delete("/mcp", (_req, res) => {
 
 app.listen(MCP_PORT, MCP_HOST, () => {
     console.log(`MCP (Streamable HTTP) on http://${MCP_HOST}:${MCP_PORT}/mcp`);
+    console.log(`Dev preview available at http://${MCP_HOST}:${MCP_PORT}/dev`);
 });
