@@ -17,17 +17,17 @@ status = 200
 # Dev routes redirect
 [[redirects]]
 from = "/"
-to = "/.netlify/functions/dev-server"
+to = "/.netlify/functions/mcp-server"
 status = 200
 
 [[redirects]]
 from = "/dev"
-to = "/.netlify/functions/dev-server"
+to = "/.netlify/functions/mcp-server"
 status = 200
 
 [[redirects]]
 from = "/dev/*"
-to = "/.netlify/functions/dev-server"
+to = "/.netlify/functions/mcp-server"
 status = 200
 
 [[redirects]]

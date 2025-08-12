@@ -96,6 +96,11 @@ app.delete("/mcp", (_req: Request, res: Response) => {
 });
 
 // Dev routes
+app.get("/", async (_req: Request, res: Response) => {
+    const { getDevIndex } = await import("../../src/dev-routes.js");
+    res.type("html").send(getDevIndex());
+});
+
 app.get("/dev", async (_req: Request, res: Response) => {
     const { getDevIndex } = await import("../../src/dev-routes.js");
     res.type("html").send(getDevIndex());

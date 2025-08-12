@@ -6,13 +6,13 @@
     "license": "MIT",
     "author": "Andrew Harvard <andrew.t.harvard@gmail.com>",
     "scripts": {
-        "dev": "tsx watch netlify/functions/dev-server.ts",
-        "dev:mcp": "tsx watch netlify/functions/dev-server.ts",
+        "dev": "tsx watch src/dev-server.ts",
+        "dev:mcp": "tsx watch src/dev-server.ts",
         "build": "tsc",
         "generate:data": "tsx src/scripts/generateMockRestaurants.ts",
         "generate:menus": "tsx src/scripts/generateMockMenus.ts",
-        "start": "node dist/netlify/functions/dev-server.js",
-        "start:mcp": "node dist/netlify/functions/dev-server.js",
+        "start": "node dist/src/dev-server.js",
+        "start:mcp": "node dist/src/dev-server.js",
         "dev:inspector": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server default-server"
     },
     "dependencies": {

@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
-import { setupMCPServer } from "../../src/mcp-server-setup.js";
+import { setupMCPServer } from "./mcp-server-setup.js";
 import express from "express";
 import cors from "cors";
 import {
@@ -10,7 +10,7 @@ import {
     handleDevMenu,
     handleDevOrder,
     handleDevReceipt,
-} from "../../src/dev-routes.js";
+} from "./dev-routes.js";
 
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
 const MCP_PORT = Number(process.env.MCP_PORT || 8000);
@@ -50,6 +50,30 @@ app.get("/dev/receipt/:id", async (req, res) => {
     await handleDevReceipt(req, res);
 });
 
+// Fake OAuth authorize endpoint for dev
+app.get("/authorize", async (req, res) => {
+    try {
+        const redirectUriRaw = (req.query?.redirect_uri ?? "") as string;
+        const state = (req.query?.state ?? "") as string;
+        if (!redirectUriRaw) {
+            res.status(400).send("Missing redirect_uri");
+            return;
+        }
+        const mockCode = `mock_${Math.random().toString(36).slice(2, 10)}`;
+        const url = new URL(redirectUriRaw);
+        url.searchParams.set("code", mockCode);
+        if (state) url.searchParams.set("state", state);
+        res.redirect(302, url.toString());
+    } catch (err) {
+        console.error("/authorize error:", err);
+        res.status(500)
+            .type("html")
+            .send(
+                "<html><body><h1>Authorization Error</h1><p>There was a problem handling the request. You can close this window.</p></body></html>"
+            );
+    }
+});
+
 const transport = new StreamableHTTPServerTransport({
     sessionIdGenerator: undefined,
 });
@@ -83,30 +107,6 @@ app.get("/mcp", (_req, res) => {
         error: { code: -32000, message: "Method not allowed." },
         id: null,
     });
-});
-
-// Fake OAuth authorize endpoint for dev
-app.get("/authorize", async (req, res) => {
-    try {
-        const redirectUriRaw = (req.query?.redirect_uri ?? "") as string;
-        const state = (req.query?.state ?? "") as string;
-        if (!redirectUriRaw) {
-            res.status(400).send("Missing redirect_uri");
-            return;
-        }
-        const mockCode = `mock_${Math.random().toString(36).slice(2, 10)}`;
-        const url = new URL(redirectUriRaw);
-        url.searchParams.set("code", mockCode);
-        if (state) url.searchParams.set("state", state);
-        res.redirect(302, url.toString());
-    } catch (err) {
-        console.error("/authorize error:", err);
-        res.status(500)
-            .type("html")
-            .send(
-                "<html><body><h1>Authorization Error</h1><p>There was a problem handling the request. You can close this window.</p></body></html>"
-            );
-    }
 });
 
 app.delete("/mcp", (_req, res) => {
