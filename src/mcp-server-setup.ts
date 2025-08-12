@@ -24,7 +24,7 @@ export const setupMCPServer = (): McpServer => {
         { name: SERVER_NAME, version: "1.0.0" },
         {
             instructions:
-                "Return MCP UI as the primary output. Do not summarize UI, do not propose filters or next steps, and do not restate what is visible. After returning UI, WAIT for UI-dispatched tool messages (type=tool) and respond with updated UI only. Emit plain text ONLY for errors or when no UI can be rendered.",
+                "Return MCP UI as the primary output. Do not summarize UI, do not propose filters or next steps, and do not restate what is visible. After returning UI, WAIT for UI-dispatched tool messages (type=tool) and respond with updated UI only. Emit plain text ONLY for errors or when no UI can be rendered. After you return results for a tool, wait fo the user to reply bu clicking on UI or sending a message. Do not ask the user to click on UI or send a message.",
         }
     );
 
@@ -88,7 +88,11 @@ export const setupMCPServer = (): McpServer => {
                     .map((b: any) => b.name)
                     .filter(Boolean)
                     .join(", ");
-                const summaryText = `Found ${businesses.length} result${businesses.length === 1 ? '' : 's'}${query ? ` for "${query}"` : ''}${locationStr ? ` near ${locationStr}` : ''}.${topNames ? ` Top: ${topNames}.` : ''}`;
+                const summaryText = `Found ${businesses.length} result${
+                    businesses.length === 1 ? "" : "s"
+                }${query ? ` for "${query}"` : ""}${
+                    locationStr ? ` near ${locationStr}` : ""
+                }.${topNames ? ` Top: ${topNames}.` : ""}`;
                 const llmSummary = {
                     type: "text",
                     text: summaryText,
