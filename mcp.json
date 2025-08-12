@@ -1,6 +1,10 @@
 {
     "mcpServers": {
-        "default-server": {
+        "agentic-commerce": {
+            "type": "streamable-http",
+            "url": "https://mcp-agentic-commerce.netlify.app/mcp"
+        },
+        "agentic-commerce-dev": {
             "type": "streamable-http",
             "url": "http://127.0.0.1:8000/mcp"
         }

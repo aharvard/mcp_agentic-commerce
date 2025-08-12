@@ -5,7 +5,13 @@ import serverless from "serverless-http";
 
 // Create Express app
 const app = express();
-app.use(express.json());
+// Ensure body is parsed so we can pass it to the MCP transport under serverless-http
+app.use(
+    express.json({
+        type: ["application/json", "application/*+json"],
+        limit: "2mb",
+    })
+);
 
 // MCP endpoint
 app.post("/mcp", async (req: Request, res: Response) => {
@@ -13,7 +19,7 @@ app.post("/mcp", async (req: Request, res: Response) => {
     // to ensure complete isolation. A single instance would cause request ID collisions
     // when multiple clients connect concurrently.
 
-    console.log("Received POST MCP request", { body: req.body });
+    console.log("Received POST MCP request");
 
     try {
         const server = setupMCPServer();
@@ -22,7 +28,7 @@ app.post("/mcp", async (req: Request, res: Response) => {
                 sessionIdGenerator: undefined,
             });
         await server.connect(transport);
-        await transport.handleRequest(req, res);
+        await transport.handleRequest(req as any, res as any, req.body);
         res.on("close", () => {
             console.log("Request closed");
             transport.close();

@@ -13,7 +13,9 @@
         "generate:menus": "tsx src/scripts/generateMockMenus.ts",
         "start": "node dist/src/dev-server.js",
         "start:mcp": "node dist/src/dev-server.js",
-        "dev:inspector": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server default-server"
+        "dev:inspector": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server agentic-commerce-dev",
+        "inspect:dev": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server agentic-commerce-dev",
+        "inspect:prod": "CLIENT_PORT=6274 SERVER_PORT=6277 npx @modelcontextprotocol/inspector --config mcp.json --server agentic-commerce"
     },
     "dependencies": {
         "@mcp-ui/server": "^5.2.0",
