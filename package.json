@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "type": "module",
     "private": true,
+    "license": "MIT",
+    "author": "Andrew Harvard <andrew.t.harvard@gmail.com>",
     "scripts": {
         "dev:mcp": "tsx watch src/server.ts",
         "dev:ui": "tsx src/ui-server.ts",
