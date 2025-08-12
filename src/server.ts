@@ -21,7 +21,7 @@ import {
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
 const MCP_PORT = Number(process.env.MCP_PORT || 8000);
 
-export const SERVER_NAME = "commerce_localhost";
+export const SERVER_NAME = "agentic_commerce";
 
 const server = new McpServer(
     { name: SERVER_NAME, version: "1.0.0" },
@@ -91,11 +91,7 @@ server.tool(
                 .map((b: any) => b.name)
                 .filter(Boolean)
                 .join(", ");
-            const summaryText = `Found ${businesses.length} result$${"{"}
-                businesses.length === 1 ? '' : 's'
-            ${"}"}${query ? ` for "${query}"` : ""}${
-                locationStr ? ` near ${locationStr}` : ""
-            }.${topNames ? ` Top: ${topNames}.` : ""}`;
+            const summaryText = `Found ${businesses.length} result${businesses.length === 1 ? '' : 's'}${query ? ` for "${query}"` : ''}${locationStr ? ` near ${locationStr}` : ''}.${topNames ? ` Top: ${topNames}.` : ''}`;
             const llmSummary = {
                 type: "text",
                 text: summaryText,
