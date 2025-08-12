@@ -22,6 +22,10 @@ app.use(express.json());
 app.use(cors({ origin: "*", exposedHeaders: ["Mcp-Session-Id"] }));
 
 // Dev-only HTML previews (standalone in a browser)
+app.get("/", (_req, res) => {
+    res.type("html").send(getDevIndex());
+});
+
 app.get("/dev", (_req, res) => {
     res.type("html").send(getDevIndex());
 });
@@ -79,6 +83,30 @@ app.get("/mcp", (_req, res) => {
         error: { code: -32000, message: "Method not allowed." },
         id: null,
     });
+});
+
+// Fake OAuth authorize endpoint for dev
+app.get("/authorize", async (req, res) => {
+    try {
+        const redirectUriRaw = (req.query?.redirect_uri ?? "") as string;
+        const state = (req.query?.state ?? "") as string;
+        if (!redirectUriRaw) {
+            res.status(400).send("Missing redirect_uri");
+            return;
+        }
+        const mockCode = `mock_${Math.random().toString(36).slice(2, 10)}`;
+        const url = new URL(redirectUriRaw);
+        url.searchParams.set("code", mockCode);
+        if (state) url.searchParams.set("state", state);
+        res.redirect(302, url.toString());
+    } catch (err) {
+        console.error("/authorize error:", err);
+        res.status(500)
+            .type("html")
+            .send(
+                "<html><body><h1>Authorization Error</h1><p>There was a problem handling the request. You can close this window.</p></body></html>"
+            );
+    }
 });
 
 app.delete("/mcp", (_req, res) => {
