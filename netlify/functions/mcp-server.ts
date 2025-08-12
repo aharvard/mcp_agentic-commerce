@@ -1,5 +1,5 @@
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
-import { setupMCPServer } from "../../src/mcp-server-setup.js";
+import { setupMCPServer } from "../../src/mcp-server-setup";
 import express, { Request, Response } from "express";
 import serverless from "serverless-http";
 

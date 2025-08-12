@@ -13,6 +13,7 @@ force = true
 from = "/mcp/*"
 to = "/.netlify/functions/mcp-server"
 status = 200
+force = true
 
 # Dev routes redirect
 [[redirects]]
