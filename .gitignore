@@ -21,3 +21,6 @@ temp/
 *.swp
 *.swo
 Thumbs.db
+
+# Generated files
+src/ui/embeddedStyles.ts

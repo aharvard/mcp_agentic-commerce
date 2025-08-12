@@ -1,24 +1,9 @@
 import fs from "fs";
 import path from "path";
-
-function loadCss(): string {
-    try {
-        const cssPath = path.resolve(
-            path.dirname(new URL(import.meta.url).pathname),
-            "./style.css"
-        );
-        return fs.readFileSync(cssPath, "utf-8");
-    } catch (err) {
-        console.warn(
-            "[ui] Failed to load style.css, falling back to empty styles:",
-            err
-        );
-        return "";
-    }
-}
+import { EMBEDDED_STYLES } from "./embeddedStyles.js";
 
 export function htmlShell(title: string, bodyHtml: string, extraScript = "") {
-    const styles = loadCss();
+    const styles = EMBEDDED_STYLES;
     return `<!doctype html>
 <html>
 <head>
