@@ -18,9 +18,11 @@
     "dependencies": {
         "@mcp-ui/server": "^5.2.0",
         "@modelcontextprotocol/sdk": "^1.17.2",
+        "@netlify/functions": "^2.5.1",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
         "express": "^4.19.2",
+        "serverless-http": "^3.2.0",
         "zod": "^3.23.8"
     },
     "devDependencies": {

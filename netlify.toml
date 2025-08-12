@@ -1,0 +1,26 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+# MCP function redirect
+[[redirects]]
+from = "/mcp"
+to = "/.netlify/functions/mcp-server"
+status = 200
+force = true
+
+[[redirects]]
+from = "/mcp/*"
+to = "/.netlify/functions/mcp-server"
+status = 200
+
+# Dev routes redirect
+[[redirects]]
+from = "/dev"
+to = "/.netlify/functions/mcp-server"
+status = 200
+
+[[redirects]]
+from = "/dev/*"
+to = "/.netlify/functions/mcp-server"
+status = 200
