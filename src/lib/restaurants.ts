@@ -16,7 +16,7 @@ export type Restaurant = {
     brandColor?: string;
 };
 
-import db from "../data/restaurants.json" assert { type: "json" };
+import db from "../data/restaurants.json" with { type: "json" };
 const DB_RESTAURANTS: Restaurant[] = db as any as Restaurant[];
 
 // Synonyms for better matching across sources and to resolve category intent

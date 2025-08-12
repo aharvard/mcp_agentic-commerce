@@ -9,7 +9,7 @@ import {
     handleDevRestaurant,
     handleDevMenu,
     handleDevOrder,
-    handleDevReceipt
+    handleDevReceipt,
 } from "../../src/dev-routes.js";
 
 const MCP_HOST = process.env.MCP_HOST || "127.0.0.1";
@@ -49,10 +49,17 @@ app.get("/dev/receipt/:id", async (req, res) => {
 const transport = new StreamableHTTPServerTransport({
     sessionIdGenerator: undefined,
 });
-await server.connect(transport);
+const connectPromise = (async () => {
+    try {
+        await server.connect(transport);
+    } catch (err) {
+        console.error("Failed to connect MCP server:", err);
+    }
+})();
 
 app.post("/mcp", async (req, res) => {
     try {
+        await connectPromise;
         await transport.handleRequest(req as any, res as any, req.body);
     } catch (err) {
         console.error("Error handling MCP request:", err);
