@@ -1,12 +1,11 @@
-import { htmlShell, inlinePublicAsset } from "./htmlShell.js";
+import { htmlShell } from "./htmlShell.js";
 
 export function receiptHtml(
     details: any,
     items: Array<{ name: string; qty: number; price: number }>
 ) {
-    const logo =
-        inlinePublicAsset("Square_Logo_2025_Black.svg") ||
-        inlinePublicAsset("Square_Jewel_Black.svg");
+    // Use a regular URL for the logo - will be served from Netlify's public folder
+    const logo = "/Square_Logo_2025_Black.svg";
     const now = new Date();
     const date = now.toLocaleString();
     const orderId = `R-${now.getFullYear().toString().slice(-2)}${(

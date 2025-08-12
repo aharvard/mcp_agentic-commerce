@@ -8,7 +8,7 @@
     "scripts": {
         "dev": "tsx watch src/dev-server.ts",
         "dev:mcp": "tsx watch src/dev-server.ts",
-        "prebuild": "tsx src/scripts/buildStyles.ts",
+        "prebuild": "tsx src/scripts/buildStyles.ts && cp -r src/public/* public/",
         "build": "tsc",
         "generate:data": "tsx src/scripts/generateMockRestaurants.ts",
         "generate:menus": "tsx src/scripts/generateMockMenus.ts",

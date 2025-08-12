@@ -1,6 +1,6 @@
 [build]
 command = "pnpm run build"
-publish = "dist"
+publish = "public"
 
 # MCP function redirect
 [[redirects]]
