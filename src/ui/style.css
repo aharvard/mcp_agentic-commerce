@@ -297,3 +297,30 @@ a:hover {
     border-radius: var(--radius-pill);
     text-decoration: none;
 }
+
+/* Quantity controls (shared across UI) */
+.qty-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    border: 1px solid var(--border);
+    background: #f7f7f7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.qty-btn:hover {
+    background: #efefef;
+}
+.qty-count {
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+    font-weight: 600;
+}

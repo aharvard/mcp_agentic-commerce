@@ -9,6 +9,7 @@ import {
     restaurantDetailsHtml,
     orderHtml,
     menuHtml,
+    receiptHtml,
 } from "./ui/index.js";
 import {
     detectSquareForBusinessId,
@@ -273,6 +274,36 @@ server.tool(
     }
 );
 
+server.tool(
+    "view_receipt",
+    "Render a playful receipt for an order (demo only).",
+    {
+        business_id: z.string(),
+        items: z.array(
+            z.object({
+                name: z.string(),
+                qty: z.number().int().default(1),
+                price: z.number().default(0),
+            })
+        ),
+    },
+    async ({ business_id, items }) => {
+        const details = await getRestaurant(business_id);
+        const html = receiptHtml(details, items as any);
+        const block = createUIResource({
+            uri: `ui://receipt/${business_id}`,
+            content: { type: "rawHtml", htmlString: html },
+            encoding: "text",
+        });
+        const annotated = {
+            ...(block as any),
+            annotations: { audience: ["user"] },
+            _meta: { server: SERVER_NAME },
+        };
+        return { content: [annotated] };
+    }
+);
+
 import express from "express";
 import cors from "cors";
 
@@ -291,6 +322,7 @@ app.get("/dev", (_req, res) => {
       <li><a href=\"/dev/restaurant/atx-franklin\">Restaurant Details: Franklin Barbecue</a> — <code>src/ui/restaurantDetailsHtml.ts</code></li>
       <li><a href=\"/dev/menu/atx-franklin\">Menu: Franklin (mock)</a> — <code>src/ui/menuHtml.ts</code></li>
       <li><a href=\"/dev/order/atx-franklin\">Order: Franklin (mock)</a> — <code>src/ui/orderHtml.ts</code></li>
+      <li><a href=\"/dev/receipt/atx-franklin\">Receipt: Franklin (mock)</a> — <code>src/ui/receiptHtml.ts</code></li>
     </ul>
     <p>Query params supported on /dev/restaurants: city, state, query, limit</p>
     </body></html>`);
@@ -325,7 +357,7 @@ app.get("/dev/restaurants", async (req, res) => {
             return;
         }
         const title = `${
-            query ? `Results for "${query}"` : "Nearby Restaurants"
+            query ? `Results for \"${query}\"` : "Nearby Restaurants"
         } in ${[city, state].filter(Boolean).join(", ") || "your area"}`;
         const html = searchResultsHtml(businesses, title);
         res.type("html").send(html);
@@ -333,11 +365,11 @@ app.get("/dev/restaurants", async (req, res) => {
         const code = (error && (error as any).code) || "UNKNOWN";
         const human =
             code === "GEOCODE_NOT_FOUND"
-                ? `Could not find a location for "${[city, state]
+                ? `Could not find a location for \"${[city, state]
                       .filter(Boolean)
                       .join(
                           ", "
-                      )}". Try a different city or include a state (e.g., "Austin, TX").`
+                      )}\". Try a different city or include a state (e.g., \"Austin, TX\").`
                 : code === "LOCATION_REQUIRED"
                 ? "Location is required. Provide a city (and optional state)."
                 : "We hit a temporary issue fetching nearby places. Please try again shortly.";
@@ -365,6 +397,16 @@ app.get("/dev/order/:id", async (req, res) => {
     const html = orderHtml(details as any, [
         { name: "Sample Item A", qty: 1, price: 9.99 },
         { name: "Sample Item B", qty: 2, price: 4.25 },
+    ]);
+    res.type("html").send(html);
+});
+
+app.get("/dev/receipt/:id", async (req, res) => {
+    const id = req.params.id;
+    const details = await getRestaurant(id);
+    const html = receiptHtml(details as any, [
+        { name: "Blueberry Muffin", qty: 1, price: 3.25 },
+        { name: "Espresso", qty: 5, price: 3.0 },
     ]);
     res.type("html").send(html);
 });

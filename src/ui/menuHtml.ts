@@ -76,10 +76,10 @@ export function menuHtml(
       if(!item.qty){
         ctrl.innerHTML = '<button class="btn btn-secondary" data-action="add" data-id="'+id+'">Add</button>';
       } else {
-        ctrl.innerHTML = '<div style="display:flex;gap:8px;align-items:center">'
-          + '<button class="btn btn-secondary" data-action="dec" data-id="'+id+'">-</button>'
-          + '<span>'+item.qty+'</span>'
-          + '<button class="btn btn-secondary" data-action="inc" data-id="'+id+'">+</button>'
+        ctrl.innerHTML = '<div class="qty-controls">'
+          + '<button class="qty-btn" data-action="dec" data-id="'+id+'">-</button>'
+          + '<span class="qty-count">'+item.qty+'</span>'
+          + '<button class="qty-btn" data-action="inc" data-id="'+id+'">+</button>'
           + '</div>';
       }
     }
